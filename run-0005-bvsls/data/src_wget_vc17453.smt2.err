@@ -1,0 +1,63 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Wed Aug 28 15:47:16 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         49958 MiB
+ramon: sys.mem.avail        62943 MiB
+ramon: sys.nprocs           853
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/src_wget_vc17453.smt2
+ramon: argv                 2 = -T:5
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify sls-smt)
+ramon: childpid             3656193
+UNITS -0 -1 2 3 4 5 6 7
+(bvsle bv[1024:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) d S
+(bvsle bv[1048576:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) d S
+(bvsdiv_i (bvmul bv[1000:64] (concat #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 ...)) (bvadd v51723108 (bvmul bv[18446744073709551615:64] v51856068))) d S
+(bvsle bv[1073741824:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) u S
+(bvsle bv[1048576:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) u S
+(bvsle bv[1024:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) u S
+try-repair-uge 1 0 ev: 0 fix:7 8000000000000000 ev: 8000000000000000
+(bvule bv[9223372036854775808:64] (bvmul bv[1000:64] (concat #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 ...))) d S
+(bvmul bv[1000:64] (concat (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) ...)) d S
+(concat (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) (extract[31:31] (bvmul v27961380 #294)) ...) d S
+(bvmul bv[1000:64] (concat (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) ...)) u S
+(bvsle bv[0:64] (concat (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) ...)) u S
+(bvsdiv_i (bvmul bv[1000:64] (concat #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 ...)) (bvadd v51723108 (bvmul bv[18446744073709551615:64] v51856068))) u S
+(bvmul bv[18446744073709551615:64] (bvmul bv[1000:64] (concat #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 ...))) u S
+(bvule bv[9223372036854775808:64] (bvmul bv[1000:64] (concat #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 ...))) u S
+(= (bvmul bv[1000:64] (concat #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 ...)) bv[0:64]) u S
+(bvsle bv[1048576:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) u S
+(bvsle bv[1024:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) u S
+(bvsle bv[1073741824:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) u S
+(= (if (bvule bv[9223372036854775808:64] #309) (bvmul bv[18446744073709551615:64] #309) (bvmul bv[1000:64] #300)) (bvmul bv[18446744073709551615:64] (bvmul bv[1000:64] #300))) u S
+(= (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180)) (if (= bv[0:64] #181) (if #315 bv[1:64] bv[18446744073709551615:64]) (if #297 bv[0:64] #296))) u S
+(= (concat (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) ...) (concat (concat #289 #299) (bvmul v27961380 #294))) u S
+(bvsdiv_i (bvmul bv[1000:64] (concat #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 ...)) (bvadd v51723108 (bvmul bv[18446744073709551615:64] v51856068))) d S
+(bvmul bv[18446744073709551615:64] (bvmul bv[1000:64] (concat #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 ...))) d S
+(bvmul bv[1000:64] (concat (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) (extract[31:31] #298) ...)) d S
+(bvsle bv[1048576:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) d S
+(bvsle bv[1024:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) d S
+(bvsdiv_i (bvmul bv[1000:64] (concat #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 #299 ...)) (bvadd v51723108 (bvmul bv[18446744073709551615:64] v51856068))) d S
+(bvsle bv[1073741824:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) u S
+(bvsle bv[1024:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) u S
+(bvsle bv[1048576:64] (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180))) u S
+(= (bvsdiv_i (bvmul bv[1000:64] #300) (bvadd v51723108 #180)) (if (= bv[0:64] #181) (if #315 bv[1:64] bv[18446744073709551615:64]) (if #297 bv[0:64] #296))) u S
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw 00000000000001000000001600000000320000000000000000000000000000000000000000002)
+ramon: end                  Wed Aug 28 15:47:16 2024
+ramon: root.execname        z3
+ramon: root.utime           0.000s
+ramon: root.stime           0.000s
+ramon: group.total          0.007s
+ramon: group.utime          0.000s
+ramon: group.stime          0.007s
+ramon: group.mempeak        18504KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.008s
+ramon: loadavg              0.94

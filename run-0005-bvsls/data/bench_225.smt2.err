@@ -1,0 +1,44 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Wed Aug 28 15:47:47 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         45297 MiB
+ramon: sys.mem.avail        62943 MiB
+ramon: sys.nprocs           874
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/bench_225.smt2
+ramon: argv                 2 = -T:5
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify sls-smt)
+ramon: childpid             3692015
+UNITS -0 -3 14 17 18 21
+try-repair-ule 0 0 ev: 0 [80000001, 1[ ffffffe0 ev: ffffffe0 fix:ffffffff
+(bvule (bvmul bv[4294967295:32] (concat T1_26401 T1_26400 T1_26399 T1_26398)) bv[4294967264:32]) d S
+(bvmul bv[4294967295:32] (concat T1_26401 T1_26400 T1_26399 T1_26398)) d S
+bv[4294967295:32] d S
+(bvmul bv[4294967295:32] (concat T1_26401 T1_26400 T1_26399 T1_26398)) u S
+(bvmul bv[4294967295:32] (concat bv[0:16] T1_26407 T1_26406)) u S
+(bvule (bvmul bv[4294967295:32] (concat T1_26401 T1_26400 T1_26399 T1_26398)) bv[4294967264:32]) u S
+(bvadd (concat T1_26401 T1_26400 T1_26399 T1_26398) (bvmul bv[4294967295:32] (concat bv[0:16] T1_26407 T1_26406))) u S
+(bvule bv[32:32] (bvmul bv[4294967295:32] (concat T1_26401 T1_26400 T1_26399 T1_26398))) u S
+(bvule (concat bv[0:16] T1_26520 T1_26519) (bvadd (concat T1_26401 T1_26400 T1_26399 T1_26398) (bvmul bv[4294967295:32] #152))) u S
+(bvadd (concat T1_26401 T1_26400 T1_26399 T1_26398) (bvmul bv[4294967295:32] (concat bv[0:16] T1_26407 T1_26406))) d S
+(bvmul bv[4294967295:32] (concat T1_26401 T1_26400 T1_26399 T1_26398)) d S
+(bvmul bv[4294967295:32] (concat bv[0:16] T1_26407 T1_26406)) d S
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      1         0        10         0          0            0        1)
+ramon: end                  Wed Aug 28 15:47:47 2024
+ramon: root.execname        z3
+ramon: root.utime           0.000s
+ramon: root.stime           0.000s
+ramon: group.total          0.004s
+ramon: group.utime          0.000s
+ramon: group.stime          0.004s
+ramon: group.mempeak        18268KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.005s
+ramon: loadavg              0.96

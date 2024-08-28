@@ -1,0 +1,71 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Wed Aug 28 15:47:45 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         45658 MiB
+ramon: sys.mem.avail        62943 MiB
+ramon: sys.nprocs           868
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/bench_10815.smt2
+ramon: argv                 2 = -T:5
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify sls-smt)
+ramon: childpid             3688394
+UNITS -0 -1 -2 -3 -4 -5 -6 -7 -8 -9 10 11 12 13 -14 -15 16 -17 -18 -19 -20 21 -24 -25 -26 -27 28 -29 -30 -31 -32 -33 34 -35 -36 -37 38 -39 -44 -45 -46 -47 -48 -49 52 53 54 55
+try-repair-ule 1 20 ev: 20 fix:ff 0 ev: 0 [3b, 3a[
+try-repair-uge 1 0 ev: 0 [3b, 3a[ 20 ev: 20 fix:ff
+(bvule bv[32:8] T1@584) d S
+try-repair-uge 1 0 ev: 0 [3b, 3a[ 20 ev: 20 fix:ff
+(bvule bv[32:8] T1@586) d S
+try-repair-uge 1 0 ev: 0 [3b, 3a[ 20 ev: 20 fix:ff
+(bvule bv[32:8] T1@585) d S
+(= T1@584 bv[58:8]) u S
+(concat bv[0:24] T1@585) u S
+(bvule bv[32:8] T1@585) u S
+(bvule bv[32:8] T1@584) u S
+(= T1@584 bv[38:8]) u S
+(= T1@585 bv[58:8]) u S
+(concat bv[0:24] T1@586) u S
+(bvule bv[32:8] T1@586) u S
+(= T1@586 T1@576) u S
+(= T1@584 bv[34:8]) u S
+(= T1@586 bv[58:8]) u S
+(concat bv[0:24] T1@584) u S
+(= T1@584 bv[60:8]) u S
+(bvmul bv[12769:32] (concat bv[0:24] T1@584)) u S
+(bvmul bv[113:32] (concat bv[0:24] T1@585)) u S
+(bvmul bv[4028907375:32] (concat bv[0:24] T1@585)) u S
+(bvmul bv[4178587103:32] (concat bv[0:24] T1@586)) u S
+(bvadd bv[1933277740:32] (bvmul bv[4028907375:32] (concat bv[0:24] T1@585)) (bvmul bv[4178587103:32] (concat bv[0:24] T1@586))) u S
+(bvadd bv[1933277740:32] (bvmul bv[4028907375:32] (concat bv[0:24] T1@156)) (bvmul bv[4178587103:32] (concat bv[0:24] T1@586))) u S
+(bvadd (bvmul bv[12769:32] (concat bv[0:24] T1@584)) (bvmul bv[113:32] (concat bv[0:24] T1@585))) u S
+(= (concat bv[0:24] T1@155) (bvadd bv[1933277740:32] (bvmul bv[4028907375:32] #8837) (bvmul bv[4178587103:32] #8711))) u S
+(= (bvadd (bvmul bv[12769:32] #8741) (bvmul bv[113:32] #8837)) (bvadd (bvmul bv[12769:32] #1377) (bvmul bv[113:32] #8705))) u S
+(= (concat bv[0:24] T1@584) (bvadd bv[1933277740:32] (bvmul bv[4028907375:32] #8705) (bvmul bv[4178587103:32] #8711))) u S
+(bvadd bv[1933277740:32] (bvmul bv[4028907375:32] (concat bv[0:24] T1@585)) (bvmul bv[4178587103:32] (concat bv[0:24] T1@586))) d S
+(bvadd bv[1933277740:32] (bvmul bv[4028907375:32] (concat bv[0:24] T1@156)) (bvmul bv[4178587103:32] (concat bv[0:24] T1@586))) d S
+(bvadd (bvmul bv[12769:32] (concat bv[0:24] T1@584)) (bvmul bv[113:32] (concat bv[0:24] T1@585))) d S
+(bvmul bv[113:32] (concat bv[0:24] T1@585)) d S
+(bvmul bv[4178587103:32] (concat bv[0:24] T1@586)) d S
+(bvmul bv[12769:32] (concat bv[0:24] T1@584)) d S
+(bvmul bv[4028907375:32] (concat bv[0:24] T1@585)) d S
+(concat bv[0:24] T1@586) d S
+(concat bv[0:24] T1@585) d S
+(concat bv[0:24] T1@584) d S
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      1        28        28         0          0            0        1)
+ramon: end                  Wed Aug 28 15:47:45 2024
+ramon: root.execname        z3
+ramon: root.utime           0.010s
+ramon: root.stime           0.000s
+ramon: group.total          0.014s
+ramon: group.utime          0.011s
+ramon: group.stime          0.004s
+ramon: group.mempeak        19640KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.015s
+ramon: loadavg              0.97

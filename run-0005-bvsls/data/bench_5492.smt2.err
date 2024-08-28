@@ -1,0 +1,70 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Wed Aug 28 15:47:37 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         47122 MiB
+ramon: sys.mem.avail        62943 MiB
+ramon: sys.nprocs           858
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/bench_5492.smt2
+ramon: argv                 2 = -T:5
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify sls-smt)
+ramon: childpid             3677706
+UNITS 0 1 6 -9 10 16 23 24
+try-repair-ule 1 1902 ev: 1902 fix:ffffffff 0 ev: 0 [f7725325, 7725325[
+try-repair-uge 1 0 ev: 0 [f7725325, 7725325[ 1902 ev: 1902 fix:ffffffff
+(bvule bv[6402:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) d S
+(bvule bv[6143:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) d S
+(concat T1_10664 T1_10663 T1_10662 T1_10661) d S
+(bvadd bv[143502555:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) u S
+(bvule bv[6143:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) u S
+(bvule bv[6402:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) u S
+(bvsdiv_i bv[0:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) u S
+(bvadd bv[4294965248:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) u S
+(bvadd bv[4294963201:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) u S
+(bvadd bv[4294961153:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) u S
+(extract[31:12] (bvadd bv[4294963201:32] (concat T1_10664 T1_10663 T1_10662 T1_10661))) u S
+(extract[31:11] (bvadd bv[4294961153:32] (concat T1_10664 T1_10663 T1_10662 T1_10661))) u S
+(= (bvsdiv_i bv[0:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) bv[0:32]) u S
+(extract[31:28] (bvadd bv[143502555:32] (concat T1_10664 T1_10663 T1_10662 T1_10661))) u S
+(extract[31:11] (bvadd bv[4294965248:32] (concat T1_10664 T1_10663 T1_10662 T1_10661))) u S
+(= (extract[31:28] (bvadd bv[143502555:32] #179)) bv[0:4]) u S
+(= (extract[31:11] (bvadd bv[4294965248:32] #179)) bv[0:21]) u S
+(= (extract[31:12] (bvadd bv[4294963201:32] #179)) bv[0:20]) u S
+(= (extract[31:11] (bvadd bv[4294961153:32] #179)) bv[0:21]) u S
+(extract[31:12] (bvadd bv[4294963201:32] (concat T1_10664 T1_10663 T1_10662 T1_10661))) d S
+(extract[31:28] (bvadd bv[143502555:32] (concat T1_10664 T1_10663 T1_10662 T1_10661))) d S
+(extract[31:11] (bvadd bv[4294965248:32] (concat T1_10664 T1_10663 T1_10662 T1_10661))) d S
+(extract[31:11] (bvadd bv[4294961153:32] (concat T1_10664 T1_10663 T1_10662 T1_10661))) d S
+(bvadd bv[4294965248:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) d S
+(bvadd bv[4294961153:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) d S
+(bvsdiv_i bv[0:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) d S
+(bvadd bv[143502555:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) d S
+(bvadd bv[4294963201:32] (concat T1_10664 T1_10663 T1_10662 T1_10661)) d S
+try-repair-uge 0 800 ev: 800 fix:fff 1 ev: 1
+try-repair-ule 0 1 ev: 1 800 ev: 800 fix:fff
+(bvule (bvadd bv[1:12] (concat #200 T1_10661)) bv[2048:12]) d S
+(bvadd bv[1:12] (concat (extract[3:0] T1_10662) T1_10661)) d S
+(concat (extract[3:0] T1_10662) T1_10661) d S
+(bvadd bv[1:12] (concat (extract[3:0] T1_10662) T1_10661)) u S
+(bvule (concat (extract[3:0] T1_10662) T1_10661) bv[2048:12]) u S
+(bvule (bvadd bv[1:12] (concat #200 T1_10661)) bv[2048:12]) u S
+(bvadd bv[1:12] (concat (extract[3:0] T1_10662) T1_10661)) d S
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      2        15        15         0          0            0        1)
+ramon: end                  Wed Aug 28 15:47:37 2024
+ramon: root.execname        z3
+ramon: root.utime           0.000s
+ramon: root.stime           0.000s
+ramon: group.total          0.007s
+ramon: group.utime          0.003s
+ramon: group.stime          0.003s
+ramon: group.mempeak        18248KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.007s
+ramon: loadavg              0.95

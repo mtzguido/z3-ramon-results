@@ -1,0 +1,82 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Wed Aug 28 15:47:39 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         46679 MiB
+ramon: sys.mem.avail        62943 MiB
+ramon: sys.nprocs           861
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/bench_1228.smt2
+ramon: argv                 2 = -T:5
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify sls-smt)
+ramon: childpid             3680661
+UNITS -0 1 2 5 6 7 8 9 -10 11 12 13 14 15
+try-repair-uge 1 0 ev: 0 [9, 8[ 8 ev: 8 fix:ff
+(bvule bv[8:8] T1_6131) d S
+(= T1_6131 bv[8:8]) u S
+(concat bv[0:15] T1_6131) u S
+(concat bv[0:2] T1_6131) u S
+(concat bv[0:24] T1_6131) u S
+(= T1_6131 bv[1:8]) u S
+(bvule bv[8:8] T1_6131) u S
+(bvadd bv[23:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140)) u S
+(bvadd bv[4265126:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140)) u S
+(bvadd bv[4265119:23] (concat bv[0:15] T1_6131)) u S
+(bvadd bv[33:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140) (concat bv[0:16] T1_6535 T1_6534)) u S
+(bvadd bv[4265129:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140)) u S
+(bvadd bv[4265129:23] (concat bv[0:15] T1_6131) (concat bv[0:7] T1_6141 T1_6140)) u S
+(bvadd bv[4265119:32] (concat bv[0:24] T1_6131)) u S
+(bvadd bv[4265126:23] (concat bv[0:15] T1_6131) (concat bv[0:7] T1_6141 T1_6140)) u S
+(extract[31:23] (bvadd bv[4265119:32] (concat bv[0:24] T1_6131))) u S
+(bvule (bvadd bv[4265126:23] (concat bv[0:15] T1_6131) (concat bv[0:7] T1_6141 T1_6140)) bv[4265942:23]) u S
+(extract[31:10] (bvadd bv[33:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140) (concat bv[0:16] T1_6535 T1_6534))) u S
+(extract[31:10] (bvadd bv[23:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140))) u S
+(extract[31:23] (bvadd bv[4265126:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140))) u S
+(bvadd bv[23:10] (concat bv[0:2] T1_6131) (concat (extract[1:0] T1_6141) T1_6140)) u S
+(bvule (bvadd bv[4265119:23] (concat bv[0:15] T1_6131)) bv[4265942:23]) u S
+(bvule (bvadd bv[4265129:23] (concat bv[0:15] T1_6131) (concat bv[0:7] T1_6141 T1_6140)) bv[4265942:23]) u S
+(extract[31:23] (bvadd bv[4265129:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140))) u S
+(bvadd bv[33:10] (concat bv[0:2] T1_6131) (concat (extract[1:0] T1_6141) T1_6140) (concat (extract[1:0] T1_6535) T1_6534)) u S
+(= (extract[31:23] (bvadd bv[4265129:32] #161 #290)) bv[0:9]) u S
+(bvule (bvadd bv[33:10] (concat bv[0:2] T1_6131) (concat #199 T1_6140) (concat #194 T1_6534)) bv[846:10]) u S
+(bvule (bvadd bv[23:10] (concat bv[0:2] T1_6131) (concat #199 T1_6140)) bv[846:10]) u S
+(= (extract[31:10] (bvadd bv[23:32] #161 #290)) bv[0:22]) u S
+(= (extract[31:10] (bvadd bv[33:32] #161 #290 #218)) bv[0:22]) u S
+(= (extract[31:23] (bvadd bv[4265119:32] #161)) bv[0:9]) u S
+(= (extract[31:23] (bvadd bv[4265126:32] #161 #290)) bv[0:9]) u S
+(extract[31:23] (bvadd bv[4265119:32] (concat bv[0:24] T1_6131))) d S
+(bvadd bv[23:10] (concat bv[0:2] T1_6131) (concat (extract[1:0] T1_6141) T1_6140)) d S
+(extract[31:23] (bvadd bv[4265129:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140))) d S
+(bvadd bv[33:10] (concat bv[0:2] T1_6131) (concat (extract[1:0] T1_6141) T1_6140) (concat (extract[1:0] T1_6535) T1_6534)) d S
+(extract[31:23] (bvadd bv[4265126:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140))) d S
+(extract[31:10] (bvadd bv[33:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140) (concat bv[0:16] T1_6535 T1_6534))) d S
+(extract[31:10] (bvadd bv[23:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140))) d S
+(bvadd bv[4265129:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140)) d S
+(bvadd bv[4265126:23] (concat bv[0:15] T1_6131) (concat bv[0:7] T1_6141 T1_6140)) d S
+(bvadd bv[4265126:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140)) d S
+(bvadd bv[4265129:23] (concat bv[0:15] T1_6131) (concat bv[0:7] T1_6141 T1_6140)) d S
+(bvadd bv[4265119:32] (concat bv[0:24] T1_6131)) d S
+(bvadd bv[33:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140) (concat bv[0:16] T1_6535 T1_6534)) d S
+(bvadd bv[23:32] (concat bv[0:24] T1_6131) (concat bv[0:16] T1_6141 T1_6140)) d S
+(bvadd bv[4265119:23] (concat bv[0:15] T1_6131)) d S
+(concat bv[0:15] T1_6131) d S
+(concat bv[0:24] T1_6131) d S
+(concat bv[0:2] T1_6131) d S
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      1        11        11         0          0            0        1)
+ramon: end                  Wed Aug 28 15:47:39 2024
+ramon: root.execname        z3
+ramon: root.utime           0.000s
+ramon: root.stime           0.000s
+ramon: group.total          0.006s
+ramon: group.utime          0.003s
+ramon: group.stime          0.003s
+ramon: group.mempeak        18256KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.009s
+ramon: loadavg              0.65
