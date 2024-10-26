@@ -1,0 +1,53 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Sat Oct 26 15:00:32 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         27796 MiB
+ramon: sys.mem.avail        62608 MiB
+ramon: sys.nprocs           3051
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_SAT/From_AProVE_2014__Test6.jar-obl-13__term_unfeasibility_4_0.smt2
+ramon: argv                 2 = -T:20
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = sat.smt=true
+ramon: argv                 7 = model_validate=true
+ramon: childpid             459102
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts         :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin     :units         :memory       )
+(sat.stats      0      0    0 32216/31854     0/0 100       0    40.92   0.00)
+(nlsat :conflicts 1 :decisions 0 :propagations 661 :clauses 6808 :learned 1)
+ramon: poll                 wall=1.000s usage=0.816s mem=59552KiB load=0.82 rootload=0.78
+ (sat-cleaner :elim-literals 6 :elim-clauses 0 :cost 5853 :time 0.00)
+ (sat-cleaner :elim-literals 3 :elim-clauses 0 :cost 5981 :time 0.00)
+(sat.stats    149  59047    0 36581/35736   738/56 103       0    60.28   1.01)
+(sat.stats    149  59047    0 36687/35842   738/56 103       0    59.99   1.01)
+(sat.stats    149  59047    0 36687/35842   738/56 103       0    59.99   1.01)
+(sat.simplify :simplifications 1)
+ (sat-scc :elim-vars 0 :elim-bin 45 :time 0.01)
+ (sat-probing :cost 76326461.45 :time 0.01)
+(sat.stats    149  59047    0 33640/32852   722/62 103       0    61.45   1.04)
+ASSERTION VIOLATION
+File: ../src/sat/smt/arith_solver.cpp
+Line: 1276
+Failed to verify: s().value(c) != l_true
+
+Z3 4.13.3.0
+Please file an issue with this message and more detail about how you encountered it at https://github.com/Z3Prover/z3/issues/new
+ramon: end                  Sat Oct 26 15:00:33 2024
+ramon: root.execname        z3
+ramon: root.utime           1.340s
+ramon: root.stime           0.030s
+ramon: group.total          1.377s
+ramon: group.utime          1.345s
+ramon: group.stime          0.032s
+ramon: group.mempeak        67192KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+[31mramon: exitcode             114[0m
+ramon: walltime             1.560s
+ramon: loadavg              0.88

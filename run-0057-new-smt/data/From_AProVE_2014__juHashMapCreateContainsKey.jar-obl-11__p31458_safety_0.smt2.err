@@ -1,0 +1,61 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Sat Oct 26 15:00:28 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         28292 MiB
+ramon: sys.mem.avail        62608 MiB
+ramon: sys.nprocs           3038
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_SAT/From_AProVE_2014__juHashMapCreateContainsKey.jar-obl-11__p31458_safety_0.smt2
+ramon: argv                 2 = -T:20
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = sat.smt=true
+ramon: argv                 7 = model_validate=true
+ramon: childpid             457158
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts        :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin     :units        :memory       )
+(sat.stats      0      0    0  4858/4849     0/0  52       0    21.13   0.00)
+ (sat-cleaner :elim-literals 2 :elim-clauses 0 :cost 215 :time 0.00)
+(nlsat :conflicts 4 :decisions 0 :propagations 892 :clauses 1386 :learned 4)
+ (sat-cleaner :elim-literals 3 :elim-clauses 0 :cost 586 :time 0.00)
+(nlsat :conflicts 4 :decisions 1 :propagations 205 :clauses 1781 :learned 4)
+(nlsat :conflicts 1 :decisions 0 :propagations 118 :clauses 1817 :learned 1)
+(nlsat :conflicts 2 :decisions 0 :propagations 107 :clauses 1765 :learned 2)
+(nlsat :conflicts 1 :decisions 0 :propagations 268 :clauses 1768 :learned 1)
+(nlsat :conflicts 2 :decisions 0 :propagations 226 :clauses 1801 :learned 2)
+(nlsat :conflicts 1 :decisions 0 :propagations 199 :clauses 1765 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 211 :clauses 1776 :learned 1)
+(sat.stats    184   9513    0  6127/6038   766/56  54       0    30.59   0.53)
+(sat.stats    184   9513    0  6349/6260   766/56  54       0    30.11   0.54)
+(sat.stats    184   9513    0  6349/6260   766/56  54       0    30.11   0.54)
+(sat.simplify :simplifications 1)
+ (sat-scc :elim-vars 13 :elim-bin 43 :time 0.00)
+ (sat-probing :probing-assigned 3 :cost 6162430.41 :time 0.00)
+(sat.stats    184   9513    0  5290/5166   734/63  64       0    30.41   0.54)
+ (sat-cleaner :elim-literals 6 :elim-clauses 0 :cost 3984 :time 0.00)
+(sat.stats    189   9571    1  5270/5146   767/75  64       0    30.60   0.55)
+ASSERTION VIOLATION
+File: ../src/sat/smt/arith_solver.cpp
+Line: 1276
+Failed to verify: s().value(c) != l_true
+
+Z3 4.13.3.0
+Please file an issue with this message and more detail about how you encountered it at https://github.com/Z3Prover/z3/issues/new
+ramon: end                  Sat Oct 26 15:00:29 2024
+ramon: root.execname        z3
+ramon: root.utime           0.560s
+ramon: root.stime           0.010s
+ramon: group.total          0.577s
+ramon: group.utime          0.565s
+ramon: group.stime          0.012s
+ramon: group.mempeak        34880KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+[31mramon: exitcode             114[0m
+ramon: walltime             0.602s
+ramon: loadavg              0.96

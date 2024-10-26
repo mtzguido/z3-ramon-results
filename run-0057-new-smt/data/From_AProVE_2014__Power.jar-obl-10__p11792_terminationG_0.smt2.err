@@ -1,0 +1,51 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Sat Oct 26 15:01:18 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         27801 MiB
+ramon: sys.mem.avail        62608 MiB
+ramon: sys.nprocs           3049
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_SAT/From_AProVE_2014__Power.jar-obl-10__p11792_terminationG_0.smt2
+ramon: argv                 2 = -T:20
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = sat.smt=true
+ramon: argv                 7 = model_validate=true
+ramon: childpid             477464
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts        :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin     :units        :memory       )
+(sat.stats      0      0    0  6714/6683     0/0  38       0    28.35   0.00)
+(nlsat :conflicts 3 :decisions 0 :propagations 1300 :clauses 3366 :learned 3)
+(sat.stats    109   3348    0  7057/7016   428/4  38       0    40.83   0.61)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 2762 :time 0.00)
+(sat.stats    109   3348    0  7134/7093   428/4  38       0    40.25   0.61)
+(sat.stats    109   3348    0  7134/7093   428/4  38       0    40.25   0.61)
+(sat.simplify :simplifications 1)
+ (sat-scc :elim-vars 0 :time 0.00)
+ (sat-probing :cost 5663040.62 :time 0.00)
+(sat.stats    109   3348    0  6807/6735   402/9  38       0    40.62   0.62)
+ASSERTION VIOLATION
+File: ../src/sat/smt/arith_solver.cpp
+Line: 1276
+Failed to verify: s().value(c) != l_true
+
+Z3 4.13.3.0
+Please file an issue with this message and more detail about how you encountered it at https://github.com/Z3Prover/z3/issues/new
+ramon: end                  Sat Oct 26 15:01:19 2024
+ramon: root.execname        z3
+ramon: root.utime           0.750s
+ramon: root.stime           0.010s
+ramon: group.total          0.774s
+ramon: group.utime          0.758s
+ramon: group.stime          0.016s
+ramon: group.mempeak        46068KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+[31mramon: exitcode             114[0m
+ramon: walltime             0.898s
+ramon: loadavg              0.86

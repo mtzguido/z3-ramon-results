@@ -1,0 +1,78 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Sat Oct 26 15:00:42 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         27206 MiB
+ramon: sys.mem.avail        62608 MiB
+ramon: sys.nprocs           3063
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_SAT/From_T2__ruslan-benchmarks_misc_n-38.t2__p9264_edge_closing_0.smt2
+ramon: argv                 2 = -T:20
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = sat.smt=true
+ramon: argv                 7 = model_validate=true
+ramon: childpid             462703
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts       :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin    :units        :memory       )
+(sat.stats      0      0    0   994/899     0/0  26       0    24.38   0.00)
+(nlsat :conflicts 1 :decisions 0 :propagations 64 :clauses 2463 :learned 1)
+ramon: poll                 wall=1.000s usage=0.888s mem=34280KiB load=0.89 rootload=0.80
+ramon: poll                 wall=2.003s usage=1.890s mem=34728KiB load=1.00 rootload=0.99
+ramon: poll                 wall=3.011s usage=2.819s mem=35288KiB load=0.92 rootload=0.92
+ (sat-cleaner :elim-literals 4 :elim-clauses 0 :cost 1566 :time 0.00)
+ramon: poll                 wall=4.000s usage=3.807s mem=37268KiB load=1.00 rootload=0.99
+ (sat-cleaner :elim-literals 4 :elim-clauses 0 :cost 1781 :time 0.00)
+ (sat-cleaner :elim-literals 8 :elim-clauses 0 :cost 2255 :time 0.00)
+ (sat-cleaner :elim-literals 13 :elim-clauses 0 :cost 2713 :time 0.00)
+(sat.stats    110   8001    0  1635/1491   343/17  34       0    37.57   4.70)
+(sat.stats    110   8001    0  1635/1491   343/17  34       0    37.00   4.70)
+(sat.stats    110   8001    0  1635/1491   343/17  34       0    37.00   4.70)
+(sat.simplify :simplifications 1)
+ (sat-scc :elim-vars 4 :elim-bin 3 :time 0.00)
+ (sat-cleaner :elim-literals 6 :elim-clauses 0 :cost 2924 :time 0.00)
+ (sat-probing :probing-assigned 10 :cost 3400937.28 :time 0.00)
+(sat.stats    110   8001    0  1109/933   318/21 122       0    37.28   4.71)
+ (sat-cleaner :elim-literals 145 :elim-clauses 42 :cost 2769 :time 0.00)
+ramon: poll                 wall=5.000s usage=4.802s mem=42796KiB load=0.99 rootload=1.00
+ (sat-cleaner :elim-literals 2 :elim-clauses 0 :cost 2880 :time 0.00)
+ramon: poll                 wall=6.000s usage=5.779s mem=45072KiB load=0.98 rootload=0.95
+ (sat-cleaner :elim-literals 2 :elim-clauses 2 :cost 6169 :time 0.00)
+(nlsat :conflicts 1 :decisions 0 :propagations 153 :clauses 3715 :learned 1)
+ (sat-cleaner :elim-literals 11 :elim-clauses 0 :cost 3510 :time 0.00)
+ (sat-cleaner :elim-literals 10 :elim-clauses 6 :cost 7430 :time 0.00)
+ (sat-cleaner :elim-literals 9 :elim-clauses 0 :cost 4056 :time 0.00)
+ (sat-cleaner :elim-literals 5 :elim-clauses 0 :cost 4325 :time 0.00)
+ (sat-cleaner :elim-literals 14 :elim-clauses 0 :cost 4544 :time 0.00)
+ramon: poll                 wall=7.000s usage=6.777s mem=49948KiB load=1.00 rootload=0.98
+(nlsat :conflicts 1 :decisions 0 :propagations 130 :clauses 3984 :learned 1)
+ (sat-cleaner :elim-literals 16 :elim-clauses 2 :cost 4633 :time 0.00)
+ (sat-cleaner :elim-literals 6 :elim-clauses 3 :cost 4946 :time 0.00)
+ (sat-cleaner :elim-literals 3 :elim-clauses 0 :cost 5275 :time 0.00)
+(nlsat :conflicts 1 :decisions 0 :propagations 106 :clauses 4087 :learned 1)
+ (sat-cleaner :elim-literals 7 :elim-clauses 0 :cost 5379 :time 0.00)
+ (sat-cleaner :elim-literals 3 :elim-clauses 1 :cost 5628 :time 0.00)
+ASSERTION VIOLATION
+File: ../src/sat/smt/arith_solver.cpp
+Line: 1276
+Failed to verify: s().value(c) != l_true
+
+Z3 4.13.3.0
+Please file an issue with this message and more detail about how you encountered it at https://github.com/Z3Prover/z3/issues/new
+ramon: end                  Sat Oct 26 15:00:50 2024
+ramon: root.execname        z3
+ramon: root.utime           7.160s
+ramon: root.stime           0.140s
+ramon: group.total          7.308s
+ramon: group.utime          7.161s
+ramon: group.stime          0.147s
+ramon: group.mempeak        58808KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+[31mramon: exitcode             114[0m
+ramon: walltime             7.569s
+ramon: loadavg              0.97

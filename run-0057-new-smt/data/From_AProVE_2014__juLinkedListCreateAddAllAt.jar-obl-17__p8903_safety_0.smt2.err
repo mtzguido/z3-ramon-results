@@ -1,0 +1,53 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Sat Oct 26 15:01:19 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         27602 MiB
+ramon: sys.mem.avail        62608 MiB
+ramon: sys.nprocs           3045
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_SAT/From_AProVE_2014__juLinkedListCreateAddAllAt.jar-obl-17__p8903_safety_0.smt2
+ramon: argv                 2 = -T:20
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = sat.smt=true
+ramon: argv                 7 = model_validate=true
+ramon: childpid             477858
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts         :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin     :units         :memory       )
+(sat.stats      0      0    0 51314/51307     0/0 198       0    44.36   0.00)
+(nlsat :conflicts 35 :decisions 0 :propagations 5066 :clauses 7186 :learned 35)
+ramon: poll                 wall=1.000s usage=0.973s mem=74068KiB load=0.97 rootload=0.94
+(sat.stats    113   9162    0 51773/51740   458/9 198       0    71.02   0.94)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 4210 :time 0.00)
+(sat.stats    113   9162    0 51843/51810   458/9 198       0    66.35   0.96)
+(sat.stats    113   9162    0 51843/51810   458/9 198       0    66.35   0.96)
+(sat.simplify :simplifications 1)
+ (sat-scc :elim-vars 2 :time 0.00)
+ (sat-probing :cost 54052467.59 :time 0.01)
+(sat.stats    113   9162    0 51464/51383   432/5 198       0    67.59   0.98)
+ramon: poll                 wall=2.000s usage=1.967s mem=90652KiB load=0.99 rootload=0.98
+ASSERTION VIOLATION
+File: ../src/sat/smt/arith_solver.cpp
+Line: 1276
+Failed to verify: s().value(c) != l_true
+
+Z3 4.13.3.0
+Please file an issue with this message and more detail about how you encountered it at https://github.com/Z3Prover/z3/issues/new
+ramon: end                  Sat Oct 26 15:01:22 2024
+ramon: root.execname        z3
+ramon: root.utime           2.300s
+ramon: root.stime           0.050s
+ramon: group.total          2.370s
+ramon: group.utime          2.310s
+ramon: group.stime          0.060s
+ramon: group.mempeak        97092KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+[31mramon: exitcode             114[0m
+ramon: walltime             2.404s
+ramon: loadavg              0.99
