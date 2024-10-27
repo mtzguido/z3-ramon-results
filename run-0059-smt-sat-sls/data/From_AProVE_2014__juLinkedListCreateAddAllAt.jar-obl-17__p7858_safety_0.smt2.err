@@ -1,0 +1,100 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Sun Oct 27 09:52:49 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         14192 MiB
+ramon: sys.mem.avail        62260 MiB
+ramon: sys.nprocs           2678
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_SAT/From_AProVE_2014__juLinkedListCreateAddAllAt.jar-obl-17__p7858_safety_0.smt2
+ramon: argv                 2 = -T:20
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = smt.sls.enable=true
+ramon: argv                 5 = sat.smt=true
+ramon: argv                 6 = -st
+ramon: argv                 7 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 8 = model_validate=true
+ramon: childpid             1074230
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts         :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin     :units         :memory       )
+(sat.stats      0      0    0 23066/23062     0/0 221       0    64.60   0.01)
+(nlsat :conflicts 9 :decisions 0 :propagations 2105 :clauses 3276 :learned 9)
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    309   56.5367     10007         0          0           14       47)
+(nlsat :conflicts 25 :decisions 1 :propagations 999 :clauses 3635 :learned 25)
+(sat.ddfw       2    525   33.5973     20019         0          1           11       48)
+(sat.ddfw       2    977   35.9568     40011         0          2           32       86)
+(sat.stats    179   3802    0 23327/23317   330/6 221       0    75.86   0.61)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 9893 :time 0.00)
+(sat.stats    179   3802    0 23380/23370   330/6 221       0    75.77   0.61)
+(sat.stats    179   3802    0 23380/23370   330/6 221       0    75.77   0.61)
+(sat.simplify :simplifications 1)
+ (sat-scc :elim-vars 0 :time 0.00)
+ (sat-probing :cost 14470476.35 :time 0.01)
+(sat.stats    179   3802    0 23135/23077   313/19 221       0    76.35   0.65)
+(sat.stats    183   4095    1 23135/23077   318/19 221       0    77.49   0.68)
+(sat.stats :conflicts    :restarts       :learned/bin       :gc          :time)
+(sat.stats       :decisions  :clauses/bin        :units         :memory       )
+(sat.stats    188   4505    2 23135/23077   328/19 221       0    77.97   0.70)
+(sat.stats    192   4511    3 23135/23077   332/19 221       0    77.97   0.70)
+(sat.stats    195   4531    4 23135/23077   337/19 221       0    78.06   0.71)
+(sat.stats    198   4549    5 23135/23077   343/19 221       0    78.06   0.72)
+(sat.stats    201   4552    6 23135/23077   346/19 221       0    78.16   0.72)
+(sat.stats    205   4555    7 23135/23077   350/19 221       0    78.16   0.72)
+(sat.stats    211   4576    8 23135/23077   357/19 221       0    78.25   0.73)
+(sat.stats    215   4593    9 23135/23077   361/19 221       0    78.25   0.73)
+(sat.stats    220   4598   10 23135/23077   367/19 221       0    78.35   0.73)
+(sat.stats    223   4730   11 23135/23077   373/19 221       0    78.35   0.74)
+(sat.stats    226   5018   12 23195/23128   391/20 221       0    78.55   0.76)
+(sat.stats    231   5185   13 23207/23140   399/20 221       0    78.55   0.77)
+ramon: poll                 wall=1.000s usage=0.857s mem=83272KiB load=0.86 rootload=0.83
+(nlsat :conflicts 1 :decisions 0 :propagations 677 :clauses 3939 :learned 1)
+(sat.ddfw       2   1025     30.38     70000         0          3           19       99)
+(nlsat :conflicts 5 :decisions 0 :propagations 646 :clauses 4186 :learned 5)
+(sat.stats    316  13764   40 23823/23720   604/39 221       0    82.13   1.32)
+ (sat-cleaner :elim-literals 1 :elim-clauses 0 :cost 14647 :time 0.00)
+(sat.ddfw       2   1025     25.67    110015         0          4           24      136)
+ramon: poll                 wall=2.000s usage=1.857s mem=94464KiB load=1.00 rootload=1.00
+(sat.ddfw       2   1025     23.00    160013         0          5           33      148)
+SMT -> SLS units 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 441 442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 458 459 460 461 462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 501 502 503 504 505 506 507 508 509 510 511 512 513 514 515 516 517 518 519 520 521 522 523 524 525 526 527 528 529 530 531 532 533 534 535 536 537 538 539 540 541 542 543 544 545 546 547 548 549 550 551 552 553 554 555 556 557 558 559 560 561 562 563 564 565 566 567 568 569 570 571 572 573 574 575 576 577 578 579 580 581 582 583 584 585 586 587 588 589 590 591 592 593 594 595 596 597 598 599 600 601 602 603
+ramon: poll                 wall=3.000s usage=2.860s mem=101MiB load=1.00 rootload=1.01
+(sat.ddfw       2   1025     20.43    220000         1          6           20      199)
+(sat.stats    653  44577   55 24575/24420  1133/58 222       0    96.93   3.08)
+(sat.stats    714  49516   62 24621/24465  1227/64 222       0    98.53   3.37)
+(sat.ddfw       2   1025     18.64    290008         1          7           21      205)
+ramon: poll                 wall=4.000s usage=3.908s mem=111MiB load=1.05 rootload=1.03
+(sat.ddfw       2   1025     17.32    370000         2          8            2      250)
+(sat.stats :conflicts  :restarts        :learned/bin        :gc          :time)
+(sat.stats      :decisions   :clauses/bin        :units        :memory        )
+(sat.stats   1120  62451  139 24758/24597  1720/73 222       0   109.82   4.69)
+ramon: poll                 wall=5.000s usage=5.018s mem=121MiB load=1.11 rootload=1.10
+(sat.ddfw       1    985     16.21    460041         3          9           32      268)
+ramon: poll                 wall=6.000s usage=6.185s mem=130MiB load=1.17 rootload=1.17
+(sat.ddfw       1   1025     15.34    560000         3         10           28      316)
+ramon: poll                 wall=7.000s usage=7.293s mem=142MiB load=1.11 rootload=1.09
+(sat.stats   1597  74283  284 24758/24597  2226/77 222       0   126.90   6.79)
+(sat.ddfw       1   1025     14.53    670008         4         11           41      337)
+ramon: poll                 wall=8.000s usage=8.429s mem=155MiB load=1.14 rootload=1.13
+(nlsat :conflicts 1 :decisions 0 :propagations 76 :clauses 4483 :learned 1)
+(sat.ddfw       1   1025     12.89    780106         5         12           35      389)
+sls-result l_undef
+"checking model (on original set of clauses)"
+(sat.stats   2173  92425  447 24809/24644  2864/78 222       0   110.87   8.56)
+Verifying solution
+solution verified
+ramon: end                  Sun Oct 27 09:52:58 2024
+ramon: root.execname        z3
+ramon: root.utime           9.470s
+ramon: root.stime           0.080s
+ramon: group.total          9.560s
+ramon: group.utime          9.473s
+ramon: group.stime          0.087s
+ramon: group.mempeak        169MiB
+ramon: group.pidpeak        3
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             8.942s
+ramon: loadavg              1.07
