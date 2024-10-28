@@ -1,0 +1,47 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Sun Oct 27 22:58:45 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         31420 MiB
+ramon: sys.mem.avail        62193 MiB
+ramon: sys.nprocs           1051
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/bench_2113.smt2
+ramon: argv                 2 = -T:20
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = smt.sls.enable=true
+ramon: argv                 5 = sat.smt=true
+ramon: argv                 6 = -st
+ramon: argv                 7 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 8 = model_validate=true
+ramon: childpid             2516393
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts          :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin       :units       :memory        )
+(sat.stats      0      0    0 104064/44446     0/0  72       0   104.30   0.05)
+ (sat-cleaner :elim-literals 33 :elim-clauses 33 :cost 183925 :time 0.01)
+SMT -> SLS units -1101 -1933 -2989 -3980 -4783 -5396 -6352 -6882 -7959 -8986 -9576 -10015 -11028 -11451 -12742 -14061 -14499 -14753 -16025 -16270 -17694 -19062 -19306 -19402 -20744 -20843 -22509 -24070 -24168 -25593 -27390 28864 30061 -27426
+ (sat-cleaner :elim-literals 31 :elim-clauses 33 :cost 186283 :time 0.02)
+ramon: poll                 wall=1.010s usage=0.886s mem=112MiB load=0.88 rootload=0.82
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1     17      9.31      6902        13          0            2        1)
+sls-result l_undef
+"checking model (on original set of clauses)"
+(sat.stats    341   1533    0 127537/65245   431/37 335       0    62.50   0.83)
+Verifying solution
+solution verified
+ramon: end                  Sun Oct 27 22:58:46 2024
+ramon: root.execname        z3
+ramon: root.utime           1.060s
+ramon: root.stime           0.050s
+ramon: group.total          1.127s
+ramon: group.utime          1.070s
+ramon: group.stime          0.056s
+ramon: group.mempeak        112MiB
+ramon: group.pidpeak        3
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             1.273s
+ramon: loadavg              0.89
