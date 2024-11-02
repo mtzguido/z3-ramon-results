@@ -1,0 +1,55 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Fri Nov  1 19:40:46 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         29878 MiB
+ramon: sys.mem.avail        62092 MiB
+ramon: sys.nprocs           1406
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/alive-arm-tv-smt-benchmarks/7mvCiznczDq2.smt2
+ramon: argv                 2 = -T:20
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = smt.bv.solver=2
+ramon: argv                 5 = smt.sls.enable=false
+ramon: argv                 6 = sat.smt=true
+ramon: argv                 7 = -st
+ramon: argv                 8 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 9 = model_validate=true
+ramon: childpid             271120
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts      :learned/bin    :gc          :time)
+(sat.stats          :decisions  :clauses/bin  :units        :memory       )
+(sat.stats      0      0    0    12/12     0/0  74       0    18.12   0.00)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 13 :time 0.00)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 24 :time 0.00)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 28 :time 0.00)
+lshr: (lshr[51] (bv2int %0) (mod (bv2int %0) 51)) 2251799813685247 := 2251799813685246 >>l 6
+shl: (shl[51] (bv2int %0) (+ 51 (* 2251799813685247 #50))) 2251799813685246 := 2251799813685246 << 45
+ (sat-cleaner :elim-literals 1 :elim-clauses 0 :cost 166 :time 0.00)
+ (sat-cleaner :elim-literals 2 :elim-clauses 0 :cost 183 :time 0.00)
+band: (band[51] (lshr[51] (bv2int %0) (mod #57 51)) (shl[51] (bv2int %0) (+ 51 #876))) 0 := 35184372088831&2181431069507584
+lshr: (lshr[64] (bv2int %0) (mod (+ #900 #907) 64)) 2251799813685246 := 2251799813685246 >>l 50
+ (sat-cleaner :elim-literals 1 :elim-clauses 0 :cost 247 :time 0.00)
+band: (band[51] (lshr[51] (bv2int %0) (mod #57 51)) (shl[51] (bv2int %0) (+ 51 #876))) 0 := 35184372088831&2181431069507584
+band: (band[51] (lshr[64] (bv2int %0) (mod #908 64)) (shl[64] (* 2 #57) (mod #918 64))) 1 := 1&2251799813685244
+band: (band[51] (lshr[51] (bv2int %0) (mod #57 51)) (shl[51] (bv2int %0) (+ 51 #876))) 0 := 35184372088831&2181431069507584
+band: (band[51] (lshr[64] (bv2int %0) (mod #908 64)) (shl[64] (* 2 #57) (mod #918 64))) 0 := 1&2251799813685244
+"checking model (on original set of clauses)"
+(sat.stats     66    631    0   187/185    58/9 104       0    18.66   0.06)
+Verifying solution
+solution verified
+ramon: end                  Fri Nov  1 19:40:46 2024
+ramon: root.execname        z3
+ramon: root.utime           0.060s
+ramon: root.stime           0.000s
+ramon: group.total          0.070s
+ramon: group.utime          0.066s
+ramon: group.stime          0.004s
+ramon: group.mempeak        19832KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.143s
+ramon: loadavg              0.49

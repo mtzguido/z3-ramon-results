@@ -1,0 +1,115 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Fri Nov  1 19:56:33 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         29904 MiB
+ramon: sys.mem.avail        62091 MiB
+ramon: sys.nprocs           1393
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/alive-arm-tv-smt-benchmarks/DapcZDsJ4CcE.smt2
+ramon: argv                 2 = -T:20
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = smt.bv.solver=2
+ramon: argv                 5 = smt.sls.enable=false
+ramon: argv                 6 = sat.smt=true
+ramon: argv                 7 = -st
+ramon: argv                 8 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 9 = model_validate=true
+ramon: childpid             318559
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts     :learned/bin    :gc          :time)
+(sat.stats          :decisions   :clauses/bin :units       :memory       )
+(sat.stats      0      0    0     8/8     0/0  79       0    18.03   0.00)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 0 :time 0.00)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 0 :time 0.00)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 0 :time 0.00)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 7 :time 0.00)
+lshr: (lshr[62] (bv2int %1) (mod (bv2int %0) 62)) 27620 := 0 >>l 61
+ (sat-cleaner :elim-literals 2 :elim-clauses 0 :cost 37 :time 0.00)
+shl: (shl[62] (bv2int %0) (+ 62 (* 4611686018427387903 #61))) 123 := 123 << 1
+ (sat-cleaner :elim-literals 4 :elim-clauses 0 :cost 96 :time 0.00)
+band: (band[62] (lshr[62] (bv2int %1) (mod #60 62)) (shl[62] (bv2int %0) (+ 62 #121))) 0 := 1&246
+lshr: (lshr[64] (* 4 (bv2int %1)) (mod (+ 2 #60 #96) 64)) 0 := 9223372036854848616 >>l 63
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 131 :time 0.00)
+band: (band[62] (lshr[62] (bv2int %1) (mod #60 62)) (shl[62] (bv2int %0) (+ 62 #121))) 1 := 1&122
+band: (band[62] (lshr[62] (bv2int %1) (mod #60 62)) (shl[62] (bv2int %0) (+ 62 #121))) 0 := 1&122
+band: (band[62] (lshr[64] (* 4 #67) (mod #97 64)) (shl[64] (* 2 #60) (mod #144 64))) 1 := 1&122
+ (sat-cleaner :elim-literals 4 :elim-clauses 0 :cost 270 :time 0.00)
+(sat.stats    115    939    0   511/508   118/34 128       0    18.89   0.15)
+ (sat-cleaner :elim-literals 12 :elim-clauses 0 :cost 420 :time 0.00)
+(sat.stats    115    939    0   612/610   116/36 130       0    18.89   0.15)
+(sat.stats    115    939    0   612/610   116/36 130       0    18.89   0.15)
+(sat.simplify :simplifications 1)
+ (sat-scc :elim-vars 8 :elim-bin 232 :time 0.00)
+ (sat-probing :cost 942418.89 :time 0.00)
+(sat.stats    115    939    0   175/173   103/26 130       0    18.89   0.15)
+(sat.stats    119   1012    1   186/184   121/40 130       0    18.99   0.16)
+(sat.stats :conflicts    :restarts     :learned/bin       :gc          :time)
+(sat.stats       :decisions    :clauses/bin    :units         :memory       )
+(sat.stats    122   1042    2   208/206   128/43 130       0    18.99   0.18)
+(sat.stats    125   1079    3   220/218   131/43 130       0    18.99   0.18)
+(sat.stats    128   1186    4   238/236   134/43 130       0    18.99   0.18)
+(sat.stats    131   1280    5   250/248   137/43 130       0    18.99   0.19)
+(sat.stats    134   1346    6   259/257   140/43 130       0    18.99   0.19)
+(sat.stats    137   1412    7   259/257   143/43 130       0    18.99   0.19)
+(sat.stats    141   1448    8   268/266   147/43 130       0    18.99   0.19)
+(sat.stats    144   1483    9   268/266   152/43 130       0    18.99   0.19)
+(sat.stats    149   1512   10   277/275   158/44 130       0    18.99   0.20)
+ (sat-cleaner :elim-literals 4 :elim-clauses 1 :cost 735 :time 0.00)
+(sat.stats    204   2463   11   488/487   223/59 131       0    19.08   0.24)
+(sat.stats    210   2527   12   517/516   229/59 131       0    19.08   0.24)
+(sat.stats    214   2530   13   517/516   235/61 131       0    19.08   0.24)
+ (sat-cleaner :elim-literals 16 :elim-clauses 5 :cost 922 :time 0.00)
+ (sat-cleaner :elim-literals 27 :elim-clauses 1 :cost 1030 :time 0.00)
+lshr: (lshr[62] (bv2int %1) (mod (bv2int %0) 62)) 3 := 3 >>l 60
+shl: (shl[62] (bv2int %0) (+ 62 (* 4611686018427387903 #61))) 2305843009213693948 := 2305843009213693948 << 2
+(sat.stats :conflicts   :restarts       :learned/bin        :gc          :time)
+(sat.stats       :decisions   :clauses/bin       :units         :memory       )
+(sat.stats    364   4567   18  1960/1957   410/100 136       0    19.58   0.49)
+ramon: poll                 wall=1.000s usage=0.998s mem=22548KiB load=1.00 rootload=0.99
+ramon: poll                 wall=2.000s usage=1.997s mem=25244KiB load=1.00 rootload=0.99
+ (sat-cleaner :elim-literals 4 :elim-clauses 0 :cost 4926 :time 0.00)
+ramon: poll                 wall=3.000s usage=2.996s mem=27240KiB load=1.00 rootload=0.99
+(sat.stats   1064   9500   21 34914/34911  1498/398 146       0    26.05   3.53)
+(sat.stats   1073  10045   22 34992/34989  1507/398 146       0    26.05   3.71)
+(sat.stats   1080  10206   23 35085/35082  1533/401 146       0    26.05   3.77)
+ramon: poll                 wall=4.000s usage=3.996s mem=27464KiB load=1.00 rootload=0.99
+ramon: poll                 wall=5.000s usage=4.996s mem=27536KiB load=1.00 rootload=1.00
+ramon: poll                 wall=6.000s usage=5.996s mem=27728KiB load=1.00 rootload=1.00
+ramon: poll                 wall=7.000s usage=6.996s mem=27912KiB load=1.00 rootload=1.00
+(sat.stats   1709  27661   39 42355/42352  2364/574 146       0    26.84   7.35)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 9197 :time 0.00)
+ramon: poll                 wall=8.000s usage=7.995s mem=28404KiB load=1.00 rootload=1.00
+ramon: poll                 wall=9.004s usage=8.999s mem=28568KiB load=1.00 rootload=1.00
+ramon: poll                 wall=10.000s usage=9.995s mem=28644KiB load=1.00 rootload=1.00
+ramon: poll                 wall=11.000s usage=10.995s mem=28912KiB load=1.00 rootload=1.00
+ramon: poll                 wall=12.000s usage=11.994s mem=29048KiB load=1.00 rootload=1.00
+(sat.stats   2396  40713   49 51988/51985  3165/672 147       0    27.82  12.35)
+ (sat-cleaner :elim-literals 0 :elim-clauses 2 :cost 12872 :time 0.00)
+ramon: poll                 wall=13.000s usage=12.994s mem=29280KiB load=1.00 rootload=1.00
+ramon: poll                 wall=14.000s usage=13.994s mem=29440KiB load=1.00 rootload=1.00
+ramon: poll                 wall=15.000s usage=14.994s mem=29468KiB load=1.00 rootload=1.00
+ramon: poll                 wall=16.000s usage=15.994s mem=29612KiB load=1.00 rootload=1.00
+ (sat-cleaner :elim-literals 1 :elim-clauses 4 :cost 15541 :time 0.00)
+ramon: poll                 wall=17.000s usage=16.993s mem=29716KiB load=1.00 rootload=1.00
+ramon: poll                 wall=18.000s usage=17.993s mem=29892KiB load=1.00 rootload=1.00
+(sat.stats :conflicts   :restarts       :learned/bin         :gc         :time )
+(sat.stats      :decisions   :clauses/bin         :units         :memory       )
+(sat.stats   3596  62464   89 60726/60723  4547/765 151       0    28.96  18.60)
+ramon: poll                 wall=19.000s usage=18.993s mem=30248KiB load=1.00 rootload=1.00
+ramon: poll                 wall=20.000s usage=19.992s mem=30328KiB load=1.00 rootload=1.00
+ramon: end                  Fri Nov  1 19:56:53 2024
+ramon: root.execname        z3
+ramon: root.utime           19.970s
+ramon: root.stime           0.030s
+ramon: group.total          20.003s
+ramon: group.utime          19.971s
+ramon: group.stime          0.032s
+ramon: group.mempeak        30596KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             20.011s
+ramon: loadavg              1.00
