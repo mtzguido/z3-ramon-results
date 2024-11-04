@@ -1,0 +1,184 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Mon Nov  4 10:09:50 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         21569 MiB
+ramon: sys.mem.avail        62407 MiB
+ramon: sys.nprocs           1406
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/bench_4759.smt2
+ramon: argv                 2 = -T:20
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = smt.sls.enable=false
+ramon: argv                 5 = sat.smt=true
+ramon: argv                 6 = -st
+ramon: argv                 7 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 8 = model_validate=true
+ramon: childpid             1088978
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts     :learned/bin    :gc          :time)
+(sat.stats          :decisions   :clauses/bin :units       :memory       )
+(sat.stats      0      0    0     8/6     0/0   1       0    17.72   0.00)
+"checking model (on original set of clauses)"
+(sat.stats      0     17    0     8/6     0/0   1       0    17.72   0.00)
+Failed to validate b18 53: (= (extract[15:5] (bvashr k!0 bv[11:16])) bv[0:11]) true
+(sat
+    17 none @0
+1: 19 none @1
+    -16 binary -19@1
+    21 binary 16@1
+    20 binary -21@1
+    -18 (-18@1 -20@1 -19@1)
+2: -0 none @2
+3: -15 none @3
+4: -14 none @4
+5: -13 none @5
+6: -12 none @6
+7: -11 none @7
+8: -10 none @8
+9: -9 none @9
+10: -8 none @10
+11: -7 none @11
+12: -6 none @12
+13: -5 none @13
+14: -4 none @14
+15: -3 none @15
+16: -2 none @16
+17: -1 none @17
+    -22 @0 none @0
+(15 21)
+(-16 -19)
+(16 19)
+(16 21)
+(-20 21)
+(20 -21)
+(-15 -16 -21)+
+(-18 -20 -19)+
+updates 162
+neweqs  19 qhead: 19
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 56 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 57 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 69 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 65 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 66 
+(declare-fun extract ((_ BitVec 16)) (_ BitVec 11)): un 88 
+(declare-fun bvule ((_ BitVec 5) (_ BitVec 5)) Bool): b 31 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 61 
+(declare-fun bvashr ((_ BitVec 16) (_ BitVec 16)) (_ BitVec 16)): b 86 
+(declare-fun extract ((_ BitVec 16)) (_ BitVec 1)): un 90 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 63 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 60 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 64 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 70 
+(declare-fun = ((_ BitVec 1) (_ BitVec 1)) Bool): bc 92 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 67 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 71 
+(declare-fun extract ((_ BitVec 16)) (_ BitVec 5)): un 91 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 58 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 59 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 68 
+(declare-fun = ((_ BitVec 11) (_ BitVec 11)) Bool): bc 53 
+(declare-fun bit2bool ((_ BitVec 16)) Bool): un 62 
+#46 := k!0 [r 86] [p 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 86] [t 8:0] [j 86 bv 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 == 12 13 14 15 16 16 16 16 16 16 16 16 16 16 16 16 -> v0 == v18] 
+#56 := (bit2bool[0] k!0) [r 2] [b1 := F] [t 8:1] [j 2 sat: -1] 
+#57 := (bit2bool[1] k!0) [r 2] [b2 := F] [t 8:2] [j 2 sat: -2] 
+#58 := (bit2bool[2] k!0) [r 2] [b3 := F] [t 8:3] [j 2 sat: -3] 
+#59 := (bit2bool[3] k!0) [r 2] [b4 := F] [t 8:4] [j 2 sat: -4] 
+#60 := (bit2bool[4] k!0) [r 2] [b5 := F] [t 8:5] [j 2 sat: -5] 
+#61 := (bit2bool[5] k!0) [r 2] [b6 := F] [t 8:6] [j 2 sat: -6] 
+#62 := (bit2bool[6] k!0) [r 2] [b7 := F] [t 8:7] [j 2 sat: -7] 
+#63 := (bit2bool[7] k!0) [r 2] [b8 := F] [t 8:8] [j 2 sat: -8] 
+#64 := (bit2bool[8] k!0) [r 2] [b9 := F] [t 8:9] [j 2 sat: -9] 
+#65 := (bit2bool[9] k!0) [r 2] [b10 := F] [t 8:10] [j 2 sat: -10] 
+#66 := (bit2bool[10] k!0) [r 2] [b11 := F] [t 8:11] [j 2 sat: -11] 
+#67 := (bit2bool[11] k!0) [r 2] [b12 := F] [t 8:12] [j 2 sat: -12] 
+#68 := (bit2bool[12] k!0) [r 2] [b13 := F] [t 8:13] [j 2 sat: -13] 
+#69 := (bit2bool[13] k!0) [r 2] [b14 := F] [t 8:14] [j 2 sat: -14] 
+#70 := (bit2bool[14] k!0) [r 2] [b15 := F] [t 8:15] [j 2 sat: -15] 
+#71 := (bit2bool[15] k!0) [r 2] [b16 := F] [t 8:16] [j 2 sat: -16] 
+#33 := bv[11:16] [p 86] [t 8:17] 
+#1 := true [b17 := T no-cgc] [t 8:25] 
+#86 := (bvashr k!0 bv[11:16]) [p 88 90 91 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 86] [t 8:18] 
+#88 := (extract[15:5] #86) [p 53] [t 8:19] 
+#83 := bv[0:11] [p 53] [t 8:20] 
+#53 := (= #88 bv[0:11]) [b18 := F] 
+#90 := (extract[15:15] #86) [r 85] [p 92] [t 8:21] [j 85 sat: 19] 
+#85 := bv[0:1] [p 92 92] [t 8:22] 
+#92 := (= #90 bv[0:1]) [b19 := T] 
+#91 := (extract[4:0] #86) [p 31] [t 8:23] 
+#89 := bv[23:5] [p 31] [t 8:24] 
+#31 := (bvule #91 bv[23:5]) [r 1] [b20 := T] [t 8:25] [j 1 sat: 20] 
+#74 := (or #72 #73) [b21 := T no-cgc] 
+#2 := false [b22 := F no-cgc] [t 8:16] 
+bool-vars
+1: 56 l_false (bit2bool[0] k!0) bv
+2: 57 l_false (bit2bool[1] k!0) bv
+3: 58 l_false (bit2bool[2] k!0) bv
+4: 59 l_false (bit2bool[3] k!0) bv
+5: 60 l_false (bit2bool[4] k!0) bv
+6: 61 l_false (bit2bool[5] k!0) bv
+7: 62 l_false (bit2bool[6] k!0) bv
+8: 63 l_false (bit2bool[7] k!0) bv
+9: 64 l_false (bit2bool[8] k!0) bv
+10: 65 l_false (bit2bool[9] k!0) bv
+11: 66 l_false (bit2bool[10] k!0) bv
+12: 67 l_false (bit2bool[11] k!0) bv
+13: 68 l_false (bit2bool[12] k!0) bv
+14: 69 l_false (bit2bool[13] k!0) bv
+15: 70 l_false (bit2bool[14] k!0) bv
+16: 71 l_false (bit2bool[15] k!0) bv
+17: 1 l_true true bv
+18: 53 l_false (= #88 bv[0:11])
+19: 92 l_true (= #90 bv[0:1])
+20: 31 l_true (bvule #91 bv[23:5]) bv
+21: 74 l_true (or #72 #73)
+22: 2 l_false false bv
+bv-solver:
+v0    46   -> 46   (= 0) 1:(bit2bool[0] k!0) 2:(bit2bool[1] k!0) 3:(bit2bool[2] k!0) 4:(bit2bool[3] k!0) 5:(bit2bool[4] k!0) 6:(bit2bool[5] k!0) 7:(bit2bool[6] k!0) 8:(bit2bool[7] k!0) 9:(bit2bool[8] k!0) 10:(bit2bool[9] k!0) 11:(bit2bool[10] k!0) 12:(bit2bool[11] k!0) 13:(bit2bool[12] k!0) 14:(bit2bool[13] k!0) 15:(bit2bool[14] k!0) 16:(bit2bool[15] k!0)
+v1    56   -> 56   46[0]
+v2    57   -> 57   46[1]
+v3    58   -> 58   46[2]
+v4    59   -> 59   46[3]
+v5    60   -> 60   46[4]
+v6    61   -> 61   46[5]
+v7    62   -> 62   46[6]
+v8    63   -> 63   46[7]
+v9    64   -> 64   46[8]
+v10   65   -> 65   46[9]
+v11   66   -> 66   46[10]
+v12   67   -> 67   91[0] 86[0] 46[11]
+v13   68   -> 68   91[1] 86[1] 46[12]
+v14   69   -> 69   91[2] 86[2] 46[13]
+v15   70   -> 70   91[3] 86[3] 46[14]
+v16   71   -> 71   91[4] 90[0] 88[10] 88[9] 88[8] 88[7] 88[6] 88[5] 88[4] 88[3] 88[2] 88[1] 88[0] 86[15] 86[14] 86[13] 86[12] 86[11] 86[10] 86[9] 86[8] 86[7] 86[6] 86[5] 86[4] 46[15]
+v17   33   -> 33   (= 11) 17:true 17:true -17:false 17:true -17:false -17:false -17:false -17:false -17:false -17:false -17:false -17:false -17:false -17:false -17:false -17:false
+v18   86   -> 86   (= 0) 12:(bit2bool[11] k!0) 13:(bit2bool[12] k!0) 14:(bit2bool[13] k!0) 15:(bit2bool[14] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0)
+v19   88   -> 88   (= 0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0) 16:(bit2bool[15] k!0)
+v20   83   -> 83   (= 0) -17:false -17:false -17:false -17:false -17:false -17:false -17:false -17:false -17:false -17:false -17:false
+v21   90   -> 90   (= 0) 16:(bit2bool[15] k!0)
+v22   85   -> 90   (= 0) -17:false
+v23   91   -> 91   (= 0) 12:(bit2bool[11] k!0) 13:(bit2bool[12] k!0) 14:(bit2bool[13] k!0) 15:(bit2bool[14] k!0) 16:(bit2bool[15] k!0)
+v24   89   -> 89   (= 23) 17:true 17:true 17:true -17:false 17:true
+v25   31   -> 31  
+)
+53: (= (extract[15:5] (bvashr k!0 bv[11:16])) bv[0:11]) :=
+value according to model:  true
+value of Boolean literal:  l_false
+(define-fun k!0 () (_ BitVec 16)
+  #x0000)
+
+ramon: end                  Mon Nov  4 10:09:50 2024
+ramon: root.execname        z3
+ramon: root.utime           0.000s
+ramon: root.stime           0.000s
+ramon: group.total          0.010s
+ramon: group.utime          0.007s
+ramon: group.stime          0.003s
+ramon: group.mempeak        18760KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+[31mramon: exitcode             1[0m
+ramon: walltime             0.010s
+ramon: loadavg              0.97
