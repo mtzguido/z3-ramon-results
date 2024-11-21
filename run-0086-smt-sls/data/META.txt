@@ -1,0 +1,12 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-sls
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: fa6f3f2dba89c2c44282f10c468e7482972a9bdd
+Z3 branch: sls
+Z3 options: "-T:20 -v:2 smt.sls.enable=true smt.sls.parallel=false sat.smt=false -st tactic.default_tactic="(then simplify propagate-values solve-eqs simplify smt)" model_validate=true"
+Z3 inputs: inputs/QF_NIA_SAT
+Z3 commit message: fixing prop-queue
+
+Signed-off-by: Nikolaj Bjorner <nbjorner@microsoft.com>
