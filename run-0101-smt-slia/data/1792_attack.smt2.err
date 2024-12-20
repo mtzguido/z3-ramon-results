@@ -1,0 +1,92 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Fri Dec 20 03:18:14 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         28924 MiB
+ramon: sys.mem.avail        62849 MiB
+ramon: sys.nprocs           1078
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_SLIA_SAT/1792_attack.smt2
+ramon: argv                 2 = -T:20
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = model_validate=true
+ramon: childpid             448070
+ramon: poll                 wall=1.002s usage=0.999s mem=117MiB load=1.00 rootload=0.96
+ramon: poll                 wall=2.000s usage=1.996s mem=208MiB load=1.00 rootload=0.98
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-depth 2)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length (str.substr attack 0 (+ -516 (str.len attack))) 2)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length (str.substr attack (+ -516 (str.len attack)) 516) 2)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length (str.substr attack (+ -516 (str.len attack)) 516) 4)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length (str.substr attack (+ -516 (str.len attack)) 516) 8)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length (str.substr attack (+ -516 (str.len attack)) 516) 16)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length (str.substr attack (+ -516 (str.len attack)) 516) 32)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length (str.substr attack (+ -516 (str.len attack)) 516) 64)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length (str.substr attack (+ -516 (str.len attack)) 516) 128)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length (str.substr attack (+ -516 (str.len attack)) 516) 256)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length (str.substr attack (+ -516 (str.len attack)) 516) 512)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length (str.substr attack (+ -516 (str.len attack)) 516) 1024)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units          :simplify  :memory)
+(smt.stats       :conflicts     :propagations           :lemmas      :deletions   )
+(smt.stats    0     12      0      0  1570/1051/11564       2/0     0    0  226.43)
+ramon: poll                 wall=3.000s usage=2.995s mem=226MiB load=1.00 rootload=0.99
+(smt.seq :increase-depth 20)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-depth 30)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length attack 40)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length attack 80)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length attack 160)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length attack 320)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.seq :increase-length attack 640)
+(smt.delete-inactive-clauses  :num-deleted-clauses 0)
+(smt.searching)
+(smt.stats    0     28   2699   2409  2834/2287/14839       8/4     0    0  237.33)
+ramon: poll                 wall=4.003s usage=3.999s mem=243MiB load=1.00 rootload=1.00
+ramon: poll                 wall=5.000s usage=4.995s mem=247MiB load=1.00 rootload=1.00
+ramon: poll                 wall=6.000s usage=5.995s mem=250MiB load=1.00 rootload=0.99
+ramon: poll                 wall=7.000s usage=6.995s mem=253MiB load=1.00 rootload=1.00
+ramon: poll                 wall=8.000s usage=7.995s mem=254MiB load=1.00 rootload=1.00
+ramon: poll                 wall=9.000s usage=8.994s mem=417MiB load=1.00 rootload=0.97
+ramon: poll                 wall=10.000s usage=9.994s mem=543MiB load=1.00 rootload=0.96
+ramon: poll                 wall=11.000s usage=10.994s mem=660MiB load=1.00 rootload=0.95
+ramon: poll                 wall=12.000s usage=11.994s mem=740MiB load=1.00 rootload=0.99
+ramon: poll                 wall=13.000s usage=12.992s mem=1311MiB load=1.00 rootload=0.82
+ramon: poll                 wall=14.000s usage=13.992s mem=1619MiB load=1.00 rootload=0.94
+(smt.stats    0     44   3827   5596 137540/2287/14839      24/7     0    0 1627.17)
+ramon: poll                 wall=15.000s usage=14.992s mem=1663MiB load=1.00 rootload=0.99
+ramon: poll                 wall=16.000s usage=15.992s mem=2228MiB load=1.00 rootload=0.93
+ramon: poll                 wall=17.000s usage=16.991s mem=2228MiB load=1.00 rootload=1.00
+ramon: poll                 wall=18.000s usage=17.990s mem=2131MiB load=1.00 rootload=1.00
+ramon: end                  Fri Dec 20 03:18:32 2024
+ramon: root.execname        z3
+ramon: root.utime           17.700s
+ramon: root.stime           0.580s
+ramon: group.total          18.298s
+ramon: group.utime          17.710s
+ramon: group.stime          0.588s
+ramon: group.mempeak        2740MiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             18.306s
+ramon: loadavg              1.00
