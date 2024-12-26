@@ -1,0 +1,10 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-sls-bv
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: d3a65211852ca13c97bde36ce4e424db3be19df2
+Z3 branch: master
+Z3 options: "-T:20 -v:2 -st tactic.default_tactic="(then simplify propagate-values solve-eqs simplify sls-smt)" model_validate=true"
+Z3 inputs: inputs/QF_BV_SAT
+Z3 commit message: rely on is_sat fallback for failed repair-up, add separate file for WIP on lookahead.
