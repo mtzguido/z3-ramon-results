@@ -1,0 +1,224 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Wed Dec 25 15:03:16 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         41370 MiB
+ramon: sys.mem.avail        61385 MiB
+ramon: sys.nprocs           1331
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/alive-arm-tv-smt-benchmarks/6f5rnFVTtfCd.smt2
+ramon: argv                 2 = sat.smt=true
+ramon: argv                 3 = smt.bv.solver=2
+ramon: argv                 4 = -T:20
+ramon: argv                 5 = -v:2
+ramon: argv                 6 = -st
+ramon: argv                 7 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 8 = model_validate=true
+ramon: childpid             3689865
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts     :learned/bin    :gc          :time)
+(sat.stats          :decisions   :clauses/bin :units       :memory       )
+(sat.stats      0      0    0     8/8     0/0  81       0    18.03   0.00)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 0 :time 0.00)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 0 :time 0.00)
+ (sat-cleaner :elim-literals 2 :elim-clauses 0 :cost 14 :time 0.00)
+ (sat-cleaner :elim-literals 2 :elim-clauses 0 :cost 16 :time 0.00)
+(sat.stats    165   1347    0   675/675   171/19  91       0    18.60   0.28)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 708 :time 0.00)
+(sat.stats    165   1347    0   775/775   171/19  92       0    18.60   0.28)
+(sat.stats    165   1347    0   775/775   171/19  92       0    18.60   0.28)
+(sat.simplify :simplifications 1)
+ (sat-scc :elim-vars 0 :elim-bin 367 :time 0.00)
+ (sat-probing :cost 453418.60 :time 0.00)
+(sat.stats    165   1347    0    76/76   149/15  92       0    18.60   0.29)
+(sat.stats    168   1388    1    94/94   155/18  92       0    18.60   0.29)
+(sat.stats :conflicts    :restarts     :learned/bin       :gc          :time)
+(sat.stats       :decisions    :clauses/bin     :units        :memory       )
+(sat.stats    171   1429    2   105/105   160/20  92       0    18.60   0.30)
+(sat.stats    174   1495    3   120/120   163/21  92       0    18.70   0.30)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 620 :time 0.00)
+(sat.stats    177   1531    4   149/149   166/21  95       0    18.70   0.33)
+(sat.stats    180   1593    5   167/167   169/21  95       0    18.70   0.33)
+(sat.stats    184   1622    6   170/170   173/21  95       0    18.70   0.33)
+lshr: (lshr[58] (bv2int %2) (mod (bv2int %0) 58)) 1 := 1 >>l 2
+ (sat-cleaner :elim-literals 1 :elim-clauses 0 :cost 701 :time 0.00)
+lshr: (lshr[58] (bv2int %2) (mod (bv2int %0) 58)) 0 := 0 >>l 3
+shl: (shl[58] (bv2int %1) (+ 58 (* 288230376151711743 #61))) 288230376151711743 := 288230376151711743 << 55
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 830 :time 0.00)
+lshr: (lshr[58] (bv2int %2) (mod (bv2int %0) 58)) 0 := 3 >>l 1
+shl: (shl[58] (bv2int %1) (+ 58 (* 288230376151711743 #61))) 288230376151711741 := 288230376151711741 << 57
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 0&144115188075855872
+lshr: (lshr[64] (* 64 (bv2int %2)) (mod (+ 6 #57 #100) 64)) 0 := 64 >>l 7
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 0&144115188075855872
+shl: (shl[64] (* 2 (bv2int %1)) (mod (+ 57 #140 #144) 64)) 0 := 576460752303423482 << 56
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 922 :time 0.00)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 1013 :time 0.00)
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 1&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 1 := 1&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 1 := 1&144115188075855872
+(sat.stats    298   3034    7   444/438   287/43 132       0    19.08   0.39)
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 2&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 2 := 2&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 4&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 4 := 4&144115188075855872
+(sat.stats    301   3121    8   515/509   292/45 132       0    19.18   0.39)
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 8&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 8 := 8&144115188075855872
+(sat.stats    304   3218    9   605/599   298/48 132       0    19.18   0.39)
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 16&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 16 := 16&144115188075855872
+(sat.stats    307   3314   10   675/669   304/51 132       0    19.28   0.40)
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 32&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 32 := 32&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 64&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 64 := 64&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 128&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 128 := 128&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 256&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 256 := 256&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 512&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 512 := 512&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 1024&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 1024 := 1024&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 2048&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 2048 := 2048&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 4096&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 4096 := 4096&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 8192&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 8192 := 8192&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 16384&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 16384 := 16384&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 32768&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 32768 := 32768&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 65536&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 65536 := 65536&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 131072&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 131072 := 131072&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 262144&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 262144 := 262144&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 524288&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 524288 := 524288&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 1048576&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 1048576 := 1048576&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 2097152&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 2097152 := 2097152&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 4194304&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 4194304 := 4194304&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 8388608&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 8388608 := 8388608&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 16777216&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 16777216 := 16777216&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 33554432&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 33554432 := 33554432&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 67108864&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 67108864 := 67108864&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 134217728&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 134217728 := 134217728&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 268435456&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 268435456 := 268435456&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 536870912&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 536870912 := 536870912&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 1073741824&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 1073741824 := 1073741824&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 2147483648&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 2147483648 := 2147483648&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 4294967296&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 4294967296 := 4294967296&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 8589934592&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 8589934592 := 8589934592&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 17179869184&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 17179869184 := 17179869184&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 34359738368&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 34359738368 := 34359738368&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 68719476736&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 68719476736 := 68719476736&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 137438953472&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 137438953472 := 137438953472&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 274877906944&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 274877906944 := 274877906944&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 549755813888&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 549755813888 := 549755813888&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 1099511627776&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 1099511627776 := 1099511627776&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 2199023255552&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 2199023255552 := 2199023255552&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 4398046511104&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 4398046511104 := 4398046511104&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 8796093022208&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 8796093022208 := 8796093022208&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 17592186044416&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 17592186044416 := 17592186044416&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 35184372088832&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 35184372088832 := 35184372088832&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 70368744177664&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 70368744177664 := 70368744177664&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 140737488355328&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 140737488355328 := 140737488355328&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 281474976710656&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 281474976710656 := 281474976710656&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 562949953421312&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 562949953421312 := 562949953421312&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 1125899906842624&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 1125899906842624 := 1125899906842624&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 2251799813685248&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 2251799813685248 := 2251799813685248&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 4503599627370496&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 4503599627370496 := 4503599627370496&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 9007199254740992&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 9007199254740992 := 9007199254740992&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 18014398509481984&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 18014398509481984 := 18014398509481984&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 36028797018963968&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 36028797018963968 := 36028797018963968&144115188075855872
+band: (band[58] (lshr[58] (bv2int %2) (mod #57 58)) (shl[58] (bv2int %1) (+ 58 #126))) 0 := 72057594037927936&144115188075855872
+band: (band[58] (lshr[64] (* 64 #79) (mod #101 64)) (shl[64] (* 2 #64) (mod #149 64))) 72057594037927936 := 72057594037927936&144115188075855872
+ (sat-cleaner :elim-literals 3 :elim-clauses 1 :cost 2014 :time 0.00)
+ramon: poll                 wall=1.000s usage=0.997s mem=29092KiB load=1.00 rootload=0.98
+ramon: poll                 wall=2.000s usage=1.977s mem=31600KiB load=0.98 rootload=0.97
+(sat.stats :conflicts   :restarts       :learned/bin          :gc          :time)
+(sat.stats      :decisions   :clauses/bin          :units         :memory       )
+(sat.stats    710  28123   11 40695/40689  1690/1061 483       0    30.98   2.39)
+(sat.stats    714  28365   12 40801/40795  1697/1064 483       0    30.98   2.41)
+(sat.stats    717  28850   13 40867/40861  1703/1067 483       0    30.98   2.43)
+(sat.stats    720  29066   14 43064/43058  1758/1119 483       0    31.27   2.45)
+(sat.stats    723  29396   15 43834/43828  1783/1141 483       0    31.27   2.47)
+(sat.stats    726  29705   16 43834/43828  1787/1142 483       0    31.27   2.49)
+ (sat-cleaner :elim-literals 0 :elim-clauses 1 :cost 3494 :time 0.00)
+ramon: poll                 wall=3.000s usage=2.977s mem=34480KiB load=1.00 rootload=1.00
+ramon: poll                 wall=4.000s usage=3.976s mem=36888KiB load=1.00 rootload=1.00
+ramon: poll                 wall=5.000s usage=4.976s mem=43052KiB load=1.00 rootload=1.00
+ramon: poll                 wall=6.000s usage=5.976s mem=47080KiB load=1.00 rootload=0.99
+(sat.stats :conflicts   :restarts         :learned/bin          :gc          :time)
+(sat.stats      :decisions   :clauses/bin            :units         :memory       )
+(sat.stats   1064  45760   31 198521/198515  3243/2288 487       0    45.59   6.11)
+ramon: poll                 wall=7.000s usage=6.976s mem=47800KiB load=1.00 rootload=1.00
+ramon: poll                 wall=8.000s usage=7.975s mem=48484KiB load=1.00 rootload=1.00
+ramon: poll                 wall=9.000s usage=8.975s mem=48624KiB load=1.00 rootload=1.00
+ramon: poll                 wall=10.000s usage=9.975s mem=48972KiB load=1.00 rootload=1.00
+ramon: poll                 wall=11.000s usage=10.975s mem=49356KiB load=1.00 rootload=1.00
+ramon: poll                 wall=12.000s usage=11.975s mem=49500KiB load=1.00 rootload=1.00
+ramon: poll                 wall=13.000s usage=12.974s mem=49876KiB load=1.00 rootload=1.00
+ramon: poll                 wall=14.000s usage=13.974s mem=50240KiB load=1.00 rootload=1.00
+ramon: poll                 wall=15.000s usage=14.969s mem=50508KiB load=1.00 rootload=1.00
+ (sat-cleaner :elim-literals 90 :elim-clauses 0 :cost 5283 :time 0.00)
+ramon: poll                 wall=16.000s usage=15.969s mem=51020KiB load=1.00 rootload=1.00
+ (sat-cleaner :elim-literals 1 :elim-clauses 0 :cost 5428 :time 0.00)
+ramon: poll                 wall=17.000s usage=16.969s mem=51276KiB load=1.00 rootload=1.00
+ramon: poll                 wall=18.000s usage=17.968s mem=51276KiB load=1.00 rootload=1.00
+ramon: poll                 wall=19.000s usage=18.968s mem=51532KiB load=1.00 rootload=1.00
+ramon: poll                 wall=20.000s usage=19.968s mem=51532KiB load=1.00 rootload=0.99
+ramon: end                  Wed Dec 25 15:03:36 2024
+ramon: root.execname        z3
+ramon: root.utime           19.940s
+ramon: root.stime           0.030s
+ramon: group.total          19.981s
+ramon: group.utime          19.949s
+ramon: group.stime          0.032s
+ramon: group.mempeak        51788KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             20.010s
+ramon: loadavg              1.00

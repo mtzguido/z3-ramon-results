@@ -1,0 +1,71 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Wed Dec 25 15:45:37 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         40950 MiB
+ramon: sys.mem.avail        61381 MiB
+ramon: sys.nprocs           1326
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/alive-arm-tv-smt-benchmarks/NAK5YWXvwhqU.smt2
+ramon: argv                 2 = sat.smt=true
+ramon: argv                 3 = smt.bv.solver=2
+ramon: argv                 4 = -T:20
+ramon: argv                 5 = -v:2
+ramon: argv                 6 = -st
+ramon: argv                 7 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 8 = model_validate=true
+ramon: childpid             3816935
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts      :learned/bin    :gc          :time)
+(sat.stats          :decisions  :clauses/bin  :units        :memory       )
+(sat.stats      0      0    0    12/12     0/0  79       0    18.12   0.00)
+ (sat-cleaner :elim-literals 1 :elim-clauses 0 :cost 17 :time 0.00)
+band: (band[41] (lshr[41] (bv2int %0) (mod #80 41)) (shl[41] (bv2int %0) (+ 41 #880))) 0 := 0&0
+shl: (shl[64] (* 2 (bv2int %0)) (mod (+ 40 #919 #921) 64)) 18397208875854987265 := 0 << 40
+ (sat-cleaner :elim-literals 5 :elim-clauses 0 :cost 66 :time 0.00)
+(sat.stats    101   1124    0   438/437    98/21  97       0    18.70   0.09)
+ (sat-cleaner :elim-literals 1 :elim-clauses 0 :cost 384 :time 0.00)
+(sat.stats    101   1124    0   509/508    98/21  97       0    18.70   0.09)
+(sat.stats    101   1124    0   509/508    98/21  97       0    18.70   0.09)
+(sat.simplify :simplifications 1)
+ (sat-scc :elim-vars 6 :elim-bin 171 :time 0.00)
+ (sat-probing :cost 335218.70 :time 0.00)
+(sat.stats    101   1124    0    84/83    96/24  97       0    18.70   0.09)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 335 :time 0.00)
+lshr: (lshr[41] (bv2int %0) (mod (bv2int %1) 41)) 2199023255551 := 253453402112 >>l 23
+shl: (shl[41] (bv2int %0) (+ 41 (* 2199023255551 #51))) 323884154880 := 323884154880 << 18
+(sat.stats    111   1359    1   128/127   109/30  99       0    18.89   0.10)
+(sat.stats :conflicts    :restarts     :learned/bin       :gc          :time)
+(sat.stats       :decisions    :clauses/bin     :units        :memory       )
+(sat.stats    114   1403    2   164/163   112/30  99       0    18.89   0.11)
+(sat.stats    117   1449    3   196/195   115/30  99       0    18.89   0.11)
+band: (band[41] (lshr[41] (bv2int %0) (mod #80 41)) (shl[41] (bv2int %0) (+ 41 #880))) 0 := 1&0
+lshr: (lshr[64] (bv2int %0) (mod (+ #904 #911) 64)) 8388608 := 8388608 >>l 37
+(sat.stats    121   1491    4   217/215   119/30  99       0    18.89   0.11)
+(sat.stats    124   1549    5   227/225   122/30  99       0    18.89   0.12)
+(sat.stats    127   1582    6   252/250   125/30  99       0    18.89   0.12)
+ (sat-cleaner :elim-literals 9 :elim-clauses 0 :cost 505 :time 0.00)
+(sat.stats    130   1614    7   298/296   124/28 113       0    18.89   0.12)
+band: (band[41] (lshr[41] (bv2int %0) (mod #80 41)) (shl[41] (bv2int %0) (+ 41 #880))) 0 := 2&0
+shl: (shl[64] (* 2 (bv2int %0)) (mod (+ 40 #919 #921) 64)) 0 := 33554432 << 3
+band: (band[41] (lshr[41] (bv2int %0) (mod #80 41)) (shl[41] (bv2int %0) (+ 41 #880))) 0 := 1&0
+band: (band[41] (lshr[64] (bv2int %0) (mod #912 64)) (shl[64] (* 2 #69) (mod #922 64))) 0 := 0&134217728
+"checking model (on original set of clauses)"
+(sat.stats    191   2330    7   366/363   188/37 113       0    18.99   0.14)
+Verifying solution
+solution verified
+ramon: end                  Wed Dec 25 15:45:37 2024
+ramon: root.execname        z3
+ramon: root.utime           0.140s
+ramon: root.stime           0.000s
+ramon: group.total          0.145s
+ramon: group.utime          0.141s
+ramon: group.stime          0.004s
+ramon: group.mempeak        20180KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.200s
+ramon: loadavg              0.72

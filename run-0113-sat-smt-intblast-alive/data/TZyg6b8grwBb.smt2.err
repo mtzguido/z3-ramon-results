@@ -1,0 +1,53 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Wed Dec 25 15:59:52 2024
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         40510 MiB
+ramon: sys.mem.avail        61380 MiB
+ramon: sys.nprocs           1325
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/alive-arm-tv-smt-benchmarks/TZyg6b8grwBb.smt2
+ramon: argv                 2 = sat.smt=true
+ramon: argv                 3 = smt.bv.solver=2
+ramon: argv                 4 = -T:20
+ramon: argv                 5 = -v:2
+ramon: argv                 6 = -st
+ramon: argv                 7 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 8 = model_validate=true
+ramon: childpid             3859550
+(sat.copy :learned 0)
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts      :learned/bin    :gc          :time)
+(sat.stats          :decisions  :clauses/bin  :units        :memory       )
+(sat.stats      0      0    0    12/12     0/0  79       0    18.13   0.00)
+ (sat-cleaner :elim-literals 1 :elim-clauses 1 :cost 6 :time 0.00)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 0 :time 0.00)
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 0 :time 0.00)
+ (sat-cleaner :elim-literals 1 :elim-clauses 0 :cost 39 :time 0.00)
+lshr: (lshr[58] (bv2int %0) (mod (bv2int %1) 58)) 288230376151684002 := 0 >>l 57
+ (sat-cleaner :elim-literals 0 :elim-clauses 0 :cost 69 :time 0.00)
+lshr: (lshr[58] (bv2int %0) (mod (bv2int %1) 58)) 14011 := 0 >>l 37
+ (sat-cleaner :elim-literals 1 :elim-clauses 0 :cost 197 :time 0.00)
+shl: (shl[58] (bv2int %0) (+ 58 (* 288230376151711743 #69))) 0 := 137438953471 << 21
+band: (band[58] (lshr[58] (bv2int %0) (mod #68 58)) (shl[58] (bv2int %0) (+ 58 #880))) 0 := 0&2097152
+lshr: (lshr[64] (bv2int %0) (mod (+ #904 #911) 64)) 0 := 1 >>l 57
+band: (band[58] (lshr[58] (bv2int %0) (mod #68 58)) (shl[58] (bv2int %0) (+ 58 #880))) 0 := 0&2097152
+band: (band[58] (lshr[64] (bv2int %0) (mod #912 64)) (shl[64] (* 2 #75) (mod #922 64))) 0 := 0&2
+"checking model (on original set of clauses)"
+(sat.stats     60    561    0   181/178    49/8 106       0    18.70   0.07)
+Verifying solution
+solution verified
+ramon: end                  Wed Dec 25 15:59:52 2024
+ramon: root.execname        z3
+ramon: root.utime           0.040s
+ramon: root.stime           0.000s
+ramon: group.total          0.048s
+ramon: group.utime          0.040s
+ramon: group.stime          0.008s
+ramon: group.mempeak        19956KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.168s
+ramon: loadavg              0.29
