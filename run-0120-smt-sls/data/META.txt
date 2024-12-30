@@ -1,0 +1,26 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-sls
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: 27cb81e7e6779e3b2255f8dfde674130bd9154b9
+Z3 branch: master
+Z3 options: "-T:20 -v:2 -st tactic.default_tactic="(then simplify propagate-values solve-eqs simplify sls-smt)" model_validate=true"
+Z3 inputs: inputs/QF_BV_SAT
+Z3 commit message: Several changes to make sls terminate more often with length/extract operations (#7498)
+
+* Fixed range regex
+
+* Fix sls for str.at
+
+* Added case for str.at
+
+* Pad/Truncate string in sls extract/length to fit length constraints
+
+* Guarded index check
+
+* Added missing progressing cases in extraction
+
+* Add padding if required
+
+* Commented out debug output
