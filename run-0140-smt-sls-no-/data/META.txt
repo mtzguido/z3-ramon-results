@@ -1,0 +1,12 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-sls-no-
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: 710f75749521c212a9f08a2e04d3fa3fe07c60b0
+Z3 branch: master
+Z3 options: "-T:20 -v:2 -st  sls.use_lookahead_bv=false tactic.default_tactic="(then simplify propagate-values solve-eqs simplify sls-smt)" model_validate=true"
+Z3 inputs: inputs/QF_BV_SAT
+Z3 commit message: fixup parameter handling for enabling bv-lookahead
+
+Signed-off-by: Nikolaj Bjorner <nbjorner@microsoft.com>
