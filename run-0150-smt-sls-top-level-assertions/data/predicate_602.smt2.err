@@ -1,0 +1,51 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Sun Jan  5 12:11:08 2025
+ramon: nproc                32
+ramon: sys.mem              63442 MiB
+ramon: sys.mem.free         12183 MiB
+ramon: sys.mem.avail        59228 MiB
+ramon: sys.nprocs           2310
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/predicate_602.smt2
+ramon: argv                 2 = -T:20
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = sls.bv_use_top_level_assertions=true
+ramon: argv                 6 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify sls-smt)
+ramon: argv                 7 = model_validate=true
+ramon: childpid             2365127
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw    1552      0     10000     10000         0          0            5     7523)
+(sat.ddfw    1552      0      5000     20000         0          1            5    14410)
+(sat.ddfw    1552      0      4000     40000         0          2            5    22852)
+(sat.ddfw    1552      0      3750     70000         0          3            5    37225)
+(sat.ddfw    1552      0   3076.92    110000         0          4            5    55520)
+(sat.ddfw    1552      0   2777.78    160000         0          5            6    82761)
+(sat.ddfw    1552      0      2400    220000         1          6            5   116143)
+(sat.ddfw    1552      0   2058.82    290000         1          7            6   152364)
+(sat.ddfw    1552      0   1777.78    370000         2          8            8   182208)
+(sat.ddfw    1552      0   1578.95    460000         3          9            9   214500)
+(sat.ddfw    1552      0   1449.28    560000         3         10            6   256496)
+(sat.ddfw    1552      0   1358.02    670000         4         11            3   326385)
+lookahead-search moves:0 max-moves:800
+ramon: poll                 wall=1.000s usage=0.942s mem=22184KiB load=0.94 rootload=0.93
+ASSERTION VIOLATION
+File: ../src/ast/sls/sls_bv_eval.cpp
+Line: 2104
+Failed to verify: wval(e).commit_eval_check_tabu()
+
+Z3 4.13.4.0
+Please file an issue with this message and more detail about how you encountered it at https://github.com/Z3Prover/z3/issues/new
+ramon: end                  Sun Jan  5 12:11:10 2025
+ramon: root.execname        z3
+ramon: root.utime           1.440s
+ramon: root.stime           0.000s
+ramon: group.total          1.445s
+ramon: group.utime          1.441s
+ramon: group.stime          0.004s
+ramon: group.mempeak        22440KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+[31mramon: exitcode             114[0m
+ramon: walltime             1.503s
+ramon: loadavg              0.96
