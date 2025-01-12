@@ -1,0 +1,12 @@
+Ramon benchmark for Z3
+-
+Job description: with lookahead
+Job tag: smt-sls-lookahead
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: 9770c005926e2085d4ede18f03d56cb67d762d84
+Z3 branch: master
+Z3 options: "-T:20 -v:2 -st sls.arith_use_lookahead=true tactic.default_tactic="(then simplify propagate-values solve-eqs simplify sls-smt)" model_validate=true"
+Z3 inputs: inputs/QF_NIA_MCM
+Z3 commit message: adjust heuristic in random-inc-dec for finite domains
+
+Signed-off-by: Nikolaj Bjorner <nbjorner@microsoft.com>
