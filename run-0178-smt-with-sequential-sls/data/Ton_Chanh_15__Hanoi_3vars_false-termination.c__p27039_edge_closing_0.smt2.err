@@ -1,0 +1,76 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Wed Jan 15 19:26:06 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         14915 MiB
+ramon: sys.mem.avail        62331 MiB
+ramon: sys.nprocs           1706
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_CInteger/Ton_Chanh_15__Hanoi_3vars_false-termination.c__p27039_edge_closing_0.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = smt.sls.enable=true
+ramon: argv                 6 = smt.sls.parallel=false
+ramon: argv                 7 = model_validate=true
+ramon: childpid             1731303
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units       :simplify  :memory)
+(smt.stats        :conflicts    :propagations        :lemmas      :deletions   )
+(smt.stats    0      0      0      0  3794/3352/29       0/0     0    0  108.05)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 30000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1     20   113.636     10000         0          0            2       72)
+(sat.ddfw       1    459   37.3134     20000         0          1            8       86)
+(sat.ddfw       1    462  0.264925     20071         0          2            3       95)
+sls-result l_undef
+SLS -> SMT phase 1
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 22 :clauses 1440 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 20000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1    172   23.5849     10000         0          0            3        9)
+(sat.ddfw       1    429   7.13208     13402         1          1           10       15)
+sls-result l_undef
+SLS -> SMT phase 1
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+set value failed Nl2CT1 := (- 150003)
+v6 := -150003 Nl2CT1  muls: v21 v39 v68 v98 v121 v143 v166 v188 v211 v233 v254 v277 v299 v322 v344 v366 v388 v411 v433 v454 v477 v499 v521 v544 v565 v586 v608 v631 v654 v677 v699 v721 v742 v764 v786 v807 v829 v850 v873 v896 v918 v941 v962 v984 v1007 v1029 v1052 v1074 v1096 v1119 v1141 v1164 v1187 v1209 v1231 v1252 v1275 v1297 v1318 v1340 v1362 v1384 v1407 v1430 v1453 v1475 v1498 v1520 v1543 v1566 v1588 v1610 v1633 v1655 v1676 v1698 v1721 v1742 v1763 v1785 v1808 v1829 v1852 v1875 v1897 v1920 v1943 v1965 v1986 v2008 v2030 v2053 v2075 v2098 v2120 v2142 v2164 v2187 v2209 v2231 v2254 v2276 v2298 v2321 v2342 v2364 v2385 v2406 v2429 v2451 v2473   bool: -1@12 1@69 1@2143  := -150003
+bounded run 10000
+ramon: poll                 wall=1.000s usage=0.951s mem=153MiB load=0.95 rootload=0.91
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1     40   12.2328      6936         0          0           11       17)
+sls-result l_undef
+SLS -> SMT phase 1
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 2187 :learned 1)
+(nlsat :conflicts 7 :decisions 0 :propagations 111 :clauses 2170 :learned 7)
+(nlsat :conflicts 7 :decisions 0 :propagations 103 :clauses 2162 :learned 7)
+SMT -> SLS phase
+SMT -> SLS values
+set value failed Nl2CT1 := (- 250002)
+v6 := -250002 Nl2CT1  muls: v21 v39 v68 v98 v121 v143 v166 v188 v211 v233 v254 v277 v299 v322 v344 v366 v388 v411 v433 v454 v477 v499 v521 v544 v565 v586 v608 v631 v654 v677 v699 v721 v742 v764 v786 v807 v829 v850 v873 v896 v918 v941 v962 v984 v1007 v1029 v1052 v1074 v1096 v1119 v1141 v1164 v1187 v1209 v1231 v1252 v1275 v1297 v1318 v1340 v1362 v1384 v1407 v1430 v1453 v1475 v1498 v1520 v1543 v1566 v1588 v1610 v1633 v1655 v1676 v1698 v1721 v1742 v1763 v1785 v1808 v1829 v1852 v1875 v1897 v1920 v1943 v1965 v1986 v2008 v2030 v2053 v2075 v2098 v2120 v2142 v2164 v2187 v2209 v2231 v2254 v2276 v2298 v2321 v2342 v2364 v2385 v2406 v2429 v2451 v2473   bool: -1@12 1@69 1@2143  := -250002
+bounded run 10000
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      1   2.30218      1478         0          0            0        2)
+sls-result l_true
+ramon: end                  Wed Jan 15 19:26:07 2025
+ramon: root.execname        z3
+ramon: root.utime           1.060s
+ramon: root.stime           0.050s
+ramon: group.total          1.118s
+ramon: group.utime          1.066s
+ramon: group.stime          0.052s
+ramon: group.mempeak        157MiB
+ramon: group.pidpeak        3
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             1.167s
+ramon: loadavg              0.96

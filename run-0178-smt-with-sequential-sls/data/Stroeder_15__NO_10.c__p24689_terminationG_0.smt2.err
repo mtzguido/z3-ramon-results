@@ -1,0 +1,600 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Wed Jan 15 19:15:59 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         15026 MiB
+ramon: sys.mem.avail        62333 MiB
+ramon: sys.nprocs           1711
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_CInteger/Stroeder_15__NO_10.c__p24689_terminationG_0.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = smt.sls.enable=true
+ramon: argv                 6 = smt.sls.parallel=false
+ramon: argv                 7 = model_validate=true
+ramon: childpid             1701018
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts          :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin        :units       :memory       )
+(sat.stats      0      0    0 170735/71732     0/0   2       0    62.13   0.00)
+ (sat-cleaner :elim-literals 5 :elim-clauses 4 :cost 304505 :time 0.01)
+(sat.stats    146    655    0 170723/71728   145/16   5       0    62.71   0.02)
+(sat.stats    146    655    0 170723/71728   145/16   5       0    62.71   0.03)
+(sat.stats    146    655    0 170723/71728   145/16   5       0    62.71   0.03)
+(sat.simplify :simplifications 1)
+ (sat-scc :elim-vars 15 :elim-bin 112 :time 0.04)
+ (sat-probing :probing-assigned 17 :cost 170072084.77 :time 0.05)
+(sat.stats    146    655    0 131234/24617    27/11  23       0    84.77   0.38)
+ (sat-cleaner :elim-literals 54 :elim-clauses 17 :cost 386375 :time 0.01)
+(sat.stats    150    691    1 131166/24608    29/9  23       0    84.77   0.39)
+(sat.stats :conflicts    :restarts        :learned/bin       :gc          :time)
+(sat.stats       :decisions  :clauses/bin          :units        :memory       )
+(sat.stats    292   1380    2 131166/24608   171/13  23       0    84.77   0.40)
+(sat.stats    295   1383    3 131166/24608   174/13  23       0    84.77   0.40)
+(sat.stats    299   1392    4 131166/24608   178/13  23       0    84.77   0.40)
+(sat.stats    303   1396    5 131166/24608   182/13  23       0    84.77   0.40)
+(sat.stats    306   1403    6 131166/24608   185/13  23       0    84.77   0.40)
+(sat.stats    309   1408    7 131166/24608   188/13  23       0    84.77   0.41)
+(sat.stats    313   1411    8 131166/24608   192/13  23       0    84.77   0.41)
+(sat.stats    317   1427    9 131166/24608   196/13  23       0    84.77   0.41)
+(sat.stats    320   1428   10 131166/24608   199/13  23       0    84.77   0.41)
+(sat.stats    323   1433   11 131166/24608   202/13  23       0    84.77   0.41)
+(sat.stats    327   1436   12 131166/24608   206/13  23       0    84.77   0.41)
+(sat.stats    330   1445   13 131166/24608   209/13  23       0    84.77   0.41)
+(sat.stats    333   1448   14 131166/24608   212/13  23       0    84.77   0.41)
+(sat.stats    501   3933   24 131166/24608   379/28  24       0    84.77   0.43)
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units     :simplify  :memory)
+(smt.stats        :conflicts    :propagations      :lemmas      :deletions   )
+(smt.stats    0      0      0      0   315/303/7       0/0     0    0  166.64)
+(nlsat :conflicts 1 :decisions 0 :propagations 6 :clauses 62 :learned 1)
+SMT -> SLS phase
+SMT -> SLS units 1 2 3 4 29 30 31
+SMT -> SLS values
+bounded run 30000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    348    204.14     10003         4          0            6       76)
+(sat.ddfw       2    609    103.20     18981         6          1            8      132)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 20000
+ramon: poll                 wall=1.003s usage=0.936s mem=270MiB load=0.93 rootload=0.89
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    454     68.51     10002         3          0            7       56)
+(sat.ddfw       2    536     16.54     12598         3          1            2       79)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    230     34.20      6259         3          0            5       75)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    334     29.91      6281         1          0            5       62)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+set value failed Nl2CT1 := (- 100)
+v2 := -100 Nl2CT1  muls: v5 v8 v21 v30 v39   bool: -1@4 1@18  := -100
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    259     25.39      6296         2          0            3       37)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    416     22.22      6245         0          0            3       64)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    330     20.63      6312         0          0            5       23)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    292     18.95      6274         0          0            7       15)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    311     17.52      6273         0          0            5       27)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    292     16.44      6297         2          0            7       24)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    244     15.29      6254         3          0            2       32)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    328     14.24      6279         2          0           12       28)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    307     13.06      6293         2          0            2       35)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 33 :clauses 75 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    282     12.37      6282         1          0            2       26)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    324     11.61      6269         0          0            8       38)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    295     11.04      6250         0          0           11       54)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    356     10.60      6286         0          0            8       34)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    270     10.02      6283         2          0            5       34)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 3 :decisions 0 :propagations 45 :clauses 109 :learned 3)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    309      9.54      6298         3          0            5       31)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 2 :decisions 0 :propagations 90 :clauses 107 :learned 2)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    311      9.18      6296         0          0            5       22)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SLS -> SMT activity
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    263      8.69      6291         3          0            8       24)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    291      8.33      6272         1          0            5       33)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    222      8.05      6290         1          0            2       32)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    279      7.76      6277         0          0            5       36)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    282      7.52      6274         1          0            5       23)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 28 :clauses 115 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    254      7.28      6279         2          0            8       38)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 28 :clauses 110 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    258      6.99      6254         1          0            5       28)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 28 :clauses 110 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    293      6.74      6245         1          0            2       32)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 25 :clauses 115 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    281      6.59      6297         0          0            2       18)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 2 :decisions 0 :propagations 83 :clauses 109 :learned 2)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    262      6.33      6290         1          0            5       23)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 44 :clauses 109 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    331      6.13      6268         1          0            3       42)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 3 :decisions 0 :propagations 50 :clauses 109 :learned 3)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    362      5.95      6261         0          0           16       45)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 44 :clauses 109 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    300      5.79      6262         1          0            7       42)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 2 :decisions 0 :propagations 83 :clauses 109 :learned 2)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=2.000s usage=1.932s mem=270MiB load=1.00 rootload=0.99
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    214      5.65      6279         1          0            5       32)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 2 :decisions 0 :propagations 45 :clauses 109 :learned 2)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    303      5.50      6282         1          0            2       46)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 2 :decisions 0 :propagations 31 :clauses 97 :learned 2)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    246      5.34      6253         2          0            5       62)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    360      5.22      6274         0          0            5       54)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    260      5.11      6297         0          0            5       23)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    292      4.98      6279         0          0            5       25)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    294      4.86      6314         0          0            8       46)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SLS -> SMT activity
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    277      4.70      6281         0          0            2       21)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    312      4.62      6297         0          0            3       40)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+set value failed Nl2CT1 := (- 2)
+v2 := -2 Nl2CT1  muls: v5 v8 v21 v30 v39   bool: -1@4 1@18  := -2
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    330      4.52      6289         0          0            5       42)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    265      4.39      6285         4          0            5       18)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    292      4.29      6261         2          0            8       23)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+set value failed Nl2CT1 := (- 2)
+v2 := -2 Nl2CT1  muls: v5 v8 v21 v30 v39   bool: -1@4 1@18  := -2
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    345      4.25      6305         0          0            3       20)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    289      4.15      6293         4          0            4       20)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    324      4.05      6249         0          0            3       29)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    202      3.98      6246         2          0           11       33)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    243      3.90      6276         3          0            3       54)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 42 :clauses 124 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    255      3.82      6293         3          0            3       25)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+set value failed Nl2CT1 := 2
+v2 := 2 Nl2CT1  muls: v5 v8 v21 v30 v39   bool: -1@4 1@18  := 2
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    327      3.74      6268         0          0            5       23)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 61 :clauses 117 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    322      3.68      6274         0          0            5       22)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 28 :clauses 116 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    303      3.63      6293         0          0           10       29)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 31 :clauses 116 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    275      3.54      6272         2          0            2       36)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 2 :decisions 0 :propagations 41 :clauses 116 :learned 2)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    293      3.50      6292         1          0            5       29)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 3 :decisions 0 :propagations 54 :clauses 117 :learned 3)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    257      3.41      6270         4          0            3       27)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 4 :decisions 0 :propagations 46 :clauses 117 :learned 4)
+(nlsat :conflicts 2 :decisions 0 :propagations 42 :clauses 117 :learned 2)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    225      3.34      6273         4          0            5       20)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 31 :clauses 118 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    319      3.29      6301         0          0            5       25)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 33 :clauses 115 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    205      3.21      6279         7          0            2       33)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+SLS -> SMT activity
+(nlsat :conflicts 1 :decisions 0 :propagations 32 :clauses 115 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2    152      2.18      4339         4          0            3       21)
+sls-result l_undef
+SLS -> SMT phase 2
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 5 :propagations 13 :clauses 75 :learned 1)
+(nlsat-b&b :conflicts 78 :decisions 30 :propagations 328 :clauses 75 :learned 76)
+(nlsat :conflicts 102 :decisions 40 :propagations 458 :clauses 75 :learned 101)
+(nlsat-b&b :conflicts 186 :decisions 93 :propagations 801 :clauses 75 :learned 174)
+(nlsat-b&b :conflicts 190 :decisions 100 :propagations 871 :clauses 75 :learned 180)
+(nlsat :conflicts 200 :decisions 109 :propagations 922 :clauses 75 :learned 190)
+ramon: end                  Wed Jan 15 19:16:02 2025
+ramon: root.execname        z3
+ramon: root.utime           2.790s
+ramon: root.stime           0.050s
+ramon: group.total          2.852s
+ramon: group.utime          2.796s
+ramon: group.stime          0.056s
+ramon: group.mempeak        305MiB
+ramon: group.pidpeak        3
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             2.920s
+ramon: loadavg              0.98
