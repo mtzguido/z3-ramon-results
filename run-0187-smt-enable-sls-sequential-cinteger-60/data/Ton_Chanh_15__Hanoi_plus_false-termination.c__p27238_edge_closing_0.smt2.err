@@ -1,0 +1,53 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Mon Jan 20 20:45:50 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         25511 MiB
+ramon: sys.mem.avail        59617 MiB
+ramon: sys.nprocs           1434
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_CInteger/Ton_Chanh_15__Hanoi_plus_false-termination.c__p27238_edge_closing_0.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = smt.sls.enable=true
+ramon: argv                 6 = smt.sls.parallel=false
+ramon: argv                 7 = model_validate=true
+ramon: argv                 8 = sls.arith_use_clausal_lookahead=true
+ramon: childpid             2829020
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units        :simplify  :memory)
+(smt.stats        :conflicts    :propagations         :lemmas      :deletions   )
+(smt.stats    0      0      0      0 12016/10633/27       0/0     0    0  126.73)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 30000
+ramon: poll                 wall=1.001s usage=0.845s mem=371MiB load=0.84 rootload=0.72
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1      3   28.9636     11933         0          0            6     1639)
+ramon: poll                 wall=2.000s usage=1.841s mem=878MiB load=1.00 rootload=0.80
+(sat.ddfw       1      7   9.03562     21827         0          1            7     3676)
+sls-result l_undef
+SLS -> SMT phase 1
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 13 :clauses 2881 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 20000
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      1   6.00861      7673         0          0            0      893)
+sls-result l_true
+ramon: end                  Mon Jan 20 20:45:53 2025
+ramon: root.execname        z3
+ramon: root.utime           1.790s
+ramon: root.stime           0.370s
+ramon: group.total          2.169s
+ramon: group.utime          1.793s
+ramon: group.stime          0.376s
+ramon: group.mempeak        891MiB
+ramon: group.pidpeak        3
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             2.326s
+ramon: loadavg              0.93

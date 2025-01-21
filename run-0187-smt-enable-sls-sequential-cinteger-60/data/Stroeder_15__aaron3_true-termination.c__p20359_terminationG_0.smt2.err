@@ -1,0 +1,64 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Mon Jan 20 20:55:26 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         25680 MiB
+ramon: sys.mem.avail        59617 MiB
+ramon: sys.nprocs           1435
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_CInteger/Stroeder_15__aaron3_true-termination.c__p20359_terminationG_0.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = smt.sls.enable=true
+ramon: argv                 6 = smt.sls.parallel=false
+ramon: argv                 7 = model_validate=true
+ramon: argv                 8 = sls.arith_use_clausal_lookahead=true
+ramon: childpid             2857601
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts          :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin        :units       :memory       )
+(sat.stats      0      0    0 196318/80042     0/0   0       0    76.74   0.00)
+ (sat-cleaner :elim-literals 35 :elim-clauses 23 :cost 357330 :time 0.01)
+(sat.stats    164   1195    0 196280/80049   161/22  15       0    77.44   0.02)
+(sat.stats    164   1195    0 196280/80049   161/22  15       0    77.44   0.03)
+(sat.stats    164   1195    0 196280/80049   161/22  15       0    77.44   0.03)
+(sat.simplify :simplifications 1)
+ (sat-scc :elim-vars 83 :elim-bin 227 :time 0.05)
+ (sat-cleaner :elim-literals 4 :elim-clauses 0 :cost 357855 :time 0.01)
+(sat.stats    164   1195    0 237090/29658   155/16  15       0   100.47   0.18)
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units       :simplify   :memory)
+(smt.stats        :conflicts    :propagations        :lemmas      :deletions   )
+(smt.stats    0      0      0      0  1242/1164/33       0/0     0    0   32.57)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 30000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1      9    118.60     10555         0          0            2     5538)
+(sat.ddfw       1     11     10.75     13619         1          1            4    12949)
+sls-result l_undef
+SLS -> SMT phase 1
+SLS -> SMT values
+(nlsat :conflicts 5 :decisions 0 :propagations 167 :clauses 486 :learned 5)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 20000
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      1      0.61       179         0          0            0        5)
+sls-result l_true
+ramon: end                  Mon Jan 20 20:55:27 2025
+ramon: root.execname        z3
+ramon: root.utime           0.630s
+ramon: root.stime           0.030s
+ramon: group.total          0.672s
+ramon: group.utime          0.636s
+ramon: group.stime          0.036s
+ramon: group.mempeak        120MiB
+ramon: group.pidpeak        3
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.728s
+ramon: loadavg              0.92

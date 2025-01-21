@@ -1,0 +1,102 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Mon Jan 20 21:01:07 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         25213 MiB
+ramon: sys.mem.avail        59616 MiB
+ramon: sys.nprocs           1432
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_CInteger/Stroeder_15__GulwaniJainKoskinen-PLDI2009-Fig1_true-termination.c__p23282_edge_closing_0.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = smt.sls.enable=true
+ramon: argv                 6 = smt.sls.parallel=false
+ramon: argv                 7 = model_validate=true
+ramon: argv                 8 = sls.arith_use_clausal_lookahead=true
+ramon: childpid             2873790
+(sat.solver)
+(sat.copy :learned 0)
+(sat.stats   :conflicts  :restarts          :learned/bin    :gc          :time)
+(sat.stats          :decisions :clauses/bin        :units       :memory       )
+(sat.stats      0      0    0 142753/57543     0/0   0       0    52.68   0.00)
+ (sat-cleaner :elim-literals 2 :elim-clauses 0 :cost 261543 :time 0.00)
+(sat.stats    176    677    0 142746/57538   165/8 6503       0    53.25   0.02)
+(sat.stats    176    677    0 142746/57538   165/8 6503       0    53.25   0.02)
+(sat.stats    176    677    0 142746/57538   165/8 6503       0    53.25   0.02)
+(sat.simplify :simplifications 1)
+ (sat-scc :elim-vars 65 :elim-bin 123 :units 7 :time 0.02)
+ (sat-cleaner :elim-literals 2057 :elim-clauses 13192 :cost 263627 :time 0.00)
+ (sat-probing :probing-assigned 115 :cost 196946567.12 :time 0.04)
+(sat.stats    176    677    0 90940/16248    46/5 6640       0    67.12   0.22)
+ (sat-cleaner :elim-literals 451 :elim-clauses 113 :cost 270082 :time 0.00)
+(sat.stats    190    753    1 90445/16151    60/6 6640       0    67.12   0.23)
+(sat.stats :conflicts    :restarts        :learned/bin      :gc          :time)
+(sat.stats        :decisions :clauses/bin       :units          :memory       )
+(sat.stats    194    755    2 90445/16151    64/6 6640       0    67.12   0.23)
+(sat.stats    197    758    3 90445/16151    67/6 6640       0    67.12   0.23)
+(sat.stats    200    764    4 90445/16151    70/6 6640       0    67.12   0.23)
+(sat.stats    205    767    5 90445/16151    75/6 6640       0    67.12   0.23)
+(sat.stats    211    776    6 90445/16151    81/6 6640       0    67.12   0.23)
+(sat.stats    214    780    7 90445/16151    84/6 6640       0    67.12   0.23)
+(sat.stats    218    786    8 90445/16151    88/6 6640       0    67.12   0.23)
+(sat.stats    221    788    9 90445/16151    91/6 6640       0    67.12   0.23)
+(sat.stats    224    790   10 90445/16151    94/6 6640       0    67.12   0.23)
+(sat.stats    227    796   11 90445/16151    97/6 6640       0    67.12   0.23)
+(sat.stats    231    799   12 90445/16151   101/6 6640       0    67.12   0.23)
+(sat.stats    234    801   13 90445/16151   104/6 6640       0    67.12   0.23)
+(sat.stats :conflicts   :restarts        :learned/bin        :gc          :time)
+(sat.stats        :decisions :clauses/bin        :units          :memory       )
+(sat.stats    317    973   18 90445/16151   187/11 6640       0    67.12   0.24)
+(sat.stats    492   1377   33 90445/16151   362/17 6640       0    67.12   0.24)
+(sat.stats    501   1392   35 90445/16151   371/17 6640       0    67.12   0.24)
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units      :simplify   :memory)
+(smt.stats        :conflicts    :propagations       :lemmas      :deletions   )
+(smt.stats    0      0      0      0  1048/993/35       0/0     0    0   95.21)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 30000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1      5      1.94       886        14          0            1    28714)
+sls-result l_undef
+SLS -> SMT phase 1
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 20000
+ramon: poll                 wall=1.003s usage=1.003s mem=180MiB load=1.00 rootload=0.98
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1      5      0.55       458         7          0            1    19336)
+sls-result l_undef
+SLS -> SMT phase 1
+SLS -> SMT values
+(nlsat :conflicts 4 :decisions 0 :propagations 154 :clauses 339 :learned 4)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1      1      0.72       819         1          0            1     8965)
+sls-result l_undef
+SLS -> SMT phase 1
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      1      0.84       972         0          0            0      126)
+sls-result l_true
+ramon: end                  Mon Jan 20 21:01:09 2025
+ramon: root.execname        z3
+ramon: root.utime           1.610s
+ramon: root.stime           0.020s
+ramon: group.total          1.639s
+ramon: group.utime          1.615s
+ramon: group.stime          0.024s
+ramon: group.mempeak        180MiB
+ramon: group.pidpeak        3
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             1.646s
+ramon: loadavg              1.00
