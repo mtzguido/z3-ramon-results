@@ -1,0 +1,12 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-sls-clausal-lookahead
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: 22e4054674a291d83f59019273ff0b24f24295bf
+Z3 branch: master
+Z3 options: "-T:20 -v:2 -st tactic.default_tactic="(then simplify propagate-values solve-eqs simplify sls-smt)" model_validate=true sls.arith_use_clausal_lookahead=true"
+Z3 inputs: inputs/QF_NIA_MCM
+Z3 commit message: add clausal lookahead to arithmetic solver as part of portfolio
+
+have legacy qfbv-sls solver use nnf pre-processing. It relies on it for correctness of the score updates.
