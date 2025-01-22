@@ -1,0 +1,328 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Tue Jan 21 21:10:28 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         25721 MiB
+ramon: sys.mem.avail        59583 MiB
+ramon: sys.nprocs           1404
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_CInteger/Ton_Chanh_15__Hanoi_plus_false-termination.c__p27239_edge_closing_0.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = sls.arith_use_lookahead=true
+ramon: childpid             3024255
+ramon: poll                 wall=1.000s usage=0.999s mem=34164KiB load=1.00 rootload=0.99
+ramon: poll                 wall=2.000s usage=1.999s mem=52032KiB load=1.00 rootload=1.00
+ramon: poll                 wall=3.000s usage=2.997s mem=53328KiB load=1.00 rootload=1.00
+ramon: poll                 wall=4.000s usage=3.997s mem=54608KiB load=1.00 rootload=0.99
+ramon: poll                 wall=5.000s usage=4.997s mem=55632KiB load=1.00 rootload=1.00
+ramon: poll                 wall=6.000s usage=5.997s mem=57168KiB load=1.00 rootload=1.00
+ramon: poll                 wall=7.000s usage=6.997s mem=57168KiB load=1.00 rootload=1.00
+ramon: poll                 wall=8.000s usage=7.997s mem=99400KiB load=1.00 rootload=0.99
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units       :simplify  :memory)
+(smt.stats        :conflicts    :propagations        :lemmas      :deletions   )
+(smt.stats    0      0      0      0  8915/8525/35       0/0     0    0  122.89)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 30000
+ramon: poll                 wall=9.000s usage=8.997s mem=204MiB load=1.00 rootload=0.97
+ramon: poll                 wall=10.000s usage=9.997s mem=204MiB load=1.00 rootload=1.00
+ramon: poll                 wall=11.000s usage=10.997s mem=204MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1      1   1.10246      3852         0          0          344        1)
+sls-result l_undef
+SLS -> SMT phase 1
+SLS -> SMT values
+(nlsat :conflicts 1 :decisions 0 :propagations 22 :clauses 4288 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 20000
+ramon: poll                 wall=12.047s usage=12.045s mem=212MiB load=1.00 rootload=0.99
+ramon: poll                 wall=13.000s usage=12.997s mem=212MiB load=1.00 rootload=1.01
+ramon: poll                 wall=14.000s usage=13.997s mem=212MiB load=1.00 rootload=1.00
+ramon: poll                 wall=15.000s usage=14.997s mem=212MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2      1  0.563477      3928         0          0          346        8)
+sls-result l_undef
+SMT -> SLS phase
+SMT -> SLS values
+set value failed lam291n19 := 42858
+v8801 := 42858 lam291n19  muls: v8802 v8804 v8806 v8808   bool: -1@7759  := 42858
+bounded run 10000
+ramon: poll                 wall=16.000s usage=15.997s mem=215MiB load=1.00 rootload=0.99
+ramon: poll                 wall=17.000s usage=16.997s mem=215MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       3      1  0.451222      3950         0          0          347        9)
+sls-result l_undef
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 6486 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+set value failed Nl2CT2 := (- 300006)
+v29 := -300006 Nl2CT2  muls: v30 v46 v78 v123 v148 v173 v198 v214 v239 v263 v298 v323 v349 v375 v392 v426 v443 v470 v492 v528 v554 v579 v604 v623 v654 v673 v698 v725 v756 v782 v807 v833 v859 v885 v910 v935 v953 v985 v1011 v1035 v1061 v1081 v1107 v1131 v1163 v1189 v1204 v1238 v1262 v1281 v1307 v1332 v1354 v1386 v1414 v1440 v1465 v1482 v1516 v1536 v1561 v1587 v1612 v1644 v1663 v1690 v1717 v1747 v1767 v1789 v1817 v1849 v1873 v1897 v1919 v1940 v1965 v2000 v2025 v2051 v2069 v2098 v2125 v2153 v2171 v2205 v2224 v2251 v2277 v2308 v2327 v2352 v2375 v2401 v2432 v2449 v2482 v2508 v2528 v2552 v2579 v2611 v2628 v2660 v2686 v2712 v2728 v2763 v2788 v2808 v2833 v2857 v2889 v2914 v2935 v2964 v2989 v3013 v3041 v3065 v3091 v3115 v3133 v3168 v3186 v3217 v3236 v3267 v3286 v3312 v3345 v3364 v3397 v3423 v3448 v3465 v3491 v3519 v3549 v3574 v3599 v3617 v3642 v3670 v3702 v3726 v3744 v3774 v3796 v3819 v3851 v3870 v3897 v3927 v3946 v3970 v4004 v4024 v4047 v4081 v4104 v4123 v4151 v4177 v4206 v4231 v4249 v4282 v4301 v4326 v4358 v4377 v4410 v4435 v4458 v4480 v4504 v4536 v4554 v4579 v4610 v4631 v4652 v4680 v4712 v4736 v4758 v4788 v4809 v4841 v4867 v4890 v4911 v4935 v4968 v4988 v5013 v5039 v5070 v5088 v5118 v5137 v5164 v5190 v5212 v5246 v5271 v5297 v5317 v5347 v5372 v5392 v5415 v5441 v5467 v5496 v5525 v5547 v5567 v5592 v5623 v5645 v5667 v5698 v5724 v5743 v5769 v5800 v5824 v5847 v5874 v5890 v5924 v5948 v5974 v6000 v6018 v6042 v6077 v6103 v6129 v6155 v6179 v6195 v6230 v6256 v6278 v6300 v6331 v6357 v6383 v6409 v6432 v6459 v6476 v6500 v6533 v6554 v6577 v6603 v6634 v6660 v6679 v6710 v6728 v6755 v6787 v6805 v6836 v6854 v6878 v6906 v6933 v6963 v6989 v7015 v7041 v7067 v7082 v7110 v7135 v7166 v7191 v7209 v7234 v7260 v7292 v7317 v7335 v7369 v7385 v7414 v7446 v7471 v7488 v7511 v7546 v7564 v7587 v7618 v7638 v7658 v7693 v7712 v7744 v7769 v7789 v7814 v7847 v7872 v7890 v7914 v7940 v7967 v7996 v8025 v8051 v8074 v8094 v8122 v8146 v8179 v8202 v8230 v8249 v8274 v8300 v8330 v8354 v8380 v8405 v8428 v8448 v8478 v8500 v8526 v8558 v8580 v8598 v8627 v8658 v8676 v8705 v8727 v8753 v8777 v8802   bool: -1@59 1@82 1@7763  := -300006
+set value failed lam291n19 := 58982
+v8801 := 58982 lam291n19  muls: v8802 v8804 v8806 v8808   bool: -1@7759  := 58982
+bounded run 10000
+ramon: poll                 wall=18.000s usage=17.997s mem=217MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       7      1  0.365955      3889         0          0          349        1)
+sls-result l_undef
+ramon: poll                 wall=19.000s usage=18.997s mem=217MiB load=1.00 rootload=1.00
+(nlsat :conflicts 1 :decisions 0 :propagations 32 :clauses 6083 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 33 :clauses 6438 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=20.000s usage=19.997s mem=219MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       3      1  0.310055      3907         0          0          347        1)
+sls-result l_undef
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 6450 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 6450 :learned 1)
+ramon: poll                 wall=21.000s usage=20.996s mem=220MiB load=1.00 rootload=1.00
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 6450 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 6786 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 35 :clauses 6097 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 35 :clauses 6097 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 35 :clauses 6098 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 35 :clauses 6097 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 35 :clauses 6099 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 35 :clauses 6097 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 5753 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 5752 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 5753 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 5753 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 5753 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 5752 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 35 :clauses 5752 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 5753 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 5753 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 35 :clauses 6104 :learned 1)
+ramon: poll                 wall=22.000s usage=21.996s mem=227MiB load=1.00 rootload=1.00
+(nlsat :conflicts 1 :decisions 0 :propagations 37 :clauses 6455 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 36 :clauses 6103 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 37 :clauses 5754 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 36 :clauses 6103 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 35 :clauses 5754 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 35 :clauses 5754 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 36 :clauses 6103 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 35 :clauses 6104 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 36 :clauses 6105 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 37 :clauses 6103 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 36 :clauses 5754 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 36 :clauses 5756 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 36 :clauses 5755 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+set value failed lam0n20 := 14981
+v28 := 14981 lam0n20  muls: v30 v58 v60 v62   bool: -1@55  := 14981
+set value failed lam291n19 := 14980
+v8801 := 14980 lam291n19  muls: v8802 v8804 v8806 v8808   bool: -1@7759  := 14980
+bounded run 10000
+ramon: poll                 wall=23.000s usage=22.996s mem=230MiB load=1.00 rootload=0.99
+ramon: poll                 wall=24.000s usage=23.996s mem=230MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2      1   0.24518      3942         0          0          346        1)
+sls-result l_undef
+(nlsat :conflicts 1 :decisions 0 :propagations 36 :clauses 5759 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 36 :clauses 5756 :learned 1)
+(smt.stats    0    101   1442    905  9008/8570/35     189/3     1    0  225.16)
+(nlsat :conflicts 1 :decisions 0 :propagations 34 :clauses 5780 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 35 :clauses 5776 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 37 :clauses 6124 :learned 1)
+SMT -> SLS phase
+SMT -> SLS units 1 2 3 4 5 6 7 8 9 10 11 12 91 92 7898 7899 7900 7901 7902 7903 7904 7905 7906 7907 7908 7909 7910 7911 7912 7913 7914 7915 7916 7917 7918
+SMT -> SLS values
+set value failed Nl2CT2 := (- 200004)
+v29 := -200004 Nl2CT2  muls: v30 v46 v78 v123 v148 v173 v198 v214 v239 v263 v298 v323 v349 v375 v392 v426 v443 v470 v492 v528 v554 v579 v604 v623 v654 v673 v698 v725 v756 v782 v807 v833 v859 v885 v910 v935 v953 v985 v1011 v1035 v1061 v1081 v1107 v1131 v1163 v1189 v1204 v1238 v1262 v1281 v1307 v1332 v1354 v1386 v1414 v1440 v1465 v1482 v1516 v1536 v1561 v1587 v1612 v1644 v1663 v1690 v1717 v1747 v1767 v1789 v1817 v1849 v1873 v1897 v1919 v1940 v1965 v2000 v2025 v2051 v2069 v2098 v2125 v2153 v2171 v2205 v2224 v2251 v2277 v2308 v2327 v2352 v2375 v2401 v2432 v2449 v2482 v2508 v2528 v2552 v2579 v2611 v2628 v2660 v2686 v2712 v2728 v2763 v2788 v2808 v2833 v2857 v2889 v2914 v2935 v2964 v2989 v3013 v3041 v3065 v3091 v3115 v3133 v3168 v3186 v3217 v3236 v3267 v3286 v3312 v3345 v3364 v3397 v3423 v3448 v3465 v3491 v3519 v3549 v3574 v3599 v3617 v3642 v3670 v3702 v3726 v3744 v3774 v3796 v3819 v3851 v3870 v3897 v3927 v3946 v3970 v4004 v4024 v4047 v4081 v4104 v4123 v4151 v4177 v4206 v4231 v4249 v4282 v4301 v4326 v4358 v4377 v4410 v4435 v4458 v4480 v4504 v4536 v4554 v4579 v4610 v4631 v4652 v4680 v4712 v4736 v4758 v4788 v4809 v4841 v4867 v4890 v4911 v4935 v4968 v4988 v5013 v5039 v5070 v5088 v5118 v5137 v5164 v5190 v5212 v5246 v5271 v5297 v5317 v5347 v5372 v5392 v5415 v5441 v5467 v5496 v5525 v5547 v5567 v5592 v5623 v5645 v5667 v5698 v5724 v5743 v5769 v5800 v5824 v5847 v5874 v5890 v5924 v5948 v5974 v6000 v6018 v6042 v6077 v6103 v6129 v6155 v6179 v6195 v6230 v6256 v6278 v6300 v6331 v6357 v6383 v6409 v6432 v6459 v6476 v6500 v6533 v6554 v6577 v6603 v6634 v6660 v6679 v6710 v6728 v6755 v6787 v6805 v6836 v6854 v6878 v6906 v6933 v6963 v6989 v7015 v7041 v7067 v7082 v7110 v7135 v7166 v7191 v7209 v7234 v7260 v7292 v7317 v7335 v7369 v7385 v7414 v7446 v7471 v7488 v7511 v7546 v7564 v7587 v7618 v7638 v7658 v7693 v7712 v7744 v7769 v7789 v7814 v7847 v7872 v7890 v7914 v7940 v7967 v7996 v8025 v8051 v8074 v8094 v8122 v8146 v8179 v8202 v8230 v8249 v8274 v8300 v8330 v8354 v8380 v8405 v8428 v8448 v8478 v8500 v8526 v8558 v8580 v8598 v8627 v8658 v8676 v8705 v8727 v8753 v8777 v8802   bool: -1@59 1@82 1@7763  := -200004
+bounded run 10000
+ramon: poll                 wall=25.000s usage=24.996s mem=237MiB load=1.00 rootload=1.00
+ramon: poll                 wall=26.011s usage=26.008s mem=237MiB load=1.00 rootload=1.01
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       7      1  0.214191      3891         0          0          351        1)
+sls-result l_undef
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=27.000s usage=26.996s mem=238MiB load=1.00 rootload=0.99
+ramon: poll                 wall=28.003s usage=28.000s mem=238MiB load=1.00 rootload=1.01
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       6      1   0.19788      3939         0          0          350        1)
+sls-result l_undef
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=29.000s usage=28.996s mem=238MiB load=1.00 rootload=0.99
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       6      1  0.181109      3921         0          0          350        1)
+sls-result l_undef
+ramon: poll                 wall=30.000s usage=29.995s mem=240MiB load=1.00 rootload=1.00
+(nlsat :conflicts 1 :decisions 0 :propagations 38 :clauses 6826 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+set value failed lam164n19 := 100007
+v5038 := 100007 lam164n19  muls: v5039 v5041 v5043 v5045   bool: -1@4431  := 100007
+set value failed Nl2CT2 := (- 100002)
+v29 := -100002 Nl2CT2  muls: v30 v46 v78 v123 v148 v173 v198 v214 v239 v263 v298 v323 v349 v375 v392 v426 v443 v470 v492 v528 v554 v579 v604 v623 v654 v673 v698 v725 v756 v782 v807 v833 v859 v885 v910 v935 v953 v985 v1011 v1035 v1061 v1081 v1107 v1131 v1163 v1189 v1204 v1238 v1262 v1281 v1307 v1332 v1354 v1386 v1414 v1440 v1465 v1482 v1516 v1536 v1561 v1587 v1612 v1644 v1663 v1690 v1717 v1747 v1767 v1789 v1817 v1849 v1873 v1897 v1919 v1940 v1965 v2000 v2025 v2051 v2069 v2098 v2125 v2153 v2171 v2205 v2224 v2251 v2277 v2308 v2327 v2352 v2375 v2401 v2432 v2449 v2482 v2508 v2528 v2552 v2579 v2611 v2628 v2660 v2686 v2712 v2728 v2763 v2788 v2808 v2833 v2857 v2889 v2914 v2935 v2964 v2989 v3013 v3041 v3065 v3091 v3115 v3133 v3168 v3186 v3217 v3236 v3267 v3286 v3312 v3345 v3364 v3397 v3423 v3448 v3465 v3491 v3519 v3549 v3574 v3599 v3617 v3642 v3670 v3702 v3726 v3744 v3774 v3796 v3819 v3851 v3870 v3897 v3927 v3946 v3970 v4004 v4024 v4047 v4081 v4104 v4123 v4151 v4177 v4206 v4231 v4249 v4282 v4301 v4326 v4358 v4377 v4410 v4435 v4458 v4480 v4504 v4536 v4554 v4579 v4610 v4631 v4652 v4680 v4712 v4736 v4758 v4788 v4809 v4841 v4867 v4890 v4911 v4935 v4968 v4988 v5013 v5039 v5070 v5088 v5118 v5137 v5164 v5190 v5212 v5246 v5271 v5297 v5317 v5347 v5372 v5392 v5415 v5441 v5467 v5496 v5525 v5547 v5567 v5592 v5623 v5645 v5667 v5698 v5724 v5743 v5769 v5800 v5824 v5847 v5874 v5890 v5924 v5948 v5974 v6000 v6018 v6042 v6077 v6103 v6129 v6155 v6179 v6195 v6230 v6256 v6278 v6300 v6331 v6357 v6383 v6409 v6432 v6459 v6476 v6500 v6533 v6554 v6577 v6603 v6634 v6660 v6679 v6710 v6728 v6755 v6787 v6805 v6836 v6854 v6878 v6906 v6933 v6963 v6989 v7015 v7041 v7067 v7082 v7110 v7135 v7166 v7191 v7209 v7234 v7260 v7292 v7317 v7335 v7369 v7385 v7414 v7446 v7471 v7488 v7511 v7546 v7564 v7587 v7618 v7638 v7658 v7693 v7712 v7744 v7769 v7789 v7814 v7847 v7872 v7890 v7914 v7940 v7967 v7996 v8025 v8051 v8074 v8094 v8122 v8146 v8179 v8202 v8230 v8249 v8274 v8300 v8330 v8354 v8380 v8405 v8428 v8448 v8478 v8500 v8526 v8558 v8580 v8598 v8627 v8658 v8676 v8705 v8727 v8753 v8777 v8802   bool: -1@59 1@82 1@7763  := -100002
+bounded run 10000
+ramon: poll                 wall=31.000s usage=30.995s mem=240MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       3      1  0.166049      3896         0          0          347        1)
+sls-result l_undef
+(nlsat :conflicts 1 :decisions 0 :propagations 38 :clauses 6840 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=32.000s usage=31.995s mem=240MiB load=1.00 rootload=1.00
+ramon: poll                 wall=33.000s usage=32.995s mem=240MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       7      1  0.155911      3938         0          0          349        1)
+sls-result l_undef
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=34.000s usage=33.995s mem=240MiB load=1.00 rootload=1.00
+ramon: poll                 wall=35.000s usage=34.994s mem=240MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       6      1  0.143709      3880         0          0          350        1)
+sls-result l_undef
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=36.000s usage=35.994s mem=240MiB load=1.00 rootload=1.00
+ramon: poll                 wall=37.000s usage=36.994s mem=240MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       4      1  0.136196      3914         0          0          348        1)
+sls-result l_undef
+(nlsat :conflicts 1 :decisions 0 :propagations 39 :clauses 6831 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+set value failed lam164n19 := 100002
+v5038 := 100002 lam164n19  muls: v5039 v5041 v5043 v5045   bool: -1@4431  := 100002
+bounded run 10000
+ramon: poll                 wall=38.000s usage=37.994s mem=240MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       4      1  0.129257      3947         0          0          348        1)
+sls-result l_undef
+(nlsat :conflicts 1 :decisions 0 :propagations 39 :clauses 6826 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+set value failed lam164n19 := 91669
+v5038 := 91669 lam164n19  muls: v5039 v5041 v5043 v5045   bool: -1@4431  := 91669
+bounded run 10000
+ramon: poll                 wall=39.000s usage=38.993s mem=240MiB load=1.00 rootload=1.00
+ramon: poll                 wall=40.000s usage=39.993s mem=240MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw      13      1  0.120203      3887         0          0          352        1)
+sls-result l_undef
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=41.000s usage=40.993s mem=240MiB load=1.00 rootload=1.00
+ramon: poll                 wall=42.000s usage=41.993s mem=240MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw      11      1  0.115328      3929         0          0          351        1)
+sls-result l_undef
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=43.000s usage=42.993s mem=240MiB load=1.00 rootload=1.00
+ramon: poll                 wall=44.000s usage=43.993s mem=240MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       4      1  0.109001      3903         0          0          348        1)
+sls-result l_undef
+(nlsat :conflicts 1 :decisions 0 :propagations 39 :clauses 6130 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=45.000s usage=44.992s mem=240MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       5      1  0.102256      3844         0          0          349        1)
+sls-result l_undef
+(nlsat :conflicts 1 :decisions 0 :propagations 38 :clauses 6127 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=46.000s usage=45.992s mem=240MiB load=1.00 rootload=1.00
+ramon: poll                 wall=47.000s usage=46.992s mem=240MiB load=1.00 rootload=0.99
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       8      1 0.0993726      3912         0          0          352        1)
+sls-result l_undef
+(nlsat :conflicts 1 :decisions 0 :propagations 39 :clauses 6128 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=48.047s usage=48.039s mem=240MiB load=1.00 rootload=1.00
+ramon: poll                 wall=49.000s usage=48.991s mem=240MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       4      1   0.09623      3959         0          0          348        1)
+sls-result l_undef
+SLS -> SMT activity
+(nlsat :conflicts 1 :decisions 0 :propagations 38 :clauses 5780 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=50.000s usage=49.991s mem=240MiB load=1.00 rootload=1.00
+ramon: poll                 wall=51.000s usage=50.991s mem=240MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       7      1 0.0918828      3946         0          0          351        1)
+sls-result l_undef
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=52.000s usage=51.991s mem=240MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       3      1 0.0888889      3972         0          0          347        1)
+sls-result l_undef
+ramon: poll                 wall=53.015s usage=53.006s mem=240MiB load=1.00 rootload=1.00
+(nlsat :conflicts 1 :decisions 0 :propagations 40 :clauses 5782 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+set value failed Nl2CT2 := (- 200004)
+v29 := -200004 Nl2CT2  muls: v30 v46 v78 v123 v148 v173 v198 v214 v239 v263 v298 v323 v349 v375 v392 v426 v443 v470 v492 v528 v554 v579 v604 v623 v654 v673 v698 v725 v756 v782 v807 v833 v859 v885 v910 v935 v953 v985 v1011 v1035 v1061 v1081 v1107 v1131 v1163 v1189 v1204 v1238 v1262 v1281 v1307 v1332 v1354 v1386 v1414 v1440 v1465 v1482 v1516 v1536 v1561 v1587 v1612 v1644 v1663 v1690 v1717 v1747 v1767 v1789 v1817 v1849 v1873 v1897 v1919 v1940 v1965 v2000 v2025 v2051 v2069 v2098 v2125 v2153 v2171 v2205 v2224 v2251 v2277 v2308 v2327 v2352 v2375 v2401 v2432 v2449 v2482 v2508 v2528 v2552 v2579 v2611 v2628 v2660 v2686 v2712 v2728 v2763 v2788 v2808 v2833 v2857 v2889 v2914 v2935 v2964 v2989 v3013 v3041 v3065 v3091 v3115 v3133 v3168 v3186 v3217 v3236 v3267 v3286 v3312 v3345 v3364 v3397 v3423 v3448 v3465 v3491 v3519 v3549 v3574 v3599 v3617 v3642 v3670 v3702 v3726 v3744 v3774 v3796 v3819 v3851 v3870 v3897 v3927 v3946 v3970 v4004 v4024 v4047 v4081 v4104 v4123 v4151 v4177 v4206 v4231 v4249 v4282 v4301 v4326 v4358 v4377 v4410 v4435 v4458 v4480 v4504 v4536 v4554 v4579 v4610 v4631 v4652 v4680 v4712 v4736 v4758 v4788 v4809 v4841 v4867 v4890 v4911 v4935 v4968 v4988 v5013 v5039 v5070 v5088 v5118 v5137 v5164 v5190 v5212 v5246 v5271 v5297 v5317 v5347 v5372 v5392 v5415 v5441 v5467 v5496 v5525 v5547 v5567 v5592 v5623 v5645 v5667 v5698 v5724 v5743 v5769 v5800 v5824 v5847 v5874 v5890 v5924 v5948 v5974 v6000 v6018 v6042 v6077 v6103 v6129 v6155 v6179 v6195 v6230 v6256 v6278 v6300 v6331 v6357 v6383 v6409 v6432 v6459 v6476 v6500 v6533 v6554 v6577 v6603 v6634 v6660 v6679 v6710 v6728 v6755 v6787 v6805 v6836 v6854 v6878 v6906 v6933 v6963 v6989 v7015 v7041 v7067 v7082 v7110 v7135 v7166 v7191 v7209 v7234 v7260 v7292 v7317 v7335 v7369 v7385 v7414 v7446 v7471 v7488 v7511 v7546 v7564 v7587 v7618 v7638 v7658 v7693 v7712 v7744 v7769 v7789 v7814 v7847 v7872 v7890 v7914 v7940 v7967 v7996 v8025 v8051 v8074 v8094 v8122 v8146 v8179 v8202 v8230 v8249 v8274 v8300 v8330 v8354 v8380 v8405 v8428 v8448 v8478 v8500 v8526 v8558 v8580 v8598 v8627 v8658 v8676 v8705 v8727 v8753 v8777 v8802   bool: -1@59 1@82 1@7763  := -200004
+bounded run 10000
+ramon: poll                 wall=54.000s usage=53.990s mem=240MiB load=1.00 rootload=0.99
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       3      1 0.0840965      3912         0          0          347        1)
+sls-result l_undef
+(nlsat :conflicts 1 :decisions 0 :propagations 40 :clauses 6134 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=55.000s usage=54.990s mem=242MiB load=1.00 rootload=1.00
+ramon: poll                 wall=56.000s usage=55.990s mem=242MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       4      1 0.0802011      3877         0          0          348        1)
+sls-result l_undef
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=57.000s usage=56.990s mem=242MiB load=1.00 rootload=1.00
+ramon: poll                 wall=58.000s usage=57.990s mem=242MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       3      1 0.0766559      3840         0          0          347        1)
+sls-result l_undef
+(nlsat :conflicts 1 :decisions 0 :propagations 40 :clauses 6134 :learned 1)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 10000
+ramon: poll                 wall=59.000s usage=58.990s mem=242MiB load=1.00 rootload=1.00
+ramon: poll                 wall=60.000s usage=59.990s mem=242MiB load=1.00 rootload=1.00
+ramon: end                  Tue Jan 21 21:11:28 2025
+ramon: root.execname        z3
+ramon: root.utime           59.950s
+ramon: root.stime           0.080s
+ramon: group.total          60.038s
+ramon: group.utime          59.954s
+ramon: group.stime          0.084s
+ramon: group.mempeak        242MiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             60.046s
+ramon: loadavg              1.00
