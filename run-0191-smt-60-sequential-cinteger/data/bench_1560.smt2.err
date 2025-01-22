@@ -1,0 +1,70 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Tue Jan 21 21:36:34 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         22384 MiB
+ramon: sys.mem.avail        59565 MiB
+ramon: sys.nprocs           1397
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/bench_1560.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = sls.arith_use_lookahead=false
+ramon: childpid             3111246
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units        :simplify   :memory)
+(smt.stats        :conflicts    :propagations         :lemmas      :deletions   )
+(smt.stats    0      0      0      0 83117/12676/13       0/0     0    0   25.11)
+(smt.stats    0    101    653  69752 72219/12686/2423      91/0     1 11229   60.45)
+(smt.stats    1    202    877 161416 72223/12690/2423     188/0     1 11229   60.54)
+(smt.stats    2    313   1613 229918 72228/12695/2423     294/0     1 11229   60.66)
+(smt.stats    3    414   2141 302901 72235/12702/2423     388/0     1 11229   60.66)
+(smt.stats    4    525   2341 387060 72236/12703/2423     498/0     1 11229   60.75)
+(smt.stats    5    647   3309 467016 72072/12706/2471     616/1     2 11396   60.75)
+SMT -> SLS units 14478 14482 -14506 14510 14512 -14536 14537 -15821 -16554 -16569 16577 -16597 16605 -4 -5 -6 -7 -8 -154 -155 -156 -152 -153
+value restriction -4 (bit2bool[3] T1@263)
+value restriction -5 (bit2bool[4] T1@263)
+value restriction -6 (bit2bool[5] T1@263)
+value restriction -7 (bit2bool[6] T1@263)
+value restriction -8 (bit2bool[7] T1@263)
+value restriction -154 (bit2bool[5] T1@267)
+value restriction -155 (bit2bool[6] T1@267)
+value restriction -156 (bit2bool[7] T1@267)
+value restriction -152 (bit2bool[3] T1@267)
+value restriction -153 (bit2bool[4] T1@267)
+bounded run 100000
+lookahead-search moves:0 max-moves:800
+lookahead-search moves:800 max-moves:1700
+lookahead-search moves:1700 max-moves:2700
+lookahead-search moves:2700 max-moves:3800
+ramon: poll                 wall=1.001s usage=0.993s mem=63380KiB load=0.99 rootload=0.98
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2     70   10.7411     10000        25          0            1        1)
+lookahead-search moves:3800 max-moves:5000
+lookahead-search moves:5000 max-moves:6300
+lookahead-search moves:6300 max-moves:7700
+lookahead-search moves:7700 max-moves:9200
+ramon: poll                 wall=2.000s usage=1.991s mem=63132KiB load=1.00 rootload=0.99
+(sat.ddfw       2     85   4.53721     20000        63          1            1        2)
+lookahead-search moves:9200 max-moves:10800
+on-model 
+(sat.ddfw       0      1  0.282699     20683        66          2            0        2)
+sls-result l_true
+ramon: end                  Tue Jan 21 21:36:36 2025
+ramon: root.execname        z3
+ramon: root.utime           2.510s
+ramon: root.stime           0.010s
+ramon: group.total          2.529s
+ramon: group.utime          2.513s
+ramon: group.stime          0.016s
+ramon: group.mempeak        63388KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             2.538s
+ramon: loadavg              1.00

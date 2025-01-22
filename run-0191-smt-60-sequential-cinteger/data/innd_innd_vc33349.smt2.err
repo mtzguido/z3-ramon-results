@@ -1,0 +1,50 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Tue Jan 21 21:32:54 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         8615 MiB
+ramon: sys.mem.avail        59566 MiB
+ramon: sys.nprocs           1413
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/innd_innd_vc33349.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = sls.arith_use_lookahead=false
+ramon: childpid             3087703
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units        :simplify   :memory)
+(smt.stats        :conflicts    :propagations         :lemmas      :deletions   )
+(smt.stats    0      0      0      0 227458/6153/12       0/0     0    0   65.05)
+(smt.stats    0    101   4148  96052 227674/6157/25      97/0     1    4  110.52)
+(smt.stats    1    202   4739 118182 227584/6157/25     198/0     1    4  110.61)
+(smt.stats    2    313   5443 185780 227584/6157/25     309/0     1    4  110.61)
+(smt.stats    3    414   6766 277405 227716/6157/25     410/0     1    4  111.00)
+(smt.stats    4    525  10776 435545 227585/6158/25     520/0     1    4  111.09)
+(smt.stats    5    647  15125 730146 227585/6158/25     642/0     1    4  111.19)
+SMT -> SLS units -33 -98 -131 -12450 -26538 -39632 39677 39931 39996 40065 42158 -39995 -42157
+value restriction -39995 (bit2bool[63] v40347372)
+value restriction -42157 (bit2bool[31] (if (bvsle bv[0:32] #1655) (if #1816 bv[0:32] bv[4294967295:32]) v39788372))
+bounded run 100000
+lookahead-search moves:0 max-moves:800
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      1   2.18293       179         0          0            0       20)
+sls-result l_true
+ramon: end                  Tue Jan 21 21:32:55 2025
+ramon: root.execname        z3
+ramon: root.utime           0.340s
+ramon: root.stime           0.020s
+ramon: group.total          0.373s
+ramon: group.utime          0.350s
+ramon: group.stime          0.024s
+ramon: group.mempeak        115MiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.375s
+ramon: loadavg              1.00

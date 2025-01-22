@@ -1,0 +1,16 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-60-sequential-cinteger
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: fc9ff946b72c271d52c5ae08f3036905890de9b1
+Z3 branch: master
+Z3 options: "-T:60 -v:2 -st tactic.default_tactic="(then simplify propagate-values solve-eqs simplify smt)" smt.sls.enable=true smt.sls.parallel=false model_validate=true sls.arith_use_lookahead=false"
+Z3 inputs: inputs/QF_BV_SAT
+Z3 commit message: use cmake from PyPI only when system executable is not available (#7514)
+
+Rather than pulling `cmake` from PyPI unconditionally, add it to build
+dependencies only if the system `cmake` executable cannot be found.
+This eliminates an unnecessary dependency on systems featuring CMake,
+and ensures that whenever possible, a downstream patched CMake version
+is used that is more compatible with the system in question.

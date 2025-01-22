@@ -1,0 +1,67 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Tue Jan 21 21:34:48 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         22047 MiB
+ramon: sys.mem.avail        59565 MiB
+ramon: sys.nprocs           1412
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/bin_libsmbsharemodes_vc7119.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = sls.arith_use_lookahead=false
+ramon: childpid             3100499
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units         :simplify   :memory)
+(smt.stats        :conflicts    :propagations          :lemmas      :deletions   )
+(smt.stats    0      0      0      0 199301/58278/12       0/0     0    0   49.69)
+(smt.stats    0    101  12514 137770 199817/58296/131      84/0     1   24   87.90)
+(smt.stats    1    202  28500 371657 201175/58308/131     173/0     1   24   88.44)
+(smt.stats    2    313  38891 469793 200321/58311/131     281/0     2   25   88.53)
+(smt.stats    3    414  41904 522486 200402/58312/131     381/0     2   25   88.77)
+(smt.stats    4    525  48868 622080 202200/58317/131     487/0     2   25   88.86)
+(smt.stats    5    647  60341 722808 200113/58317/131     609/0     2   25   88.86)
+SMT -> SLS units -33 -66 -163 -16996 -20337 41472 -4181 -32477 -54342 54729 45595 41476 4359 200 -198 229 -54411 54181 51457 40520 26761 4360 41477 45596 -47995 -47996 -47997 -47998 -47999 -48000 -48001 -48002 -42829 -42830 -42831 -42832 -42833 -42834 -42835 -42836 49232
+value restriction 200 (bit2bool[3] v98901272)
+value restriction -198 (bit2bool[1] v98901272)
+value restriction -47995 (bit2bool[0] (if (= #9731 bv[0:1]) (if #15379 v65413492 bv[0:8]) (if #18909 v93522128 #19228)))
+value restriction -47996 (bit2bool[1] (if (= #9731 bv[0:1]) (if #15379 v65413492 bv[0:8]) (if #18909 v93522128 #19228)))
+value restriction -47997 (bit2bool[2] (if (= #9731 bv[0:1]) (if #15379 v65413492 bv[0:8]) (if #18909 v93522128 #19228)))
+value restriction -47998 (bit2bool[3] (if (= #9731 bv[0:1]) (if #15379 v65413492 bv[0:8]) (if #18909 v93522128 #19228)))
+value restriction -47999 (bit2bool[4] (if (= #9731 bv[0:1]) (if #15379 v65413492 bv[0:8]) (if #18909 v93522128 #19228)))
+value restriction -48000 (bit2bool[5] (if (= #9731 bv[0:1]) (if #15379 v65413492 bv[0:8]) (if #18909 v93522128 #19228)))
+value restriction -48001 (bit2bool[6] (if (= #9731 bv[0:1]) (if #15379 v65413492 bv[0:8]) (if #18909 v93522128 #19228)))
+value restriction -48002 (bit2bool[7] (if (= #9731 bv[0:1]) (if #15379 v65413492 bv[0:8]) (if #18909 v93522128 #19228)))
+value restriction -42829 (bit2bool[0] (if (= #9731 bv[0:1]) (if #15379 v221688392 bv[0:8]) (if #17970 v93522128 #17934)))
+value restriction -42830 (bit2bool[1] (if (= #9731 bv[0:1]) (if #15379 v221688392 bv[0:8]) (if #17970 v93522128 #17934)))
+value restriction -42831 (bit2bool[2] (if (= #9731 bv[0:1]) (if #15379 v221688392 bv[0:8]) (if #17970 v93522128 #17934)))
+value restriction -42832 (bit2bool[3] (if (= #9731 bv[0:1]) (if #15379 v221688392 bv[0:8]) (if #17970 v93522128 #17934)))
+value restriction -42833 (bit2bool[4] (if (= #9731 bv[0:1]) (if #15379 v221688392 bv[0:8]) (if #17970 v93522128 #17934)))
+value restriction -42834 (bit2bool[5] (if (= #9731 bv[0:1]) (if #15379 v221688392 bv[0:8]) (if #17970 v93522128 #17934)))
+value restriction -42835 (bit2bool[6] (if (= #9731 bv[0:1]) (if #15379 v221688392 bv[0:8]) (if #17970 v93522128 #17934)))
+value restriction -42836 (bit2bool[7] (if (= #9731 bv[0:1]) (if #15379 v221688392 bv[0:8]) (if #17970 v93522128 #17934)))
+bounded run 100000
+lookahead-search moves:0 max-moves:800
+on-model 
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      1   12.9639      1076         0          0            0       71)
+sls-result l_true
+ramon: end                  Tue Jan 21 21:34:48 2025
+ramon: root.execname        z3
+ramon: root.utime           0.430s
+ramon: root.stime           0.020s
+ramon: group.total          0.461s
+ramon: group.utime          0.437s
+ramon: group.stime          0.024s
+ramon: group.mempeak        92428KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.484s
+ramon: loadavg              0.95

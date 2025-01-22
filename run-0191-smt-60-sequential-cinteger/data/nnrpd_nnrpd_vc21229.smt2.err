@@ -1,0 +1,51 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Tue Jan 21 21:30:32 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         26679 MiB
+ramon: sys.mem.avail        59566 MiB
+ramon: sys.nprocs           1349
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/nnrpd_nnrpd_vc21229.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = sls.arith_use_lookahead=false
+ramon: childpid             3071734
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units        :simplify   :memory)
+(smt.stats        :conflicts    :propagations         :lemmas      :deletions   )
+(smt.stats    0      0      0      0 229144/7316/15       0/0     0    0   65.25)
+(smt.stats    0    101   3467 113411 229357/7322/29      95/0     1    8  111.06)
+(smt.stats    1    202   5408 217205 229420/7322/29     196/0     1    8  111.21)
+(smt.stats    2    313   6339 256717 229268/7322/29     307/0     1    8  111.31)
+(smt.stats    3    414   7194 277424 229268/7322/29     408/0     1    8  111.31)
+(smt.stats    4    748   8902 550957 229530/7324/29     740/0     1    8  111.40)
+(smt.stats    5    859   9648 612947 229461/7324/29     851/0     1    8  111.50)
+SMT -> SLS units -33 -98 -131 -12488 -26576 -39635 40023 40107 40361 40426 40495 43076 -40022 -40425 -43075
+value restriction -40022 (bit2bool[31] (if (bvsle bv[0:64] v30773304) (if #1997 bv[0:32] bv[4294967295:32]) v30300032))
+value restriction -40425 (bit2bool[63] v26478696)
+value restriction -43075 (bit2bool[31] (if (bvsle bv[0:32] #1839) (if #1996 bv[0:32] bv[4294967295:32]) v19369536))
+bounded run 100000
+lookahead-search moves:0 max-moves:800
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      1      9.45       189         0          0            0       30)
+sls-result l_true
+ramon: end                  Tue Jan 21 21:30:33 2025
+ramon: root.execname        z3
+ramon: root.utime           0.330s
+ramon: root.stime           0.030s
+ramon: group.total          0.373s
+ramon: group.utime          0.337s
+ramon: group.stime          0.036s
+ramon: group.mempeak        116MiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.379s
+ramon: loadavg              0.99

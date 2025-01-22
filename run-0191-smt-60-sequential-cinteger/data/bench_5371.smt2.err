@@ -1,0 +1,96 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Tue Jan 21 21:31:57 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         25166 MiB
+ramon: sys.mem.avail        59566 MiB
+ramon: sys.nprocs           1409
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/bench_5371.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = sls.arith_use_lookahead=false
+ramon: childpid             3081196
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units       :simplify   :memory)
+(smt.stats        :conflicts    :propagations        :lemmas      :deletions   )
+(smt.stats    0      0      0      0 32025/5065/57       0/0     0    0   21.18)
+(smt.stats    0    101   1434  22226 33698/5205/351      96/0     1  227   55.42)
+(smt.stats    1    202   2163  45347 33699/5206/416     195/0     1  227   55.53)
+(smt.stats    2    313   2307  98292 33702/5209/416     303/0     1  227   55.53)
+(smt.stats    3    414   3142 122397 33533/5212/416     401/1     2  399   55.53)
+(smt.stats    4    525   3470 171569 33542/5221/416     503/1     2  399   55.53)
+(smt.stats    5    647   4094 203868 33543/5222/416     624/1     2  399   55.62)
+SMT -> SLS units -45 -714 -776 -1067 -1127 -1186 -1248 -1307 -1368 -1911 -1971 -2030 -2090 -2149 -2205 -2374 -2432 -2490 -2615 -2669 -2730 -3216 -3277 -3336 -3398 -3457 -3518 -3876 -3932 -3991 -4045 -4103 -4163 -4962 -5058 5113 5606 5667 5724 5771 5785 5847 -5909 -5971 6103 -6165 6241 6303 -6365 6564 6576 6592 -6654 -6716 -6811 -6896 -6958 -4994 -4995 -4996 -4997 -52 -53 -5691 -5630 -5614 -5675 -5732 -5690 -5629 -5613 -5674 -5731 -8 -7
+value restriction -4994 (bit2bool[4] T1_11166)
+value restriction -4995 (bit2bool[5] T1_11166)
+value restriction -4996 (bit2bool[6] T1_11166)
+value restriction -4997 (bit2bool[7] T1_11166)
+value restriction -52 (bit2bool[6] T1_11168)
+value restriction -53 (bit2bool[7] T1_11168)
+value restriction -5691 (bit2bool[7] T1_11008)
+value restriction -5630 (bit2bool[7] T1_10878)
+value restriction -5614 (bit2bool[7] T1_10942)
+value restriction -5675 (bit2bool[7] T1_11071)
+value restriction -5732 (bit2bool[7] T1_11132)
+value restriction -5690 (bit2bool[6] T1_11008)
+value restriction -5629 (bit2bool[6] T1_10878)
+value restriction -5613 (bit2bool[6] T1_10942)
+value restriction -5674 (bit2bool[6] T1_11071)
+value restriction -5731 (bit2bool[6] T1_11132)
+value restriction -8 (bit2bool[7] T1_11049)
+value restriction -7 (bit2bool[6] T1_11049)
+bounded run 100000
+lookahead-search moves:0 max-moves:800
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       8    107   67.6351     10010         0          0           15        1)
+(sat.ddfw       6    205   60.2711     20015         0          1           18        2)
+lookahead-search moves:800 max-moves:1700
+(sat.ddfw       6    377   59.5119     40011         0          2           15        4)
+lookahead-search moves:1700 max-moves:2700
+(sat.ddfw       6    444   56.1074     68233         0          3           15        6)
+sls-result l_undef
+SLS -> SMT activity
+(smt.stats :restarts  :decisions  :clauses/bin/units          :simplify   :memory)
+(smt.stats      :conflicts :propagations            :lemmas      :deletions     )
+(smt.stats    6    748   4915 226341 33544/5223/416     724/1     2  399   55.77)
+bounded run 100000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw      12    176   19.1705     10007         0          0           16        1)
+lookahead-search moves:2700 max-moves:3800
+(sat.ddfw       6     82   14.4199     20000         0          1           11        2)
+lookahead-search moves:3800 max-moves:5000
+(sat.ddfw       6    348   24.1838     40000         0          2            3        4)
+lookahead-search moves:5000 max-moves:6300
+ramon: poll                 wall=1.000s usage=0.964s mem=58000KiB load=0.96 rootload=0.95
+(sat.ddfw       6    428   23.5904     67530         0          3            3        6)
+sls-result l_undef
+SLS -> SMT activity
+(smt.stats    7    859   5784 235528 33544/5223/416     835/1     2  399   55.77)
+(smt.stats    8    981   6976 264422 33564/5243/416     937/1     2  399   55.77)
+bounded run 100000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       8    174   8.40336     10000         0          0            2        1)
+(sat.ddfw       8    296   8.27815     20000         0          1            5        2)
+lookahead-search moves:6300 max-moves:7700
+on-model 
+(sat.ddfw       0      1   5.38217     26760         0          2            0        3)
+sls-result l_true
+ramon: end                  Tue Jan 21 21:31:59 2025
+ramon: root.execname        z3
+ramon: root.utime           1.310s
+ramon: root.stime           0.010s
+ramon: group.total          1.322s
+ramon: group.utime          1.310s
+ramon: group.stime          0.012s
+ramon: group.mempeak        58000KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             1.357s
+ramon: loadavg              0.97

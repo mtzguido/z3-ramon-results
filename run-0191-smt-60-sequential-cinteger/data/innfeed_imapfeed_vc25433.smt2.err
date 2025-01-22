@@ -1,0 +1,50 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Tue Jan 21 21:35:24 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         22425 MiB
+ramon: sys.mem.avail        59565 MiB
+ramon: sys.nprocs           1413
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_BV_SAT/innfeed_imapfeed_vc25433.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = sls.arith_use_lookahead=false
+ramon: childpid             3103901
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units        :simplify   :memory)
+(smt.stats        :conflicts    :propagations         :lemmas      :deletions   )
+(smt.stats    0      0      0      0 227460/6148/10       0/0     0    0   65.07)
+(smt.stats    0    101   9497 107080 227588/6152/24      96/0     1    6  127.25)
+(smt.stats    1    202  11295 217271 227648/6153/27     193/0     1    6  127.44)
+(smt.stats    2    313  11895 265279 227654/6159/27     298/0     1    6  127.55)
+(smt.stats    3    414  16798 349200 227660/6160/27     398/0     1    6  127.55)
+SMT -> SLS phase
+SMT -> SLS units -65 -14153 -26472 26779 -41658 41703 41957 42059 -26778 -42058
+value restriction -26778 (bit2bool[31] (if (bvsle bv[0:32] #1544) (if #1551 bv[0:32] bv[4294967295:32]) v23834188))
+value restriction -42058 (bit2bool[63] v41939532)
+SMT -> SLS values
+bounded run 30000
+lookahead-search moves:0 max-moves:800
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      1   2.30357       258         0          0            0      142)
+sls-result l_true
+ramon: end                  Tue Jan 21 21:35:25 2025
+ramon: root.execname        z3
+ramon: root.utime           0.400s
+ramon: root.stime           0.020s
+ramon: group.total          0.426s
+ramon: group.utime          0.402s
+ramon: group.stime          0.024s
+ramon: group.mempeak        148MiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.478s
+ramon: loadavg              0.89
