@@ -1,0 +1,61 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Wed Jan 22 11:24:30 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         25820 MiB
+ramon: sys.mem.avail        59538 MiB
+ramon: sys.nprocs           1407
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_CInteger/Stroeder_15__Narrowing.c__p24525_terminationG_0.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = sls.arith_use_clausal_lookahead=true
+ramon: childpid             3236849
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units       :simplify   :memory)
+(smt.stats        :conflicts    :propagations        :lemmas      :deletions   )
+(smt.stats    0      0      0      0  1667/1583/27       0/0     0    0   20.58)
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 30000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1      2   47.5804     10658         0          0           17     2161)
+(sat.ddfw       1      6   22.1507     21091         0          1            7     4229)
+sls-result l_undef
+SLS -> SMT phase 1
+SLS -> SMT values
+SMT -> SLS phase
+SMT -> SLS values
+bounded run 20000
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2      2   16.6308     11442         0          0            5     1201)
+(sat.ddfw       2      4   4.54923     15277         0          1            7     2038)
+sls-result l_undef
+(nlsat :conflicts 4 :decisions 0 :propagations 284 :clauses 743 :learned 4)
+SMT -> SLS phase
+SMT -> SLS values
+set value failed Nl2CT2 := (- 40)
+v17 := -40 Nl2CT2  muls: v19 v26 v48 v62 v68 v90 v104 v111 v132 v369 v377 v385 v396 v408 v419 v429 v437 v454 v466 v483 v490 v510 v516 v539 v550 v567 v574 v623 v644 v653 v667 v681 v697   bool: -1@119 -1@141 -1@164 -1@186 -1@207 -1@231 1@239  := -40
+bounded run 10000
+on-model 
+(sat.ddfw :unsat :models :kflips/sec  :flips  :restarts  :reinits  :unsat_vars  :shifts)
+(sat.ddfw       0      1  0.393975       340         0          0            0        4)
+sls-result l_true
+ramon: end                  Wed Jan 22 11:24:31 2025
+ramon: root.execname        z3
+ramon: root.utime           0.890s
+ramon: root.stime           0.010s
+ramon: group.total          0.906s
+ramon: group.utime          0.894s
+ramon: group.stime          0.012s
+ramon: group.mempeak        60244KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             0.948s
+ramon: loadavg              0.96
