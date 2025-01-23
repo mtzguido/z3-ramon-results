@@ -1,0 +1,10 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-60-clausal-lookahead-sequential-cinteger
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: b149d1f803819b14bd8646dee7cbf9c2b5b66270
+Z3 branch: master
+Z3 options: "-T:60 -v:2 -st tactic.default_tactic="(then simplify propagate-values solve-eqs simplify smt)" smt.sls.enable=true smt.sls.parallel=false model_validate=true sls.arith_use_clausal_lookahead=true"
+Z3 inputs: inputs/QF_NIA_CInteger
+Z3 commit message: count every lookahead as activity
