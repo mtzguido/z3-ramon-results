@@ -1,0 +1,12 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-60-clausal-lookahead-sequential-cinteger
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: e32f685f145d8d1149b22cc3bfe055100cbcccc3
+Z3 branch: master
+Z3 options: "-T:60 -v:2 -st tactic.default_tactic="(then simplify propagate-values solve-eqs simplify smt)" smt.sls.enable=true smt.sls.parallel=false model_validate=true sls.arith_use_clausal_lookahead=true"
+Z3 inputs: inputs/QF_NIA_CInteger
+Z3 commit message: disable backoff on smt->sls value export
+
+Signed-off-by: Nikolaj Bjorner <nbjorner@microsoft.com>
