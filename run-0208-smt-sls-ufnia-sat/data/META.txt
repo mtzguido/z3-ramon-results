@@ -1,0 +1,12 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-sls-ufnia-sat
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: 04d0e9492b0066675c75fc5fb1df6b23b79607e5
+Z3 branch: master
+Z3 options: "-T:60 -v:2 -st tactic.default_tactic="(then simplify propagate-values solve-eqs simplify sls-smt)" model_validate=true sls.arith_use_clausal_lookahead=true"
+Z3 inputs: inputs/QF_UFNIA_SAT
+Z3 commit message: set log level of revert repair down to 3
+
+Signed-off-by: Nikolaj Bjorner <nbjorner@microsoft.com>
