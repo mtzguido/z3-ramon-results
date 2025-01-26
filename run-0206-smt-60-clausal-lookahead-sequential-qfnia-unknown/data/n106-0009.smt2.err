@@ -1,0 +1,217 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Sun Jan 26 12:57:16 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         17520 MiB
+ramon: sys.mem.avail        59389 MiB
+ramon: sys.nprocs           1346
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_UFNIA_UNKNOWN/n106-0009.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = sls.arith_use_clausal_lookahead=true
+ramon: childpid             3930551
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units        :simplify   :memory)
+(smt.stats        :conflicts    :propagations         :lemmas      :deletions   )
+(smt.stats    0      0      0      0  1407/1122/853       0/0     0    0   21.41)
+revert to bignum solver register_term(e)
+SMT -> SLS values
+SMT -> SLS values
+SMT -> SLS values
+(sat.ddfw :unsat :models :kflips/sec   :flips :restarts   :reinits  :unsat_vars  :shifts)
+(sat.ddfw     291      1     3.9623      1260         0          0          339        7)
+SLS -> SMT phase. unsat size: 291
+SLS -> SMT values
+SMT -> SLS values
+SMT -> SLS values
+(sat.ddfw     197      1     1.4776      2086         0          0          229        8)
+SLS -> SMT phase. unsat size: 197
+SLS -> SMT values
+SMT -> SLS values
+SMT -> SLS units 22 23 -24 25 -26 27 -28 29 -41 42 -43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 -79 80 81 -82 83 -89 90 -91 92 93 94 95 96 97 -98 99 -100 101 107 -108 -109 110 -111 112 -113 114 123 124 125 126 127 -128 129 130 131 132 133 134 135 136 137 138 139 -140 -141 144 -145 146 -147 148 149 -194 195 -196 197 198 -199 200 -201 202 206 -207 -208 209 -210 211 -212 213 -214 215 216 -217 218 222 223 -224 225 -226 227 228 229 248 249 -250 -251 252 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 441 442 443 444 445 446 447 448 449 450 451 452 453 454 455 456 457 458 459 460 461 462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 501 502 503 504 505 506 507 508 509 510 511 512 513 -514 515 516 -517 518 -519 520 529 530 531 532 533 -534 535 -536 537 538 -539 540 -541 542 543 544 -545 546 -547 548 -549 550 -556 557 -558 559 560 561 562 563 564 565 -566 567 -568 569 570 -576 577 -578 579 -580 581 582 -583 584 593 594 595 596 597 -598 599 -600 603 -604 605 -606 607 608 -609 610 -611 612 -613 614 -615 -616 73 -617 618 -626 627 -635 -636 -637 -638 639 640 -641 642 -653 654 -661 662 -663 664 665 -666 667 -668 669 673 674 675 676 677 -678 681 682 -683 684 685 -686 687 -688 689 -690 691 -692 693 -694 695 -696 697 698 699 -700 701 -702 703 706 707 -708 -709 710 -711 712 -713 714 -715 153 -716 717 -718 719 -725 726 727 -728 732 733 -734 735 -736 739 -740 741 -742 743 -744 745 746 -747 748 749 -750 751 752 753 -754 755 756 -757 758 -759 763 764 -765 62 -766 767 768 -774 775 -776 777 778 779 780 781 782 783 784 785 786 787 791 795 799 800 801 -802 803 -804 805 -806 807 -808 809 810 811 812 813 814 -815 -816 817 -818 819 820 -821 822 823 -824 825 -826 827 828 829 830 831 832 -833 834 -840 841 -842 843 -844 845 -846 847 -848 849 -850 851 -852 855 -856 857 860 861 862 863 864 865 -866 867 -868 869 870 871 872 873 874 875 -876 877 -878 -879 880 881 -882 883 884 -885 886 -887 888 889 890 -891 892 901 902 903 904 905 906 907 -908 909 912 913 914 915 916 -917 918 -919 920 -921 922 923 -924 925 -926 930 931 932 933 934 -935 936 937 -938 941 -942 -943 -944 947 948 949 950 951 952 953 954 955 628 -956 957 -958 620 -959 960 151 -961 962 963 964 -965 966 967 968 -969 970 -971 972 -973 974 -975 976 -977 978 979 980 981 982 983 -984 985 -986 987 991 992 993 994 995 996 -997 -998 999 -1000 1001 -1002 1003 -1004 1005 -1006 1007 1008 1009 1010 1011 1012 1013 -1014 1015 1016 1017 1018 -1019 1023 1024 -1025 1029 1030 1031 1032 -1033 1034 -1035 -1036 1040 1041 1042 1043 1044 1045 -1046 1050 -1051 1055 -1056 1060 1061 1062 -1063 1066 1067 1068 1069 1070 1071 1072 1073 1074 1075 1076 1082 -761 1083 1084 1085 1090 1091 1092 1093 1096 1097 1102 1103 -1104 1112 1113 1114 1116 -1119 -1128 1131 -762 760 1543 1531 1504 1434 1418 1169 649 142 1566 155 836 1556 1488 154 156 770 1537 645 644 721 -629 572 1214 157 571 69 85 152 150 -158 1153 1159 1253 1278 1291 1344 1406 1412 1440 1455 1510 1523 143 646 -630 573 -159 574 161
+(sat.ddfw     161      1     0.9440      2693         0          0          187       15)
+SLS -> SMT phase. unsat size: 161
+SLS -> SMT values
+SMT -> SLS values
+(sat.ddfw     108      1     0.7174      3226         0          0          128       25)
+SLS -> SMT phase. unsat size: 108
+SLS -> SMT values
+SMT -> SLS values
+SMT -> SLS values
+SMT -> SLS units -63 -162 30 -64 -163 165 1204 -166 -167 169 -170 -171 173 -1168 -1170
+ramon: poll                 wall=1.000s usage=0.920s mem=62068KiB load=0.92 rootload=0.90
+(sat.ddfw      20      1     0.5797      3757         0          0           36       58)
+SLS -> SMT phase. unsat size: 20
+SLS -> SMT values
+SMT -> SLS values
+(sat.ddfw      20      2     0.4174      4310         0          0           68      281)
+SMT -> SLS values
+SMT -> SLS values
+ramon: poll                 wall=2.000s usage=1.920s mem=62068KiB load=1.00 rootload=1.00
+(sat.ddfw      20      3     0.3098      4941         0          0           82      411)
+SMT -> SLS values
+SMT -> SLS values
+(sat.ddfw      20      4     0.2209      5538         0          0           83      567)
+SMT -> SLS values
+ramon: poll                 wall=3.000s usage=2.919s mem=62488KiB load=1.00 rootload=1.00
+(sat.ddfw      20      5     0.1999      6227         0          0           65      670)
+SMT -> SLS values
+ramon: poll                 wall=4.000s usage=3.919s mem=62376KiB load=1.00 rootload=1.00
+(sat.ddfw      20      6     0.1471      6876         0          0           75      774)
+SMT -> SLS values
+ramon: poll                 wall=5.000s usage=4.918s mem=62276KiB load=1.00 rootload=1.00
+(sat.ddfw      20      7     0.1309      7546         0          0           81      926)
+SMT -> SLS values
+(sat.ddfw      20      8     0.1303      8303         0          0           86      944)
+SMT -> SLS values
+ramon: poll                 wall=6.000s usage=5.917s mem=62392KiB load=1.00 rootload=1.00
+(sat.ddfw      20      9     0.1278      9127         0          0           89      996)
+SMT -> SLS values
+ramon: poll                 wall=7.024s usage=6.945s mem=62396KiB load=1.00 rootload=1.01
+(sat.ddfw      20     10     0.1140      9923         0          0           76     1041)
+SMT -> SLS values
+(sat.ddfw      20     10     0.0126     10011         0          0          142     1041)
+(sat.ddfw      20     11     0.0891     10677         0          1           74     1098)
+SMT -> SLS values
+ramon: poll                 wall=8.000s usage=7.916s mem=62400KiB load=1.00 rootload=0.99
+(sat.ddfw      20     12     0.0838     11363         0          1           77     1188)
+SMT -> SLS values
+(sat.ddfw      20     13     0.0799     12057         0          1           81     1256)
+SMT -> SLS values
+ramon: poll                 wall=9.000s usage=8.915s mem=62444KiB load=1.00 rootload=1.00
+(sat.ddfw      20     14     0.0677     12691         0          1          121     1323)
+SMT -> SLS values
+ramon: poll                 wall=10.000s usage=9.915s mem=62340KiB load=1.00 rootload=1.00
+(sat.ddfw      20     15     0.0770     13459         0          1          103     1377)
+SMT -> SLS values
+(sat.ddfw      20     16     0.0694     14199         0          1           77     1404)
+SLS -> SMT activity
+SMT -> SLS values
+ramon: poll                 wall=11.000s usage=10.914s mem=62564KiB load=1.00 rootload=1.00
+(sat.ddfw      20     17     0.0767     15065         0          1          104     1445)
+SMT -> SLS values
+ramon: poll                 wall=12.000s usage=11.914s mem=62688KiB load=1.00 rootload=1.00
+(sat.ddfw      20     18     0.0649     15837         0          1           90     1481)
+SMT -> SLS values
+(sat.ddfw      20     19     0.0625     16634         0          1           76     1523)
+SMT -> SLS values
+ramon: poll                 wall=13.000s usage=12.914s mem=62688KiB load=1.00 rootload=1.00
+(sat.ddfw      20     20     0.0595     17445         0          1           74     1576)
+SMT -> SLS values
+ramon: poll                 wall=14.000s usage=13.914s mem=62688KiB load=1.00 rootload=1.00
+(sat.ddfw      20     21     0.0479     18127         0          1           77     1627)
+SMT -> SLS values
+ramon: poll                 wall=15.000s usage=14.914s mem=62688KiB load=1.00 rootload=1.00
+(sat.ddfw      20     22     0.0502     18879         0          1          121     1662)
+SMT -> SLS values
+ramon: poll                 wall=16.000s usage=15.914s mem=62688KiB load=1.00 rootload=1.00
+(sat.ddfw      20     23     0.0458     19606         0          1           89     1719)
+SMT -> SLS values
+(sat.ddfw      20     24     0.0502     20437         0          1           87     1761)
+SMT -> SLS values
+SMT -> SLS values
+(sat.ddfw      20     24     0.0072     20556         0          1          180     1761)
+ramon: poll                 wall=17.000s usage=16.914s mem=62944KiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec   :flips :restarts   :reinits  :unsat_vars  :shifts)
+(sat.ddfw      20     25     0.0293     21059         0          2           58     1865)
+SMT -> SLS values
+(sat.ddfw      20     26     0.0361     21703         0          2           61     2011)
+SMT -> SLS values
+SMT -> SLS values
+ramon: poll                 wall=18.000s usage=17.910s mem=62984KiB load=1.00 rootload=0.99
+(sat.ddfw      20     27     0.0430     22490         0          2           53     2064)
+SMT -> SLS values
+(sat.ddfw      20     28     0.0388     23219         0          2           72     2100)
+SMT -> SLS values
+ramon: poll                 wall=19.000s usage=18.909s mem=63136KiB load=1.00 rootload=1.00
+(sat.ddfw      20     28     0.0418     24022         0          2           65     2243)
+SMT -> SLS values
+ramon: poll                 wall=20.000s usage=19.909s mem=63392KiB load=1.00 rootload=1.00
+(sat.ddfw      20     29     0.0390     24798         0          2           59     2285)
+SMT -> SLS values
+(sat.ddfw      20     30     0.0384     25576         0          2           66     2331)
+SMT -> SLS values
+(sat.ddfw      20     31     0.0402     26408         0          2           45     2384)
+SMT -> SLS values
+ramon: poll                 wall=21.000s usage=20.909s mem=63392KiB load=1.00 rootload=1.00
+(sat.ddfw      20     32     0.0402     27261         0          2           72     2423)
+SMT -> SLS values
+(sat.ddfw      20     33     0.0354     28035         0          2           38     2451)
+SMT -> SLS values
+ramon: poll                 wall=22.000s usage=21.909s mem=63392KiB load=1.00 rootload=1.00
+(sat.ddfw      20     34     0.0349     28820         0          2           47     2480)
+SMT -> SLS values
+ramon: poll                 wall=23.000s usage=22.909s mem=63392KiB load=1.00 rootload=1.00
+(sat.ddfw      20     35     0.0311     29540         0          2           53     2507)
+SLS -> SMT activity
+SMT -> SLS values
+(sat.ddfw      20     36     0.0323     30306         0          2           60     2564)
+SMT -> SLS values
+ramon: poll                 wall=24.000s usage=23.909s mem=63648KiB load=1.00 rootload=0.99
+(sat.ddfw      20     37     0.0321     31089         0          2           65     2585)
+SMT -> SLS values
+ramon: poll                 wall=25.000s usage=24.909s mem=63648KiB load=1.00 rootload=1.00
+(sat.ddfw      20     38     0.0332     31916         0          2           84     2627)
+SMT -> SLS values
+(sat.ddfw      20     39     0.0304     32691         0          2           86     2659)
+SMT -> SLS values
+ramon: poll                 wall=26.000s usage=25.909s mem=63540KiB load=1.00 rootload=1.00
+(sat.ddfw      20     39     0.0286     33436         0          2           98     2689)
+SMT -> SLS values
+(sat.ddfw      20     40     0.0295     34222         0          2          101     2747)
+SMT -> SLS values
+ramon: poll                 wall=27.000s usage=26.908s mem=63540KiB load=1.00 rootload=1.00
+(sat.ddfw      20     41     0.0297     35029         0          2          109     2773)
+(smt.stats    0    101   9506   4836  1742/1380/1021     329/104     8   67   60.41)
+SMT -> SLS values
+ramon: poll                 wall=28.044s usage=27.955s mem=63460KiB load=1.00 rootload=1.01
+(sat.ddfw      20     42     0.0288     35834         0          2           84     2818)
+SMT -> SLS values
+(sat.ddfw      20     43     0.0274     36623         0          2           86     2844)
+SMT -> SLS values
+ramon: poll                 wall=29.000s usage=28.907s mem=64244KiB load=1.00 rootload=0.99
+(sat.ddfw      20     44     0.0267     37404         0          2           79     2862)
+SMT -> SLS values
+(sat.ddfw      20     45     0.0250     38150         0          2           92     2897)
+SMT -> SLS values
+ramon: poll                 wall=30.000s usage=29.906s mem=64104KiB load=1.00 rootload=1.00
+(sat.ddfw      20     46     0.0258     38928         0          2           82     2925)
+SMT -> SLS values
+(sat.ddfw      20     47     0.0249     39695         0          2           75     2946)
+SMT -> SLS values
+ramon: poll                 wall=31.000s usage=30.906s mem=64104KiB load=1.00 rootload=1.00
+(sat.ddfw      20     48     0.0235     40433         0          2           80     2973)
+SMT -> SLS values
+(sat.ddfw      20     48     0.0043     40567         0          2          197     2973)
+ramon: poll                 wall=32.000s usage=31.905s mem=64104KiB load=1.00 rootload=1.00
+(sat.ddfw      20     49     0.0202     41214         0          3           76     3022)
+SMT -> SLS values
+SMT -> SLS values
+(sat.ddfw      20     50     0.0238     41989         0          3           72     3058)
+SMT -> SLS values
+ramon: poll                 wall=33.000s usage=32.904s mem=64372KiB load=1.00 rootload=1.00
+(sat.ddfw      20     51     0.0230     42752         0          3           82     3107)
+SMT -> SLS values
+ramon: poll                 wall=34.000s usage=33.904s mem=64372KiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec   :flips :restarts   :reinits  :unsat_vars  :shifts)
+(sat.ddfw      20     52     0.0236     43551         0          3           91     3167)
+(smt.stats    1    115  12549   7091  2462/1934/1026     520/124     9   68   61.40)
+ramon: end                  Sun Jan 26 12:57:50 2025
+ramon: root.execname        z3
+ramon: root.utime           33.950s
+ramon: root.stime           0.010s
+ramon: group.total          33.975s
+ramon: group.utime          33.955s
+ramon: group.stime          0.020s
+ramon: group.mempeak        64616KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             34.068s
+ramon: loadavg              1.00
