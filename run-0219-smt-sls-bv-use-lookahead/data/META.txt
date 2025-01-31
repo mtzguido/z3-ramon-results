@@ -1,0 +1,10 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-sls-bv-use-lookahead
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: e3566288a48e9e88346b9e8eac44472d1c34aff6
+Z3 branch: master
+Z3 options: "-T:10 -v:2 -st tactic.default_tactic="(then simplify propagate-values solve-eqs simplify smt)" smt.sls.enable=true smt.sls.parallel=false model_validate=true sls.bv_use_lookahead=true"
+Z3 inputs: inputs/alive-arm-tv-smt-benchmarks
+Z3 commit message: fixes based on benchmarking UFDTLIA/NIA/BV
