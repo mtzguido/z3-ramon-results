@@ -1,0 +1,485 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Thu Jan 30 16:09:57 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         25316 MiB
+ramon: sys.mem.avail        59416 MiB
+ramon: sys.nprocs           1427
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/alive-arm-tv-smt-benchmarks/zQSOjEpTu0z1.smt2
+ramon: argv                 2 = -T:10
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = smt.bv.solver=2
+ramon: argv                 10 = sls.arith_use_clausal_lookahead=true
+ramon: childpid             3024261
+(smt.searching)
+(smt.stats :restarts     :decisions   :clauses/bin/units :simplify   :memory)
+(smt.stats        :conflicts    :propagations    :lemmas      :deletions   )
+(smt.stats    0      0      0      0     0/0/1       0/0     0    0   17.80)
+SMT -> SLS values
+lookahead-search moves:0 max-moves:800
+lookahead-search moves:800 max-moves:1700
+lookahead-search moves:1700 max-moves:2700
+lookahead-search moves:2700 max-moves:3800
+lookahead-search moves:3800 max-moves:5000
+lookahead-search moves:5000 max-moves:6300
+(sat.ddfw :unsat :models :kflips/sec   :flips :restarts   :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1      1    17.9211     10000        49          0            1        2)
+lookahead-search moves:6300 max-moves:7700
+lookahead-search moves:7700 max-moves:9200
+(sat.ddfw       1      1     5.0353     13998        68          1            1        2)
+SLS -> SMT values
+SMT -> SLS units -1
+SMT -> SLS values
+lookahead-search moves:8928 max-moves:10528
+ramon: poll                 wall=1.000s usage=0.924s mem=53072KiB load=0.92 rootload=0.91
+lookahead-search moves:10528 max-moves:12228
+lookahead-search moves:12228 max-moves:14028
+(sat.ddfw       1      1     4.8364     20000        98          1            1        3)
+lookahead-search moves:14028 max-moves:15928
+(sat.ddfw       1      1     1.8734     22634       110          2            1        3)
+SLS -> SMT values
+SMT -> SLS values
+lookahead-search moves:15928 max-moves:17928
+lookahead-search moves:17928 max-moves:20028
+(sat.ddfw       1      1     2.2173     26552       130          2            1        4)
+SLS -> SMT values
+SMT -> SLS values
+lookahead-search moves:20028 max-moves:22228
+ramon: poll                 wall=2.000s usage=1.924s mem=53072KiB load=1.00 rootload=1.00
+lookahead-search moves:22228 max-moves:24528
+(sat.ddfw       1      1     1.6936     30205       148          2            1        5)
+SLS -> SMT values
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 24&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 24 := 23 >>l 43
+SMT -> SLS values
+lookahead-search moves:24528 max-moves:26928
+lookahead-search moves:26928 max-moves:29428
+(sat.ddfw       1      1     1.4836     33997       166          2            1        6)
+SLS -> SMT values
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 35184372088832 := 23 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 35184372088832 := 23 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 0 := 45 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&1
+shl: (shl[64] (bv2int %0) (mod (+ #126 #156) 64)) 1 := 91 << 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 0 := 45 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&1
+shl: (shl[64] (bv2int %0) (mod (+ #126 #156) 64)) 1 := 91 << 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&35184372088831
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 0 := 45 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&35184372088831
+shl: (shl[64] (bv2int %0) (mod (+ #126 #156) 64)) 18446744073709551615 := 91 << 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&182
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 0 := 45 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&182
+shl: (shl[45] (bv2int %0) (mod (bv2int %0) 45)) 182 := 91 << 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&182
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 0 := 45 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&182
+shl: (shl[45] (bv2int %0) (mod (bv2int %0) 45)) 182 := 91 << 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&182
+lshr: (lshr[45] (bv2int %0) (+ 45 (* 35184372088831 #128))) 1 := 91 >>l 44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&182
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 0 := 45 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&182
+shl: (shl[45] (bv2int %0) (mod (bv2int %0) 45)) 182 := 91 << 1
+SMT -> SLS values
+lookahead-search moves:28821 max-moves:31421
+lookahead-search moves:31421 max-moves:34121
+ramon: poll                 wall=3.001s usage=2.927s mem=53268KiB load=1.00 rootload=1.00
+(sat.ddfw       1      1     1.3615     37997       186          2            1        7)
+SLS -> SMT values
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&182
+lshr: (lshr[45] (bv2int %0) (+ 45 (* 35184372088831 #128))) 1 := 91 >>l 44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&182
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 0 := 45 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&182
+shl: (shl[45] (bv2int %0) (mod (bv2int %0) 45)) 182 := 91 << 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&182
+lshr: (lshr[45] (bv2int %0) (+ 45 (* 35184372088831 #128))) 1 := 91 >>l 44
+(smt.stats    0    101    478    436   155/136/129      98/18     6   24   51.33)
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&92
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 0 := 23 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&92
+shl: (shl[45] (bv2int %0) (mod (bv2int %0) 45)) 183 := 46 << 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&92
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 0 := 23 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&92
+shl: (shl[45] (bv2int %0) (mod (bv2int %0) 45)) 182 := 46 << 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&92
+lshr: (lshr[45] (bv2int %0) (+ 45 (* 35184372088831 #128))) 45 := 46 >>l 44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&92
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 0 := 23 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&92
+shl: (shl[45] (bv2int %0) (mod (bv2int %0) 45)) 182 := 46 << 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&92
+lshr: (lshr[45] (bv2int %0) (+ 45 (* 35184372088831 #128))) 1 := 46 >>l 44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&92
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 0 := 23 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&92
+shl: (shl[45] (bv2int %0) (mod (bv2int %0) 45)) 182 := 46 << 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&92
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 0 := 23 >>l 43
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 0&92
+shl: (shl[45] (bv2int %0) (mod (bv2int %0) 45)) 91 := 46 << 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 1 := 25&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 25 := 24 >>l 41
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 1 := 26&1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 2 := 26&2
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 26 := 25 >>l 39
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 2 := 26&2
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 26 := 25 >>l 39
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 2 := 28&2
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 4 := 28&4
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 28 := 26 >>l 37
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 4 := 28&4
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 28 := 26 >>l 37
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 4 := 28&4
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 28 := 26 >>l 37
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 1 := 28&1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 2 := 28&2
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 4 := 28&4
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 28 := 27 >>l 35
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 4 := 28&4
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 28 := 27 >>l 35
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 1 := 30&1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 2 := 30&2
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 30 := 28 >>l 33
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 2 := 30&2
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 30 := 29 >>l 31
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 2 := 32&2
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 4 := 32&4
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 8 := 32&8
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 16 := 32&16
+SMT -> SLS values
+lookahead-search moves:32800 max-moves:35600
+(sat.ddfw       1      1     0.6095     40001       196          2            1        8)
+lookahead-search moves:35600 max-moves:38500
+(sat.ddfw       1      1     0.5884     41997       205          3            1        8)
+SLS -> SMT values
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 32&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 32 := 30 >>l 29
+(smt.stats    1    202   1274   1489   277/266/190     183/22    10   45   51.81)
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 8 := 54&51
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 8 := 56&49
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 8 := 54&51
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 8 := 54&49
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&49
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 26 >>l 37
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 8 := 54&8
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 26 >>l 37
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&47
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 28 >>l 33
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 29 >>l 31
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 29 >>l 31
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 29 >>l 31
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 28 >>l 33
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 30 >>l 29
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 30 >>l 29
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 31 >>l 27
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 44 >>l 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 43 >>l 3
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 42 >>l 5
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 41 >>l 7
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 40 >>l 9
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 40 >>l 9
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 39 >>l 11
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 38 >>l 13
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 37 >>l 15
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 32 := 54&32
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 37 >>l 15
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 64&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 45 := 64&45
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 64&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 68&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 76&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 45 := 68&45
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 45 := 68&45
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 45 := 68&45
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 68&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 68&67
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 76&68
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 68&64
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 68&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 68&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 76&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 76&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 52&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 52&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 52&44
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 38 >>l 13
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 38 >>l 13
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 37 >>l 15
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 36 >>l 17
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 35 >>l 19
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 34 >>l 21
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 33 >>l 23
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 32 >>l 25
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 31 >>l 27
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 31 >>l 27
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 32 >>l 25
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 33 >>l 23
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 32 >>l 25
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 44 := 46&44
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 46 := 31 >>l 27
+(smt.stats    2    313   2285   2647   529/304/190     316/28    10   45   52.29)
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 8 := 72&48
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 8 := 72&56
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 72 := 44 >>l 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 44 >>l 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 44 >>l 1
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 36 >>l 17
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 36 >>l 17
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 37 >>l 15
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 34 >>l 21
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 34 >>l 21
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 34 >>l 21
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 34 >>l 21
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 35 >>l 19
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 35 >>l 19
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 33 >>l 23
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 33 >>l 23
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 39 >>l 11
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 40 >>l 9
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 40 >>l 9
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 39 >>l 11
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 39 >>l 11
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 40 >>l 9
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 40 >>l 9
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 39 >>l 11
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 40 >>l 9
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 42 >>l 5
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 42 >>l 5
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 41 >>l 7
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 64&48
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 64 := 43 >>l 3
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 54&48
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 54&40
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 54&40
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 54&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 42 >>l 5
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 54&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 42 >>l 5
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 54&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 41 >>l 7
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 54&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 41 >>l 7
+SMT -> SLS values
+lookahead-search moves:36779 max-moves:39779
+lookahead-search moves:39779 max-moves:42879
+(sat.ddfw       1      1     1.0485     45997       225          3            1        9)
+SLS -> SMT values
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 54&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 43 >>l 3
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 54&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 43 >>l 3
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 0 := 54&1
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 54 := 39 >>l 11
+(smt.stats    3    414   3986   5523   644/593/322     450/47    12   74   52.58)
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 9 := 104&73
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 8 := 104&73
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 9 := 104&73
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 8 := 104&73
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 8 := 104&73
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 9 := 104&75
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 9 := 104&75
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 112 := 136&128
+(smt.stats    4    525   6400   8462   709/642/351     610/98    15   96   52.96)
+ramon: poll                 wall=4.000s usage=3.923s mem=55272KiB load=1.00 rootload=0.98
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 18 >>l 8
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 17 >>l 10
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 16 >>l 12
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 15 >>l 14
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 14 >>l 16
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 13 >>l 18
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 11 >>l 22
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 12 >>l 20
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 7 >>l 30
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 8 >>l 28
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 9 >>l 26
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 10 >>l 24
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 10 >>l 24
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 5 >>l 34
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 6 >>l 32
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 4 >>l 36
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 2 >>l 40
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 3 >>l 38
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 3 >>l 38
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 2 >>l 40
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 2 >>l 40
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 1 >>l 42
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 1 >>l 42
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 9 >>l 25
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 9 >>l 25
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 10 >>l 23
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 10 >>l 23
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 7 >>l 29
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 7 >>l 29
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 8 >>l 27
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 8 >>l 27
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 5 >>l 33
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 5 >>l 33
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 4 >>l 35
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 4 >>l 35
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 172 := 173&172
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 173 := 2 >>l 39
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 171 := 173&171
+(smt.stats    5    647   8699  11999   850/801/437     770/126    17  115   53.25)
+lookahead-search moves:40758 max-moves:43958
+lookahead-search moves:43958 max-moves:47258
+lookahead-search moves:47258 max-moves:50658
+lookahead-search moves:50658 max-moves:54158
+ramon: poll                 wall=5.014s usage=4.938s mem=55308KiB load=1.00 rootload=1.00
+lookahead-search moves:54158 max-moves:57758
+lookahead-search moves:57758 max-moves:61458
+lookahead-search moves:61458 max-moves:65258
+ramon: poll                 wall=6.000s usage=5.922s mem=55308KiB load=1.00 rootload=0.99
+lookahead-search moves:65258 max-moves:69158
+lookahead-search moves:69158 max-moves:73158
+lookahead-search moves:73158 max-moves:77258
+ramon: poll                 wall=7.000s usage=6.921s mem=55308KiB load=1.00 rootload=1.00
+lookahead-search moves:77258 max-moves:81458
+lookahead-search moves:81458 max-moves:85758
+(sat.ddfw       1      1     3.1464     70001       343          3            1       12)
+lookahead-search moves:85758 max-moves:90158
+ramon: poll                 wall=8.000s usage=7.921s mem=55308KiB load=1.00 rootload=1.00
+lookahead-search moves:90158 max-moves:94658
+lookahead-search moves:94658 max-moves:99258
+(sat.ddfw       1      1     0.7098     75997       372          4            1       13)
+SLS -> SMT activity
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 171 := 174&171
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 171 := 174&171
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 171 := 175&171
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 175 := 2 >>l 39
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 176 := 180&176
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 180 := 1 >>l 41
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 176 := 180&176
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 180 := 1 >>l 41
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 176 := 180&176
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 180 := 16 >>l 11
+band: (band[45] (lshr[64] (mod #140 17592186044416) (mod #182 64)) (shl[64] (bv2int %0) (mod #157 64))) 176 := 180&176
+lshr: (lshr[64] (mod (div #126 2) 17592186044416) (mod (+ 44 #179 #181) 64)) 180 := 16 >>l 11
+(smt.stats :restarts :decisions     :clauses/bin/units        :simplify    :memory)
+(smt.stats      :conflicts  :propagations          :lemmas        :deletions     )
+(smt.stats    6    748  11049  16253   956/873/437     969/128    17  115   53.35)
+lookahead-search moves:95593 max-moves:100293
+lookahead-search moves:100293 max-moves:105093
+ramon: poll                 wall=9.000s usage=8.921s mem=55564KiB load=1.00 rootload=1.00
+lookahead-search moves:105093 max-moves:109993
+lookahead-search moves:109993 max-moves:114993
+ramon: poll                 wall=10.000s usage=9.921s mem=55460KiB load=1.00 rootload=1.00
+ramon: end                  Thu Jan 30 16:10:07 2025
+ramon: root.execname        z3
+ramon: root.utime           9.960s
+ramon: root.stime           0.030s
+ramon: group.total          10.004s
+ramon: group.utime          9.968s
+ramon: group.stime          0.036s
+ramon: group.mempeak        55720KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             10.080s
+ramon: loadavg              0.99

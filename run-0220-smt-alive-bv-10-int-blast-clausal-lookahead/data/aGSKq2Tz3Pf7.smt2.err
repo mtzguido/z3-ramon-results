@@ -1,0 +1,200 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Thu Jan 30 15:50:55 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         26341 MiB
+ramon: sys.mem.avail        59419 MiB
+ramon: sys.nprocs           1446
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/alive-arm-tv-smt-benchmarks/aGSKq2Tz3Pf7.smt2
+ramon: argv                 2 = -T:10
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = smt.bv.solver=2
+ramon: argv                 10 = sls.arith_use_clausal_lookahead=true
+ramon: childpid             2909751
+(smt.searching)
+(smt.stats :restarts     :decisions   :clauses/bin/units :simplify   :memory)
+(smt.stats        :conflicts    :propagations    :lemmas      :deletions   )
+(smt.stats    0      0      0      0     0/0/1       0/0     0    0   17.79)
+SMT -> SLS values
+lookahead-search moves:0 max-moves:800
+lookahead-search moves:800 max-moves:1700
+lookahead-search moves:1700 max-moves:2700
+lookahead-search moves:2700 max-moves:3800
+lookahead-search moves:3800 max-moves:5000
+lookahead-search moves:5000 max-moves:6300
+(sat.ddfw :unsat :models :kflips/sec   :flips :restarts   :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1      1    19.0476     10000        49          0            1        2)
+lookahead-search moves:6300 max-moves:7700
+lookahead-search moves:7700 max-moves:9200
+(sat.ddfw       1      1     5.9406     13998        68          1            1        2)
+SLS -> SMT values
+SMT -> SLS units -1
+SMT -> SLS values
+lookahead-search moves:8928 max-moves:10528
+lookahead-search moves:10528 max-moves:12228
+lookahead-search moves:12228 max-moves:14028
+ramon: poll                 wall=1.006s usage=0.728s mem=53468KiB load=0.72 rootload=0.72
+(sat.ddfw       1      1     6.0443     20000        98          1            1        3)
+lookahead-search moves:14028 max-moves:15928
+(sat.ddfw       1      1     2.3924     22634       110          2            1        3)
+SLS -> SMT values
+SMT -> SLS values
+lookahead-search moves:15928 max-moves:17928
+lookahead-search moves:17928 max-moves:20028
+(sat.ddfw       1      1     2.9503     26552       130          2            1        4)
+SLS -> SMT values
+SMT -> SLS values
+lookahead-search moves:20028 max-moves:22228
+lookahead-search moves:22228 max-moves:24528
+(sat.ddfw       1      1     2.3179     30205       148          2            1        5)
+SLS -> SMT values
+SMT -> SLS values
+lookahead-search moves:24528 max-moves:26928
+lookahead-search moves:26928 max-moves:29428
+(sat.ddfw       1      1     2.0847     33997       166          2            1        6)
+SLS -> SMT values
+SMT -> SLS values
+lookahead-search moves:28821 max-moves:31421
+ramon: poll                 wall=2.030s usage=1.752s mem=53468KiB load=1.00 rootload=1.00
+lookahead-search moves:31421 max-moves:34121
+(sat.ddfw       1      1     1.9427     37997       186          2            1        7)
+SLS -> SMT values
+(smt.stats    0    101   1602    395   709/608/100     112/23     6   15   51.60)
+(smt.stats    1    202   2965   1760  1082/990/106     254/53     9   24   51.60)
+SMT -> SLS values
+lookahead-search moves:32800 max-moves:35600
+(sat.ddfw       1      1     0.8774     40001       196          2            1        8)
+lookahead-search moves:35600 max-moves:38500
+(sat.ddfw       1      1     0.8490     41997       205          3            1        8)
+SLS -> SMT values
+(smt.stats    2    314   4862   4896  1305/1183/113     431/60    10   27   51.79)
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 1&536838144
+lshr: (lshr[32] (* 8 (bv2int %1)) (mod (+ 3 #104 #237) 32)) 1 := 8 >>l 17
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 1&536838144
+lshr: (lshr[29] (bv2int %1) (mod (bv2int %0) 29)) 536870911 := 16384 >>l 14
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 1&536838144
+lshr: (lshr[32] (* 8 (bv2int %1)) (mod (+ 3 #104 #237) 32)) 1 := 4294705168 >>l 17
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 32766&536838144
+lshr: (lshr[29] (bv2int %1) (mod (bv2int %0) 29)) 536838145 := 536838146 >>l 14
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 1&536838144
+lshr: (lshr[32] (* 8 (bv2int %1)) (mod (+ 3 #104 #237) 32)) 1 := 4294967288 >>l 17
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 32767&536838144
+lshr: (lshr[29] (bv2int %1) (mod (bv2int %0) 29)) 536870910 := 536870911 >>l 14
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 32767&536838144
+lshr: (lshr[32] (* 8 (bv2int %1)) (mod (+ 3 #104 #237) 32)) 32767 := 4294967288 >>l 17
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 32767&536838144
+lshr: (lshr[29] (bv2int %1) (mod (bv2int %0) 29)) 536838145 := 536870911 >>l 14
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 32767&536838144
+lshr: (lshr[32] (* 8 (bv2int %1)) (mod (+ 3 #104 #237) 32)) 32767 := 4294967288 >>l 17
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 32767&536838144
+lshr: (lshr[29] (bv2int %1) (mod (bv2int %0) 29)) 536838143 := 536870911 >>l 14
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 1 := 32767&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 2 := 32767&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 4 := 4&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 8 := 8&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 16 := 16&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 32 := 32&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 64 := 64&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 128 := 128&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 256 := 256&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 128 := 128&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 256 := 256&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 512 := 512&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 1024 := 1024&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 2048 := 2048&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 4096 := 4096&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 8192 := 8192&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 16384 := 16384&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 9 := 32767&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 8 := 32767&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 8 := 32767&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 9 := 32767&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 8 := 32767&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 8 := 32767&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 4 := 32767&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 1 := 32767&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 32767&536838144
+lshr: (lshr[32] (* 8 (bv2int %1)) (mod (+ 3 #104 #237) 32)) 32767 := 4294705152 >>l 17
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 32767&536838144
+lshr: (lshr[29] (bv2int %1) (mod (bv2int %0) 29)) 32768 := 536854528 >>l 14
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 1 := 32767&536838144
+band: (band[29] (lshr[32] (* 8 #103) (mod #238 32)) (if (= #411 31) 1152921500311879680 (if #413 576460750155939840 #473))) 0 := 1&536838144
+lshr: (lshr[29] (bv2int %1) (mod (bv2int %0) 29)) 2 := 16384 >>l 14
+(smt.stats    3    415   5991   7457  1540/1402/206     638/101    14   54   52.30)
+SMT -> SLS values
+lookahead-search moves:36779 max-moves:39779
+lookahead-search moves:39779 max-moves:42879
+(sat.ddfw       1      1     1.5163     45997       225          3            1        9)
+SLS -> SMT values
+(smt.stats    4    526   6441   8313  1666/1419/209     840/104    14   54   52.59)
+(smt.stats    5    648   6896   9354  1974/1611/210    1185/170    15   59   52.68)
+lookahead-search moves:40758 max-moves:43958
+lookahead-search moves:43958 max-moves:47258
+ramon: poll                 wall=3.000s usage=2.720s mem=54748KiB load=1.00 rootload=0.99
+lookahead-search moves:47258 max-moves:50658
+lookahead-search moves:50658 max-moves:54158
+lookahead-search moves:54158 max-moves:57758
+lookahead-search moves:57758 max-moves:61458
+lookahead-search moves:61458 max-moves:65258
+ramon: poll                 wall=4.000s usage=3.720s mem=54748KiB load=1.00 rootload=1.00
+lookahead-search moves:65258 max-moves:69158
+lookahead-search moves:69158 max-moves:73158
+lookahead-search moves:73158 max-moves:77258
+lookahead-search moves:77258 max-moves:81458
+lookahead-search moves:81458 max-moves:85758
+ramon: poll                 wall=5.022s usage=4.744s mem=54748KiB load=1.00 rootload=1.01
+(sat.ddfw       1      1     4.6984     70001       343          3            1       12)
+lookahead-search moves:85758 max-moves:90158
+lookahead-search moves:90158 max-moves:94658
+lookahead-search moves:94658 max-moves:99258
+(sat.ddfw       1      1     1.0641     75997       372          4            1       13)
+SLS -> SMT activity
+SMT -> SLS values
+lookahead-search moves:95593 max-moves:100293
+(sat.ddfw       1      1     0.5974     79519       389          4            1       14)
+SLS -> SMT values
+ramon: poll                 wall=6.000s usage=5.719s mem=55004KiB load=1.00 rootload=0.99
+(smt.stats :restarts  :decisions   :clauses/bin/units          :simplify    :memory)
+(smt.stats      :conflicts  :propagations          :lemmas          :deletions    )
+(smt.stats    6    749   7479  12208  2240/1871/210    1551/170    15   59   52.78)
+lookahead-search moves:100293 max-moves:105093
+lookahead-search moves:105093 max-moves:109993
+lookahead-search moves:109993 max-moves:114993
+lookahead-search moves:114993 max-moves:120093
+ramon: poll                 wall=7.026s usage=6.747s mem=54768KiB load=1.00 rootload=1.00
+lookahead-search moves:120093 max-moves:125293
+lookahead-search moves:125293 max-moves:130593
+lookahead-search moves:130593 max-moves:135993
+lookahead-search moves:135993 max-moves:141493
+ramon: poll                 wall=8.000s usage=7.716s mem=54768KiB load=0.99 rootload=1.00
+lookahead-search moves:141493 max-moves:147093
+lookahead-search moves:147093 max-moves:152793
+lookahead-search moves:152793 max-moves:158593
+ramon: poll                 wall=9.000s usage=8.716s mem=54768KiB load=1.00 rootload=1.00
+lookahead-search moves:158593 max-moves:164493
+lookahead-search moves:164493 max-moves:170493
+(sat.ddfw       1      1     2.7520    105955       519          4            1       17)
+SLS -> SMT activity
+(smt.stats    7    860   8871  19888  2477/2121/211    2198/268    16   67   52.87)
+(smt.stats    8    982  10641  31910  2598/2434/215    3341/452    17   69   52.97)
+lookahead-search moves:170493 max-moves:176593
+ramon: poll                 wall=10.034s usage=9.751s mem=55000KiB load=1.00 rootload=1.00
+ramon: end                  Thu Jan 30 15:51:05 2025
+ramon: root.execname        z3
+ramon: root.utime           9.780s
+ramon: root.stime           0.010s
+ramon: group.total          9.793s
+ramon: group.utime          9.781s
+ramon: group.stime          0.012s
+ramon: group.mempeak        55256KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             10.094s
+ramon: loadavg              0.97
