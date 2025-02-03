@@ -1,0 +1,12 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-conflict-throttle
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: a513488c5489be564ae781290d8e7b34611affaa
+Z3 branch: conflict-throttle
+Z3 options: "-T:10 -v:2 -st tactic.default_tactic="(then simplify propagate-values solve-eqs simplify smt)" smt.sls.enable=true smt.sls.parallel=false model_validate=true smt.bv.solver=2 sls.arith_use_clausal_lookahead=true""
+Z3 inputs: inputs/alive-arm-tv-smt-benchmarks
+Z3 commit message: add conflict throttle, experiment with pb2bv
+
+Signed-off-by: Nikolaj Bjorner <nbjorner@microsoft.com>

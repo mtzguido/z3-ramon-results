@@ -1,0 +1,107 @@
+xargs: unmatched double quote; by default quotes are special to xargs unless you use the -0 option
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Mon Feb  3 03:28:44 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         35322 MiB
+ramon: sys.mem.avail        59490 MiB
+ramon: sys.nprocs           1285
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/alive-arm-tv-smt-benchmarks/8n9c5EgXzSnp.smt2
+ramon: argv                 2 = -T:10
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = smt.bv.solver=2
+ramon: childpid             1869370
+(smt.searching)
+(smt.stats :restarts     :decisions  :clauses/bin/units  :simplify   :memory)
+(smt.stats        :conflicts    :propagations    :lemmas      :deletions   )
+(smt.stats    0      0      0      0    16/8/1       0/0     0    0   18.00)
+SMT -> SLS units -17
+SMT -> SLS values
+lookahead-search moves:0 max-moves:800
+lookahead-search moves:800 max-moves:1700
+lookahead-search moves:1700 max-moves:2700
+lookahead-search moves:2700 max-moves:3800
+ramon: poll                 wall=1.015s usage=1.015s mem=54632KiB load=1.00 rootload=0.98
+lookahead-search moves:3800 max-moves:5000
+(sat.ddfw :unsat :models :kflips/sec   :flips :restarts   :reinits  :unsat_vars  :shifts)
+(sat.ddfw       1     28     8.2721     10001        37          0            3        1)
+lookahead-search moves:5000 max-moves:6300
+lookahead-search moves:6300 max-moves:7700
+ramon: poll                 wall=2.000s usage=1.999s mem=54632KiB load=1.00 rootload=1.00
+(sat.ddfw       1     31     2.7613     15057        54          1            2        2)
+SLS -> SMT values
+(smt.stats    0    101   1130    618   255/233/231      95/38     4   43   52.39)
+(smt.stats    1    202   1997   1544   465/311/231     194/72     4   43   52.68)
+SMT -> SLS values
+lookahead-search moves:7700 max-moves:9200
+lookahead-search moves:9200 max-moves:10800
+ramon: poll                 wall=3.000s usage=2.998s mem=55172KiB load=1.00 rootload=0.99
+(sat.ddfw       1     32     1.6557     20001        74          1            2        3)
+lookahead-search moves:10800 max-moves:12500
+lookahead-search moves:12500 max-moves:14300
+ramon: poll                 wall=4.000s usage=3.998s mem=55172KiB load=1.00 rootload=1.00
+(sat.ddfw       1     31     1.0953     24197        87          2            1        3)
+SLS -> SMT values
+(smt.stats    2    313   2850   2662   762/525/231     305/108     4   43   53.06)
+(smt.stats    3    414   3398   3211   954/920/232     404/126     5   43   53.26)
+SMT -> SLS values
+lookahead-search moves:14300 max-moves:16200
+lookahead-search moves:16200 max-moves:18200
+ramon: poll                 wall=5.000s usage=4.997s mem=55628KiB load=1.00 rootload=1.00
+(sat.ddfw       1     33     1.0294     29070       105          2            5        4)
+SLS -> SMT values
+(smt.stats    4    525   5198   5365  1039/986/236     475/136     7   46   53.45)
+(smt.stats    5    647   7307   9880  1188/1135/238     578/149     9   47   53.64)
+SMT -> SLS values
+lookahead-search moves:17247 max-moves:19347
+lookahead-search moves:19347 max-moves:21547
+(sat.ddfw       1     33     0.8925     34043       124          2            2        5)
+SLS -> SMT values
+(smt.stats :restarts  :decisions   :clauses/bin/units           :simplify   :memory)
+(smt.stats      :conflicts  :propagations           :lemmas         :deletions    )
+(smt.stats    6    748   7791  10153  1224/1158/238     679/163     9   47   54.02)
+(smt.stats    7    859   9706  12798  1560/1448/238     764/177    10   48   54.02)
+ramon: poll                 wall=6.000s usage=5.997s mem=56664KiB load=1.00 rootload=1.00
+SMT -> SLS values
+lookahead-search moves:19913 max-moves:22213
+(sat.ddfw       1     35     0.8396     39342       141          2            1        6)
+SLS -> SMT values
+(smt.stats    8    981  10371  13506  1610/1551/238     882/198    10   48   54.49)
+lookahead-search moves:22213 max-moves:24613
+ramon: poll                 wall=7.000s usage=6.997s mem=57092KiB load=1.00 rootload=1.00
+SMT -> SLS values
+(sat.ddfw       1     33     0.0938     40000       143          2            2        7)
+lookahead-search moves:24613 max-moves:27113
+(sat.ddfw       1     33     0.3758     42861       156          3            3        7)
+SLS -> SMT values
+(smt.stats    9   1117  13604  19296  1980/1928/258     914/200    14  131   54.69)
+(nlsat :conflicts 1 :decisions 0 :propagations 572 :clauses 1250 :learned 1)
+(nlsat :conflicts 1 :decisions 0 :propagations 573 :clauses 1254 :learned 1)
+ramon: poll                 wall=8.000s usage=7.997s mem=58468KiB load=1.00 rootload=1.00
+(nlsat :conflicts 1 :decisions 0 :propagations 575 :clauses 1288 :learned 1)
+(smt.stats   10   1218  15471  23562  2085/1982/261    1002/212    15  138   55.87)
+(smt.stats   11   1329  16743  28568  2156/2085/264    1096/211    17  145   56.07)
+lookahead-search moves:27113 max-moves:29713
+lookahead-search moves:29713 max-moves:32413
+ramon: poll                 wall=9.000s usage=8.997s mem=58656KiB load=1.00 rootload=1.00
+lookahead-search moves:32413 max-moves:35213
+ramon: poll                 wall=10.000s usage=9.996s mem=58656KiB load=1.00 rootload=1.00
+ramon: end                  Mon Feb  3 03:28:54 2025
+ramon: root.execname        z3
+ramon: root.utime           9.970s
+ramon: root.stime           0.020s
+ramon: group.total          10.003s
+ramon: group.utime          9.979s
+ramon: group.stime          0.024s
+ramon: group.mempeak        58912KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             10.006s
+ramon: loadavg              1.00

@@ -1,0 +1,139 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Mon Feb  3 03:24:26 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         35391 MiB
+ramon: sys.mem.avail        59491 MiB
+ramon: sys.nprocs           1295
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/alive-arm-tv-smt-benchmarks/5TckYzcbi6P7.smt2
+ramon: argv                 2 = -T:10
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = smt.bv.solver=2
+ramon: childpid             1843224
+xargs: unmatched double quote; by default quotes are special to xargs unless you use the -0 option
+(smt.searching)
+(smt.stats :restarts     :decisions   :clauses/bin/units :simplify   :memory)
+(smt.stats        :conflicts    :propagations    :lemmas      :deletions   )
+(smt.stats    0      0      0      0     0/0/1       0/0     0    0   17.79)
+(smt.stats    0    101   2124    486  1419/1232/118      86/8     9   23   52.06)
+SMT -> SLS units -1
+SMT -> SLS values
+lookahead-search moves:0 max-moves:800
+lookahead-search moves:800 max-moves:1700
+lookahead-search moves:1700 max-moves:2700
+lookahead-search moves:2700 max-moves:3800
+lookahead-search moves:3800 max-moves:5000
+lookahead-search moves:5000 max-moves:6300
+ramon: poll                 wall=1.000s usage=0.980s mem=54124KiB load=0.98 rootload=0.97
+(sat.ddfw :unsat :models :kflips/sec   :flips :restarts   :reinits  :unsat_vars  :shifts)
+(sat.ddfw       2      1    12.0192     10000        49          0            1        2)
+lookahead-search moves:6300 max-moves:7700
+lookahead-search moves:7700 max-moves:9200
+(sat.ddfw       2      1     3.4895     13999        68          1            1        2)
+SLS -> SMT values
+(smt.stats    1    202   3994   1171  2115/1841/122     174/15    11   28   52.27)
+ramon: poll                 wall=2.000s usage=1.980s mem=54572KiB load=1.00 rootload=1.00
+(smt.stats    2    313   7135   2314  2284/2082/125     272/17    12   32   52.36)
+SMT -> SLS values
+lookahead-search moves:8926 max-moves:10526
+lookahead-search moves:10526 max-moves:12226
+lookahead-search moves:12226 max-moves:14026
+(sat.ddfw       2      1     2.3989     20001        98          1            1        3)
+lookahead-search moves:14026 max-moves:15926
+(sat.ddfw       2      1     0.9561     22635       110          2            1        3)
+SLS -> SMT values
+ramon: poll                 wall=3.000s usage=2.979s mem=54668KiB load=1.00 rootload=1.00
+(smt.stats    3    414   9957   3281  2489/2280/130     354/18    15   38   52.55)
+(smt.stats    4    526  11742   6229  3117/2859/133     455/20    16   42   52.74)
+SMT -> SLS values
+lookahead-search moves:15926 max-moves:17926
+lookahead-search moves:17926 max-moves:20026
+(sat.ddfw       2      1     1.1575     26553       130          2            1        4)
+SLS -> SMT values
+(smt.stats    5    648  13630   7661  3130/2870/134     571/20    17   42   52.84)
+(smt.stats :restarts :decisions    :clauses/bin/units         :simplify    :memory)
+(smt.stats      :conflicts   :propagations          :lemmas        :deletions    )
+(smt.stats    6    749  17258   9579  3131/2872/136     669/20    18   43   52.93)
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 0 := 363388273328272517&1
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 0 := 363388273328272517&1
+SMT -> SLS values
+lookahead-search moves:20026 max-moves:22226
+lookahead-search moves:22226 max-moves:24526
+ramon: poll                 wall=4.019s usage=3.999s mem=55076KiB load=1.00 rootload=1.00
+(sat.ddfw       2      1     0.9078     30207       148          2            1        5)
+SLS -> SMT values
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 0 := 363388273328272517&2
+shl: (shl[64] (* 2 (bv2int %0)) (mod (+ 62 #932 #933) 64)) 2 := 0 << 58
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 0 := 363388273328272517&2
+shl: (shl[64] (* 2 (bv2int %0)) (mod (+ 62 #932 #933) 64)) 2 := 0 << 58
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 0 := 363388273328272517&1
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 0 := 363388273328272517&2
+shl: (shl[64] (* 2 (bv2int %0)) (mod (+ 62 #932 #933) 64)) 2 := 0 << 58
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 0 := 363388273328272517&2
+shl: (shl[64] (* 2 (bv2int %0)) (mod (+ 62 #932 #933) 64)) 2 := 0 << 58
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 0 := 363388273328272517&576460752303423488
+shl: (shl[63] (bv2int %0) (+ 63 (* 9223372036854775807 #131))) 0 := 1 << 59
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 0 := 363388273328272517&576460752303423488
+shl: (shl[63] (bv2int %0) (+ 63 (* 9223372036854775807 #131))) 0 := 1 << 59
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 0 := 363388273328272517&576460752303423488
+shl: (shl[63] (bv2int %0) (+ 63 (* 9223372036854775807 #131))) 0 := 1 << 59
+(smt.stats    7    860  19388  10798  3185/2902/147     775/22    19   47   53.14)
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 363388273328272517 := 363388273328272517&576460752303423488
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 363388273328272516 := 363388273328272517&576460752303423488
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 363388273328272512 := 363388273328272517&576460752303423488
+band: (band[63] (if (= #466 63) 1 (if #654 2 #925)) (shl[64] (* 2 #444) (mod #938 64))) 0 := 363388273328272517&576460752303423488
+shl: (shl[63] (bv2int %0) (+ 63 (* 9223372036854775807 #131))) 0 := 65 << 59
+(smt.stats    8    982  20654  12691  3218/2953/161     890/23    20   52   53.14)
+SMT -> SLS values
+lookahead-search moves:24526 max-moves:26926
+lookahead-search moves:26926 max-moves:29426
+(sat.ddfw       2      1     0.8090     33999       166          2            1        6)
+SLS -> SMT values
+(smt.stats    9   1116  21235  13305  3289/2967/162    1021/26    21   53   53.34)
+ramon: poll                 wall=5.000s usage=4.978s mem=55412KiB load=1.00 rootload=1.00
+(smt.stats   10   1217  21827  14886  3603/3251/162    1121/27    21   53   53.43)
+SMT -> SLS values
+lookahead-search moves:28819 max-moves:31419
+lookahead-search moves:31419 max-moves:34119
+(sat.ddfw       2      1     0.7368     37999       186          2            1        7)
+SLS -> SMT values
+(smt.stats   11   1328  22300  15864  3753/3344/162    1231/26    22   54   53.62)
+(smt.stats :restarts :decisions    :clauses/bin/units         :simplify    :memory)
+(smt.stats     :conflicts   :propagations          :lemmas         :deletions    )
+(smt.stats   12   1450  22787  17349  4000/3704/162    1352/26    22   54   53.81)
+ramon: poll                 wall=6.000s usage=5.976s mem=56116KiB load=1.00 rootload=0.99
+(smt.stats   13   1584  25769  23935  4419/4101/163    1466/28    23   55   53.81)
+lookahead-search moves:32798 max-moves:35598
+(sat.ddfw       2      1     0.3220     40001       196          2            1        8)
+lookahead-search moves:35598 max-moves:38498
+lookahead-search moves:38498 max-moves:41498
+ramon: poll                 wall=7.000s usage=6.976s mem=55896KiB load=1.00 rootload=1.00
+lookahead-search moves:41498 max-moves:44598
+lookahead-search moves:44598 max-moves:47798
+ramon: poll                 wall=8.000s usage=7.972s mem=55896KiB load=1.00 rootload=1.00
+lookahead-search moves:47798 max-moves:51098
+lookahead-search moves:51098 max-moves:54498
+lookahead-search moves:54498 max-moves:57998
+ramon: poll                 wall=9.000s usage=8.970s mem=55896KiB load=1.00 rootload=1.00
+lookahead-search moves:57998 max-moves:61598
+lookahead-search moves:61598 max-moves:65298
+ramon: poll                 wall=10.000s usage=9.970s mem=55896KiB load=1.00 rootload=1.00
+ramon: end                  Mon Feb  3 03:24:36 2025
+ramon: root.execname        z3
+ramon: root.utime           9.970s
+ramon: root.stime           0.000s
+ramon: group.total          9.980s
+ramon: group.utime          9.972s
+ramon: group.stime          0.008s
+ramon: group.mempeak        56152KiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             10.008s
+ramon: loadavg              1.00
