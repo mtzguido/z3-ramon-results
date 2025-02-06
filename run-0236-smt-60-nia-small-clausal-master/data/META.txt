@@ -1,0 +1,10 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-60-nia-small-clausal-master
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: af270da785e1b15614951678e963a73c3e0d544d
+Z3 branch: master
+Z3 options: "-T:60 -v:2 -st tactic.default_tactic="(then simplify propagate-values solve-eqs simplify smt)" smt.sls.enable=true smt.sls.parallel=false model_validate=true sls.arith_use_clausal_lookahead=true"
+Z3 inputs: inputs/QF_NIA_small
+Z3 commit message: Fix complete_partial_func for finite domains (#7547)
