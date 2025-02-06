@@ -1,0 +1,14 @@
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: smt-60-nia-small-clausal-conflict-throttle
+Z3 repo: https://github.com/Z3Prover/z3
+Z3 commit: edc3e0b05dc90f2849974e5391c89b67d7a5b62d
+Z3 branch: conflict-throttle
+Z3 options: "-T:60 -v:2 -st tactic.default_tactic="(then simplify propagate-values solve-eqs simplify smt)" smt.sls.enable=true smt.sls.parallel=false model_validate=true sls.arith_use_clausal_lookahead=true"
+Z3 inputs: inputs/QF_NIA_small
+Z3 commit message: parameters, local search, arithmetic propagation
+
+add get-info parameters to print current parameters in scope of solver
+add interface to set values in int-blaster
+settle on propagation for arithmetic assignments
