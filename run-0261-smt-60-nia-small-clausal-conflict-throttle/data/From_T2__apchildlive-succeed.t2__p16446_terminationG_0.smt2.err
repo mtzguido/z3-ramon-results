@@ -1,0 +1,144 @@
+ramon: cwd                  /home/gh1/A/_work/z3-poly-testing/z3-poly-testing
+ramon: start                Mon Feb 10 13:36:48 2025
+ramon: nproc                32
+ramon: sys.mem              63441 MiB
+ramon: sys.mem.free         19903 MiB
+ramon: sys.mem.avail        60602 MiB
+ramon: sys.nprocs           1684
+ramon: argv                 0 = z3
+ramon: argv                 1 = inputs/QF_NIA_small/From_T2__apchildlive-succeed.t2__p16446_terminationG_0.smt2
+ramon: argv                 2 = -T:60
+ramon: argv                 3 = -v:2
+ramon: argv                 4 = -st
+ramon: argv                 5 = tactic.default_tactic=(then simplify propagate-values solve-eqs simplify smt)
+ramon: argv                 6 = smt.sls.enable=true
+ramon: argv                 7 = smt.sls.parallel=false
+ramon: argv                 8 = model_validate=true
+ramon: argv                 9 = sls.arith_use_clausal_lookahead=true
+ramon: childpid             517004
+ramon: poll                 wall=1.000s usage=0.996s mem=37508KiB load=1.00 rootload=0.98
+(smt.searching)
+(smt.stats :restarts     :decisions :clauses/bin/units         :simplify   :memory)
+(smt.stats        :conflicts    :propagations          :lemmas      :deletions   )
+(smt.stats    0      0      0      0 56847/52983/227       0/0     0    0   73.72)
+(nlsat :conflicts 2 :decisions 0 :propagations 1607 :clauses 15843 :learned 2)
+(nlsat :conflicts 2 :decisions 0 :propagations 622 :clauses 16974 :learned 2)
+(nlsat :conflicts 6 :decisions 0 :propagations 593 :clauses 17492 :learned 6)
+ramon: poll                 wall=2.028s usage=2.023s mem=167MiB load=1.00 rootload=0.96
+(nlsat :conflicts 2 :decisions 0 :propagations 461 :clauses 17555 :learned 2)
+SMT -> SLS values
+ramon: poll                 wall=3.000s usage=2.995s mem=182MiB load=1.00 rootload=1.00
+(sat.ddfw :unsat :models :kflips/sec   :flips :restarts   :reinits  :unsat_vars  :shifts)
+(sat.ddfw     195      1     5.9424      5051         0          0          224       19)
+SLS -> SMT values
+(smt.stats    0    101  30722   1641 60716/56764/227     101/12     1    0  176.80)
+(nlsat :conflicts 2 :decisions 0 :propagations 626 :clauses 17407 :learned 2)
+ramon: poll                 wall=4.000s usage=3.995s mem=184MiB load=1.00 rootload=1.00
+(nlsat :conflicts 4 :decisions 0 :propagations 467 :clauses 16582 :learned 4)
+(nlsat :conflicts 4 :decisions 0 :propagations 4083 :clauses 15860 :learned 4)
+ramon: poll                 wall=5.000s usage=4.995s mem=197MiB load=1.00 rootload=1.00
+(nlsat :conflicts 4 :decisions 0 :propagations 473 :clauses 16875 :learned 4)
+(nlsat :conflicts 3 :decisions 0 :propagations 4107 :clauses 16210 :learned 3)
+ramon: poll                 wall=6.000s usage=5.995s mem=208MiB load=1.00 rootload=0.99
+(nlsat :conflicts 2 :decisions 0 :propagations 482 :clauses 17326 :learned 2)
+ramon: poll                 wall=7.000s usage=6.994s mem=216MiB load=1.00 rootload=1.00
+(smt.stats    1    202 122541  14405 61004/57022/227     202/12     1    0  203.85)
+(nlsat :conflicts 3 :decisions 0 :propagations 903 :clauses 16531 :learned 3)
+ramon: poll                 wall=8.000s usage=7.991s mem=227MiB load=1.00 rootload=0.99
+(nlsat :conflicts 2 :decisions 0 :propagations 580 :clauses 16748 :learned 2)
+ramon: poll                 wall=9.000s usage=8.990s mem=235MiB load=1.00 rootload=1.00
+(nlsat :conflicts 2 :decisions 0 :propagations 4262 :clauses 15982 :learned 2)
+ramon: poll                 wall=10.000s usage=9.989s mem=240MiB load=1.00 rootload=1.00
+(nlsat :conflicts 2 :decisions 0 :propagations 558 :clauses 15894 :learned 2)
+SMT -> SLS units 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 8601 8602 8603
+ramon: poll                 wall=11.028s usage=11.017s mem=241MiB load=1.00 rootload=0.99
+(sat.ddfw     111      1     0.0571      5526         0          0          138       22)
+SLS -> SMT values
+(smt.stats    2    313 463466  59195 61172/57170/227     313/17     1    0  224.75)
+ramon: poll                 wall=12.000s usage=11.982s mem=246MiB load=0.99 rootload=1.00
+(nlsat :conflicts 3 :decisions 0 :propagations 670 :clauses 15952 :learned 3)
+ramon: poll                 wall=13.000s usage=12.978s mem=251MiB load=1.00 rootload=1.00
+ramon: poll                 wall=14.014s usage=13.987s mem=254MiB load=1.00 rootload=0.99
+(nlsat :conflicts 3 :decisions 0 :propagations 678 :clauses 16071 :learned 3)
+ramon: poll                 wall=15.000s usage=14.974s mem=262MiB load=1.00 rootload=1.00
+(nlsat :conflicts 3 :decisions 0 :propagations 757 :clauses 16183 :learned 3)
+ramon: poll                 wall=16.000s usage=15.974s mem=263MiB load=1.00 rootload=1.00
+(smt.stats    3    414 890970 113682 61409/57352/227     414/35     1    0  241.55)
+ramon: poll                 wall=17.000s usage=16.973s mem=266MiB load=1.00 rootload=0.99
+ramon: poll                 wall=18.012s usage=17.985s mem=267MiB load=1.00 rootload=1.00
+ramon: poll                 wall=19.000s usage=18.973s mem=268MiB load=1.00 rootload=1.00
+ramon: poll                 wall=20.000s usage=19.972s mem=270MiB load=1.00 rootload=1.00
+ramon: poll                 wall=21.000s usage=20.971s mem=272MiB load=1.00 rootload=1.00
+(nlsat :conflicts 4 :decisions 0 :propagations 750 :clauses 17729 :learned 4)
+ramon: poll                 wall=22.000s usage=21.971s mem=275MiB load=1.00 rootload=1.00
+ramon: poll                 wall=23.004s usage=22.974s mem=277MiB load=1.00 rootload=0.99
+ramon: poll                 wall=24.000s usage=23.969s mem=277MiB load=1.00 rootload=1.00
+ramon: poll                 wall=25.000s usage=24.969s mem=280MiB load=1.00 rootload=1.00
+(sat.ddfw     111      2     0.0066      5674         0          0          140       23)
+ramon: poll                 wall=26.000s usage=25.968s mem=285MiB load=1.00 rootload=1.00
+(smt.stats    4    525 1145365 127126 61589/57503/227     525/60     1    0  257.34)
+ramon: poll                 wall=27.000s usage=26.967s mem=286MiB load=1.00 rootload=0.99
+(nlsat :conflicts 2 :decisions 0 :propagations 4862 :clauses 16284 :learned 2)
+ramon: poll                 wall=28.000s usage=27.966s mem=287MiB load=1.00 rootload=1.00
+ramon: poll                 wall=29.000s usage=28.966s mem=288MiB load=1.00 rootload=1.00
+ramon: poll                 wall=30.000s usage=29.966s mem=289MiB load=1.00 rootload=1.00
+ramon: poll                 wall=31.000s usage=30.965s mem=291MiB load=1.00 rootload=1.00
+(nlsat :conflicts 2 :decisions 0 :propagations 704 :clauses 16521 :learned 2)
+ramon: poll                 wall=32.000s usage=31.963s mem=293MiB load=1.00 rootload=1.00
+ramon: poll                 wall=33.000s usage=32.962s mem=294MiB load=1.00 rootload=1.00
+ramon: poll                 wall=34.000s usage=33.961s mem=295MiB load=1.00 rootload=0.99
+ramon: poll                 wall=35.000s usage=34.960s mem=298MiB load=1.00 rootload=1.00
+(nlsat :conflicts 3 :decisions 0 :propagations 874 :clauses 16360 :learned 3)
+ramon: poll                 wall=36.000s usage=35.960s mem=305MiB load=1.00 rootload=1.00
+(smt.stats    5    647 1685908 190970 61940/57756/227     647/64     1    0  271.80)
+ramon: poll                 wall=37.000s usage=36.960s mem=307MiB load=1.00 rootload=1.00
+ramon: poll                 wall=38.000s usage=37.959s mem=307MiB load=1.00 rootload=1.00
+ramon: poll                 wall=39.000s usage=38.959s mem=307MiB load=1.00 rootload=1.00
+(nlsat :conflicts 4 :decisions 0 :propagations 645 :clauses 16311 :learned 4)
+ramon: poll                 wall=40.000s usage=39.958s mem=309MiB load=1.00 rootload=1.00
+(sat.ddfw     111      3     0.0058      5888         0          0          138       25)
+SLS -> SMT values
+ramon: poll                 wall=41.000s usage=40.958s mem=313MiB load=1.00 rootload=0.99
+(nlsat :conflicts 2 :decisions 0 :propagations 667 :clauses 16209 :learned 2)
+ramon: poll                 wall=42.000s usage=41.957s mem=315MiB load=1.00 rootload=1.00
+(smt.stats :restarts :decisions    :clauses/bin/units            :simplify  :memory)
+(smt.stats      :conflicts  :propagations             :lemmas         :deletions   )
+(smt.stats    6    748 2287937 264030 61983/57791/227     748/67     1    0  280.40)
+ramon: poll                 wall=43.000s usage=42.956s mem=317MiB load=1.00 rootload=1.00
+ramon: poll                 wall=44.000s usage=43.956s mem=319MiB load=1.00 rootload=1.00
+(smt.stats    7    859 2719194 319648 62010/57822/227     859/73     1    0  288.23)
+ramon: poll                 wall=45.000s usage=44.955s mem=323MiB load=1.00 rootload=1.00
+(nlsat :conflicts 3 :decisions 0 :propagations 4215 :clauses 16372 :learned 3)
+ramon: poll                 wall=46.000s usage=45.955s mem=324MiB load=1.00 rootload=1.00
+ramon: poll                 wall=47.000s usage=46.954s mem=325MiB load=1.00 rootload=1.00
+ramon: poll                 wall=48.000s usage=47.954s mem=328MiB load=1.00 rootload=0.99
+(sat.ddfw     111      4     0.0033      6038         0          0          138       27)
+SLS -> SMT values
+ramon: poll                 wall=49.000s usage=48.954s mem=328MiB load=1.00 rootload=1.00
+ramon: poll                 wall=50.000s usage=49.954s mem=328MiB load=1.00 rootload=1.00
+ramon: poll                 wall=51.000s usage=50.954s mem=331MiB load=1.00 rootload=1.00
+(nlsat :conflicts 4 :decisions 0 :propagations 971 :clauses 16683 :learned 4)
+ramon: poll                 wall=52.000s usage=51.953s mem=332MiB load=1.00 rootload=1.00
+ramon: poll                 wall=53.000s usage=52.953s mem=332MiB load=1.00 rootload=1.00
+ramon: poll                 wall=54.020s usage=53.972s mem=332MiB load=1.00 rootload=1.00
+ramon: poll                 wall=55.000s usage=54.951s mem=332MiB load=1.00 rootload=1.00
+ramon: poll                 wall=56.016s usage=55.967s mem=333MiB load=1.00 rootload=0.99
+(smt.stats    8    981 3238412 361628 62041/57842/227     981/100     1    0  298.38)
+ramon: poll                 wall=57.000s usage=56.950s mem=336MiB load=1.00 rootload=1.00
+ramon: poll                 wall=58.000s usage=57.950s mem=336MiB load=1.00 rootload=1.00
+(nlsat :conflicts 3 :decisions 0 :propagations 868 :clauses 16466 :learned 3)
+ramon: poll                 wall=59.000s usage=58.950s mem=338MiB load=1.00 rootload=1.00
+ramon: poll                 wall=60.000s usage=59.948s mem=339MiB load=1.00 rootload=1.00
+ramon: end                  Mon Feb 10 13:37:48 2025
+ramon: root.execname        z3
+ramon: root.utime           59.830s
+ramon: root.stime           0.130s
+ramon: group.total          59.978s
+ramon: group.utime          59.838s
+ramon: group.stime          0.140s
+ramon: group.mempeak        339MiB
+ramon: group.pidpeak        2
+ramon: status               exited
+ramon: exitcode             0
+ramon: walltime             60.030s
+ramon: loadavg              1.00
