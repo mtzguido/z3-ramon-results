@@ -1,0 +1,29 @@
+Ramon benchmark for Z3
+-
+Job description: masterd on certora
+Job tag: master_on_certora
+Runner: lev-ripper
+Z3 repo: Z3Prover/z3
+Z3 commit: 8d81a2dcaf4de007ce587f396f1b48fbc29646dd
+Z3 branch: 
+Z3 options: "-T:600 -st smt.arith.lp.dio_eqs=false"
+Z3 inputs: inputs/certora
+Z3 commit message: Note that Z3_get_numeral_small is essentially redundant (#7599)
+
+* Check that Z3_get_numeral_small is given non-null out params
+
+Analogous to other Z3_get_numeral_* functions with out params.
+
+* Note that Z3_get_numeral_small is essentially redundant
+
+The error behavior of Z3_get_numeral_small does not follow the pattern of
+the other functions. The functions that have out params and return a bool
+indicating success (such as Z3_get_numeral_rational_int64) return false
+rather than signaling an error when given an unsupported expression
+argument (such as a rounding mode value). The functions that do not have out
+params signal an error in such cases. Z3_get_numeral_small is the odd one
+out in that it signals errors and returns a status bool.
+
+This error handling is the only difference between Z3_get_numeral_small and
+Z3_get_numeral_rational_int64, so this patch adds a comment to the
+documentation.
