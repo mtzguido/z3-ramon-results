@@ -1,0 +1,17 @@
+Ramon benchmark for Z3
+-
+Job description: dio on certora random seed
+Job tag: dio_certora_random_seed
+Runner: lev-ripper
+Z3 repo: Z3Prover/z3
+Z3 commit: 14e2aadad0b55b8b6c52e52ea534f9470c8f88dd
+Z3 branch: 
+Z3 options: "-T:600 lp.dio_eqs=true -st smt.random_seed=159"
+Z3 inputs: inputs/certora
+Z3 commit message: include LICENSE.txt in wheels (#7614)
+
+Update setup.py so that we copy LICENSE.TXT to src/api/python before
+creating the sdist.  Any wheels built from this sdist will now
+contain the LICENSE.txt file.
+
+Fixes #7604
