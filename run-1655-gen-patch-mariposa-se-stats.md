@@ -1,0 +1,334 @@
+# .
+
+* SAT 0
+* UNSAT 259
+* TIMEOUT 0
+* UNKNOWN 1
+
+* UNSET 42
+
+* ERROR 42
+
+# Meta data
+
+<pre>
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: gen-patch-mariposa-se
+Runner: rise-runner-1
+Z3 repo: CanCebeci/z3
+Z3 commit: aec453eb9bad24f44f4f6101b46004389bd16bb0
+Z3 branch: master
+Z3 options: "%OPTIONS2%"
+Z3 inputs: inputs/mariposa/stable_ext
+Z3 commit message: Enforce stickiness of max-generation
+
+</pre>
+
+
+# Statistics
+|FILE                                                         |TIME     |MEM        | STATUS   | EXIT | STDOUT | STDERR | 
+|------------|----------:|---------:|-------------:| ----------:|--------|--------| 
+|d_fvbkv-lib-Math-mul.i.dfy.Impl__Math____mul__i.__default.lemma__mul__one__to__one__pos.smt2 |    0.100s | 22.852MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Marshalling-Math.i.dfy.Impl__Math.__default.lemma__div__ind.smt2 |    0.106s | 22.428MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Math-mul.i.dfy.Impl__Math____mul__i.__default.lemma__mul__equality__converse.smt2 |    0.126s | 23.272MiB| unsat | 0 |  |  |
+|d_lvbkv-BlockCacheSystem-DiskLayout.i.dfy.Impl__DiskLayout.__default.ValidNodeAddrMul.smt2 |    0.132s | 23.884MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-BitmapImpl.i.dfy.Impl__BitmapImpl.Bitmap.Unset.smt2 |    0.180s | 25.428MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Base-sequences.i.dfy.Impl__Sequences.__default.UnflattenFlattenIdentity.smt2 |    0.190s | 25.92MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-BitmapImpl.i.dfy.Impl__BitmapImpl.Bitmap.Set.smt2 |    0.195s | 25.356MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Base-total_order.i.dfy.Impl__Char__Order.__default.FlattenStrictlySorted.smt2 |    0.200s | 26.984MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Base-Sequences.i.dfy.Impl__Sequences.__default.UnflattenIndexIsCorrect.smt2 |    0.207s | 27.952MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Base-total_order.i.dfy.Impl__Uint32__Order.__default.FlattenStrictlySorted.smt2 |    0.209s | 26.924MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Base-total_order.i.dfy.Impl__Uint64__Order.__default.FlattenStrictlySorted.smt2 |    0.213s | 27.66MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Marshalling-Util.i.dfy.Impl__Common____Util__i.__default.seqIntoArrayChar.smt2 |    0.246s | 32.368MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Checksums-CRC32C_Lemmas.i.dfy.Impl__CRC32C__Lemmas.__default.advances__bytes__refl.smt2 |    0.259s | 31.912MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Base-Sequences.i.dfy.CheckWellformed__Sequences.__default.RemoveOneValue.smt2 |    0.275s | 27.332MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Checksums-CRC32CImpl.i.dfy.Impl__CRC32__C__Impl.__default.advanced__of__iterated__intrinsic.smt2 |    0.286s | 33.06MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Checksums-CRC32CArrayImpl.i.dfy.Impl__CRC32__C__Array__Impl.__default.advanced__of__iterated__intrinsic.smt2 |    0.310s | 34.928MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Base-total_order.i.dfy.Impl__Total__Order.__default.FlattenStrictlySorted.smt2 |    0.318s | 28.74MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Base-sequences.i.dfy.Impl__Sequences.__default.FlattenAdditive.smt2 |    0.328s | 28.632MiB| unsat | 0 |  |  |
+|d_lvbkv-BlockCacheSystem-JournalInterval.i.dfy.Impl__JournalIntervals.__default.Disk__Journal__Read2.smt2 |    0.346s | 31.504MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Base-total_order.i.dfy.Impl__Total__Order.__default.strictlySortedInsert.smt2 |    0.348s | 27.948MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-DataStructures-BtreeModel.i.dfy.Impl__BtreeModel.__default.InterpretationInheritance.smt2 |    0.348s | 30.16MiB| unsat | 0 |  |  |
+|d_lvbkv-MapSpec-TSJMap_Refines_ThreeStateVersionedMap.i.dfy.Impl__TSJMap__Refines__ThreeStateVersionedMap.__default.apply__eq__apply__uiops.smt2 |    0.351s | 31.164MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Marshalling-GenericMarshalling.i.dfy.CheckWellformed__GenericMarshalling.__default.parse__Val.smt2 |    0.354s | 28.76MiB| unsat | 0 |  |  |
+|d_komodo-verified-sha-sha256.i.dfyImpl___module.__default.lemma__ArrayOffsetConcatenation.smt2 |    0.357s | 31.044MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-DataStructures-BtreeModel.i.dfy.Impl__BtreeModel.__default.InterpretationDelegation.smt2 |    0.368s | 31.42MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-PackedStringArray.i.dfy.Impl__PackedStringArray.__default.PsaSuffix.smt2 |    0.374s | 30.568MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-PackedStringArray.i.dfy.Impl__PackedStringArray.__default.PivotIndexes.smt2 |    0.376s | 30.64MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Marshalling-GenericMarshalling.i.dfy.Impl__GenericMarshalling.__default.lemma__parse__Val__view__ByteArray.smt2 |    0.391s | 30.348MiB| unsat | 0 |  |  |
+|d_komodo-verified-sha-bit-vector-lemmas.i.dfyImpl___module.__default.lemma__Ch.smt2 |    0.396s | 31.436MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-DataStructures-KMBtree.i.dfy.Impl__KMBtreeModel.__default.InterpretationDelegation.smt2 |    0.399s | 31.744MiB| unsat | 0 |  |  |
+|d_lvbkv-MapSpec-TSJMap_Refines_ThreeStateVersionedMap.i.dfy.Impl__TSJMap__Refines__ThreeStateVersionedMap.__default.RefinesMove3.smt2 |    0.403s | 34.596MiB| unsat | 0 |  |  |
+|d_komodo-verified-sha-sha256.i.dfyImpl___module.__default.lemma__ConcatenateSeqs__Adds.smt2 |    0.411s | 34.272MiB| unsat | 0 |  |  |
+|d_lvbkv-BlockCacheSystem-JournalInterval.i.dfy.Impl__JournalIntervals.__default.concatFoldAdditive.smt2 |    0.416s | 32.72MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-JournalistMarshallingModel.i.dfy.Impl__JournalistMarshallingModel.__default.parsesFromStuff.smt2 |    0.423s | 33.68MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-PackedStringArray.i.dfy.Impl__PackedStringArray.__default.psaAppendSeqAdditive.smt2 |    0.424s | 34.216MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-MutableMapModel.i.dfy.CheckWellformed__MutableMapModel.__default.iterToNext.smt2 |    0.449s | 31.94MiB| unsat | 0 |  |  |
+|d_komodo-verified-sha-bit-vector-lemmas.i.dfyImpl___module.__default.lemma__Maj.smt2 |    0.461s | 31.948MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-BucketWeights.i.dfy.Impl__BucketWeights.__default.WeightSplitBucketInList.smt2 |    0.486s | 35.252MiB| unsat | 0 |  |  |
+|d_komodo-verified-ptebits.i.dfyImpl___module.__default.lemma__ARM__L2PTE_split0.smt2 |    0.490s | 45.816MiB| unsat | 0 |  |  |
+|d_komodo-verified-sha-sha256.i.dfyImpl___module.__default.lemma__Trace__stitching.smt2 |    0.490s | 51.772MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Base-total_order.i.dfy.Impl__Total__Order.__default.FlattenStrictlySorted.smt2 |    0.493s | 41.48MiB| unsat | 0 |  |  |
+|d_lvbkv-Versions-CompositeView.i.dfy.Impl__CompositeView.__default.FreezePreservesInv.smt2 |    0.505s | 36.248MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-MutableMapModel.i.dfy.Impl__MutableMapModel.__default.MapFromStorageProperties.smt2 |    0.506s | 37.2MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-BucketWeights.i.dfy.Impl__BucketWeights.__default.WeightMessageListFlatten.smt2 |    0.528s | 53.656MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-BucketsLib.i.dfy.Impl__BucketsLib.__default.WFSplitBucketInList.smt2 |    0.537s | 35.744MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-JournalistImpl.i.dfy.Impl__JournalistImpl.Journalist.packageInMemoryJournal.smt2 |    0.548s | 37.416MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-PackedKV.i.dfy.Impl__PackedKV.__default.DefineIMessage.smt2 |    0.566s | 44.188MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-PackedKV.i.dfy.Impl__PackedKV.__default.psaTotalLengthBound.smt2 |    0.569s | 45.2MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-PackedStringArray.i.dfy.Impl__PackedStringArray.DynamicPsa.FromSeq.smt2 |    0.574s | 34.144MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-PackedKV.i.dfy.CheckWellformed__PackedKV.__default.LastKey.smt2 |    0.577s | 45.052MiB| unsat | 0 |  |  |
+|d_komodo-verified-ptebits.i.dfyImpl___module.__default.lemma__l2indexFromMapping__shifts.smt2 |    0.581s | 47.708MiB| unsat | 0 |  |  |
+|d_fvbkv-Versions-CompositeView_Refines_TSJMap.i.dfy.Impl__CompositeView__Refines__TSJMap.__default.CrashRefines.smt2 |    0.593s | 39.068MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-PackedKV.i.dfy.Impl__PackedKV.__default.psaTotalLengthBound.smt2 |    0.626s | 46.488MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-BucketWeights.i.dfy.Impl__BucketWeights.__default.WeightKeyListFlatten.smt2 |    0.632s | 53.44MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-JournalistImpl.i.dfy.Impl__JournalistImpl.Journalist.parseJournals.smt2 |    0.636s | 54.656MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-PackedKVMarshalling.i.dfy.Impl__PackedKVMarshalling.__default.ComputeWF.smt2 |    0.643s | 46.112MiB| unsat | 0 |  |  |
+|d_lvbkv-MapSpec-TSJMap_Refines_ThreeStateVersionedMap.i.dfy.Impl__TSJMap__Refines__ThreeStateVersionedMap.__default.RefinesStutter.smt2 |    0.662s | 38.18MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-PackedStringArray.i.dfy.CheckWellformed__PackedStringArray.__default.psaAppendSeq.smt2 |    0.691s | 53.216MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-KMBPKVOps.i.dfy.Impl__KMBPKVOps.__default.IMessagesInverse.smt2 |    0.699s | 49.476MiB| unsat | 0 |  |  |
+|d_lvbkv-Versions-CompositeView.i.dfy.Impl__CompositeView.__default.AdvancePreservesInv.smt2 |    0.705s | 37.832MiB| unsat | 0 |  |  |
+|d_lvbkv-MapSpec-TSJ.i.dfy.Impl__TSJ.__default.ExtendLog2StepPreservesInv.smt2 |    0.720s | 39.808MiB| unsat | 0 |  |  |
+|d_lvbkv-PivotBetree-PivotBetreeSpecWFNodes.i.dfy.Impl__PivotBetreeSpecWFNodes.__default.WFApplyRepivot.smt2 |    0.730s | 50.824MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-PackedKV.i.dfy.CheckWellformed__DynamicPkv.__default.PKVISeq.smt2 |    0.742s | 50.78MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-BucketWeights.i.dfy.Impl__BucketWeights.__default.WMWeightBucketListFlush.smt2 |    0.750s | 54.48MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-DataStructures-KMBtree.i.dfy.Impl__KMBtreeModel.__default.InterpretationsDisjointUnion.smt2 |    0.750s | 54.1MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-JournalistModel.i.dfy.CheckWellformed__JournalistModel.__default.parseJournals.smt2 |    0.758s | 39.94MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-PackedKV.i.dfy.CheckWellformed__DynamicPkv.__default.PKVISeq.smt2 |    0.764s | 50.784MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-LKMBPKVOps.i.dfy.Impl__LKMBPKVOps.__default.IMessagesInverse.smt2 |    0.785s | 51.224MiB| unsat | 0 |  |  |
+|d_fvbkv-PivotBetree-PivotBetreeSpecRefinement.i.dfy.Impl__PivotBetreeSpecRefinement.__default.CutoffNodeAndKeepRightAgree.smt2 |    0.793s | 50.804MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-BucketImpl.i.dfy.Impl__BucketImpl.MutBucket.WeightKeySeqIs.smt2 |    0.793s | 50.064MiB| unsat | 0 |  |  |
+|d_komodo-verified-valedecls.gen.dfyImpl___module.__default.va__lemma__MSR.smt2 |    0.807s | 52.116MiB| unsat | 0 |  |  |
+|d_komodo-verified-smcapi.i.dfyImpl___module.__default.lemma__ConcatenateSeqs__Adds_k.smt2 |    0.851s | 54.264MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-BucketWeights.i.dfy.Impl__BucketWeights.__default.WeightSplitBucketInList.smt2 |    0.856s | 52.672MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-BucketImpl.i.dfy.Impl__BucketImpl.MutBucket.GetMiddleKey.smt2 |    0.892s | 53.784MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-BucketModel.i.dfy.Impl__BucketModel.__default.mergeToChildrenIterSlack_split0.smt2 |    0.893s | 51.844MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-JournalistImpl.i.dfy.Impl__JournalistImpl.Journalist.freeze.smt2 |    0.896s | 39.712MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.gen.dfyCheckWellformed___module.__default.va__lemma__stack__banked__regs1.smt2 |    0.921s | 93.88MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-PackedKV.i.dfy.Impl__PackedKV.__default.SplitRight.smt2 |    0.929s | 53.984MiB| unsat | 0 |  |  |
+|d_fvbkv-Versions-CompositeView_Refines_TSJMap.i.dfy.Impl__CompositeView__Refines__TSJMap.__default.JournalInternalRefines.smt2 |    0.958s | 56.76MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-PackedKVMarshalling.i.dfy.Impl__PackedKVMarshalling.__default.SizeOfVPackedStringArrayIsKeyListWeight.smt2 |    0.961s | 53.936MiB| unsat | 0 |  |  |
+|d_lvbkv-PivotBetree-TSJPivotBetree.i.dfy.Impl__TSJPivotBetree.__default.NextStepPreservesInv.smt2 |    0.982s | 95.416MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-KMBPKVOps.i.dfy.Impl__KMBPKVOps.__default.canAppendMessagesIterate.smt2 |    1.002s | 55.196MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.gen.dfyCheckWellformed___module.__default.va__lemma__switch__addrspace.smt2 |    1.003s | 94.388MiB| unsat | 0 |  |  |
+|d_komodo-verified-secprop-integ_ni.i.dfyImpl___module.__default.lemma__enc__ni.smt2 |    1.093s | 93.964MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.gen.dfyCheckWellformed___module.__default.va__lemma__pre__entry__resume.smt2 |    1.184s | 96.016MiB| unsat | 0 |  |  |
+|d_lvbkv-Versions-CompositeView_Refines_TSJMap.i.dfy.Impl__CompositeView__Refines__TSJMap.__default.JournalInternalRefines.smt2 |    1.196s | 55.752MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-MutableMapModel.i.dfy.Impl__MutableMapModel.__default.UpdatePreservesSimpleIter.smt2 |    1.205s | 39.96MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-LKMBPKVOps.i.dfy.Impl__LKMBPKVOps.__default.ToPkv.smt2 |    1.209s | 59.716MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-NodeImpl.i.dfy.Impl__NodeImpl.Node.UpdateSlot.smt2 |    1.267s | 79.164MiB| unsat | 0 |  |  |
+|d_komodo-verified-ptables.i.dfyImpl___module.__default.lemma__memstatecontainspage.smt2 |    1.270s | 60.508MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-KMBtree.i.dfy.Impl__KMBtree.__default.InsertIndexSelectAndPrepareChild.smt2 |    1.329s | 56.892MiB| unsat | 0 |  |  |
+|d_lvbkv-BlockCacheSystem-BlockCache.i.dfy.Impl__BlockCache.__default.AllocStepPreservesInv.smt2 |    1.410s | 58.736MiB| unsat | 0 |  |  |
+|d_komodo-verified-sha-hmac.gen.dfyCheckWellformed___module.__default.va__lemma__hmac__inner.smt2 |    1.448s | 98.204MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-PackedKV.i.dfy.Impl__DynamicPkv.__default.PartialFlush.smt2 |    1.453s | 96.104MiB| unsat | 0 |  |  |
+|d_komodo-verified-secprop-sec_prop_util.i.dfyImpl___module.__default.lemma__maybeContents__insec__ni.smt2 |    1.517s | 96.104MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-LKMBPKVOps.i.dfy.Impl__LKMBPKVOps.__default.canAppendKeysIterate.smt2 |    1.564s | 98.484MiB| unsat | 0 |  |  |
+|d_komodo-verified-ptables.i.dfyImpl___module.__default.lemma__ptablesmatch_split11.smt2 |    1.612s | 59.236MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-BtreeModel.i.dfy.Impl__BtreeModel.__default.InsertLeafIsCorrect.smt2 |    1.632s | 53.256MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Marshalling-Util.i.dfy.CheckWellformed__Common____Util__i.__default.Uint64ToSeqByte.smt2 |    1.666s | 30.484MiB| unsat | 0 |  |  |
+|d_komodo-verified-secprop-conf_ni_entry.i.dfyImpl___module.__default.lemma__data__page__eqdb__to__addrs.smt2 |    1.669s | 99.208MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.i.dfyCheckWellformed___module.__default.lemma__evalMOVSPCLRUC__inner.smt2 |    1.686s | 99.04MiB| unsat | 0 |  |  |
+|d_lvbkv-PivotBetree-PivotBetree.i.dfy.Impl__PivotBetree.__default.StutterStepRefines.smt2 |    1.692s | 62.936MiB| unsat | 0 |  |  |
+|d_komodo-verified-init_l2ptable.gen.dfyCheckWellformed___module.__default.va__lemma__init__l2ptable__success.smt2 |    1.724s | 97.84MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.i.dfyImpl___module.__default.lemma__partialEnclaveExecution__done.smt2 |    1.727s | 99.764MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.i.dfyImpl___module.__default.lemma__partialEnclaveExecution__append.smt2 |    1.727s | 98.976MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-BucketWeights.i.dfy.Impl__BucketWeights.__default.WeightBucketListItemFlushSingletonOrEmpty.smt2 |    1.730s | 57.528MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.i.dfyImpl___module.__default.lemma__userExecutionUpdatesPageDb_split0.smt2 |    1.732s | 98.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-smcapi.i.dfyImpl___module.__default.kom__smc__map__measure__helper2.smt2 |    1.754s | 62.392MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Base-total_order.i.dfy.Impl__Total__Order.__default.strictlySortedInsert.smt2 |    1.755s | 69.832MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-BucketImpl.i.dfy.Impl__BucketImpl.MutBucket.SplitOneInList.smt2 |    1.755s | 98.768MiB| unsat | 0 |  |  |
+|d_komodo-verified-svc_handlers.gen.dfyCheckWellformed___module.__default.va__lemma__svc__unmap__data.smt2 |    1.815s | 103.0MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-DataStructures-KMBtree.i.dfy.Impl__LKMBtree.__default.InsertLeaf.smt2 |    1.841s | 56.148MiB| unsat | 0 |  |  |
+|d_komodo-verified-exception_handlers.gen.dfyCheckWellformed___module.__default.va__lemma__save__disp__context.smt2 |    1.843s | 103.0MiB| unsat | 0 |  |  |
+|d_lvbkv-BlockCacheSystem-BetreeSystem_Refines_StatesViewPivotBetree.i.dfy.Impl__BetreeSystem__Refines__StatesViewPivotBetree.__default.CrashStepRefines.smt2 |    1.867s | 88.8MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-MarshallingImpl.i.dfy.Impl__MarshallingImpl.__default.bucketToVal.smt2 |    1.927s | 99.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-psrbits.i.dfyImpl___module.__default.lemma__update__psr__f.smt2 |    1.940s | 59.208MiB| unsat | 0 |  |  |
+|d_fvbkv-Betree-BetreeInv.i.dfy.Impl__BetreeInv.__default.RedirectResultingGraphAfterAllocs.smt2 |    1.989s | 53.476MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-LKMBPKVOps.i.dfy.Impl__LKMBPKVOps.__default.canAppendMessagesIterate.smt2 |    2.012s | 95.836MiB| unsat | 0 |  |  |
+|d_komodo-verified-attest.gen.dfyCheckWellformed___module.__default.va__lemma__svc__returning__attest__inner.smt2 |    2.069s | 102.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-smcapi.i.dfyCheckWellformed___module.__default.kom__smc__map__measure__helper2.smt2 |    2.077s | 97.0MiB| unsat | 0 |  |  |
+|d_lvbkv-ByteBlockCacheSystem-ByteSystem.i.dfy.Impl__ByteSystem.__default.NextStepPreservesInv.smt2 |    2.188s | 108.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-BucketGeneratorImpl.i.dfy.Impl__BucketGeneratorImpl.Generator.GenFromBucketStackWithLowerBound.smt2 |    2.203s | 96.088MiB| unsat | 0 |  |  |
+|d_komodo-verified-allocate_page.gen.dfyCheckWellformed___module.__default.va__lemma__addrspace__incref.smt2 |    2.249s | 94.648MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-MutableBtree.i.dfy.Impl__TestBtreeModel.__default.SplitIndexInterpretation1.smt2 |    2.277s | 57.796MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-MutableBtree.i.dfy.Impl__MutableBtree.__default.InsertIndexSelectAndPrepareChild.smt2 |    2.283s | 57.208MiB| unsat | 0 |  |  |
+|d_komodo-verified-init_l2ptable.gen.dfyImpl___module.__default.lemma__SecurePage.smt2 |    2.285s | 99.196MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-BtreeModel.i.dfy.Impl__BtreeModel.__default.SplitIndexInterpretation2.smt2 |    2.294s | 57.448MiB| unsat | 0 |  |  |
+|d_komodo-verified-memset.gen.dfyImpl___module.__default.va__lemma__memcpy.smt2 |    2.392s | 61.832MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-KMBtree.i.dfy.Impl__KMBtreeModel.__default.InterpretationsDisjointUnion.smt2 |    2.446s | 56.752MiB| unsat | 0 |  |  |
+|d_fvbkv-PivotBetree-PivotBetreeSpecWFNodes.i.dfy.Impl__PivotBetreeSpecWFNodes.__default.ValidMergeWritesInvNodes.smt2 |    2.480s | 63.844MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-IndirectionTableModel.i.dfy.Impl__IndirectionTableModel.__default.LemmaComputeRefCountsEntryIterateCorrectPartial.smt2 |    2.612s | 99.152MiB| unsat | 0 |  |  |
+|d_fvbkv-BlockCacheSystem-BetreeCache.i.dfy.Impl__BetreeCache.__default.BetreeMoveStepPreservesInv.smt2 |    2.672s | 94.66MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-PackedKV.i.dfy.Impl__DynamicPkv.__default.MergeToChildren.smt2 |    2.673s | 99.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-QueryModel.i.dfy.Impl__QueryModel.__default.AugmentLookup.smt2 |    2.684s | 97.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-IndirectionTableModel.i.dfy.CheckWellformed__IndirectionTableModel.__default.RemoveRef.smt2 |    2.705s | 99.48MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-BucketsLib.i.dfy.Impl__BucketsLib.__default.WFProperMergeBucketsInList.smt2 |    2.738s | 93.32MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-JournalistMarshallingModel.i.dfy.Impl__JournalistMarshallingModel.__default.fillInChecksumsPreserves.smt2 |    2.855s | 67.644MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-KMBtree.i.dfy.Impl__KMBtreeModel.__default.SplitIndexInterpretation1.smt2 |    2.980s | 57.564MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Base-Multisets.i.dfy.Impl__Multisets.__default.FoldAdditive.smt2 |    2.987s | 58.94MiB| unsat | 0 |  |  |
+|d_lvbkv-BlockCacheSystem-BetreeJournalSystem_Refines_ThreeStateVersionedMap.i.dfy.Impl__BetreeJournalSystem__Refines__ThreeStateVersionedMap.__default.RefinesNext.smt2 |    3.085s | 217.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-CommitterImpl.i.dfy.Impl__CommitterImpl.Committer.FinishLoadingOtherPhase.smt2 |    3.171s | 167.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-svc_handlers.gen.dfyCheckWellformed___module.__default.lemma__svc__returning__verify__step0__helper.smt2 |    3.277s | 104.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.i.dfyImpl___module.__default.lemma__userExecutionPreservesStack.smt2 |    3.412s | 111.0MiB| unsat | 0 |  |  |
+|d_fvbkv-PivotBetree-PivotBetree.i.dfy.Impl__PivotBetree.__default.BetreeStepRefines.smt2 |    3.419s | 94.14MiB| unsat | 0 |  |  |
+|d_komodo-verified-map_secure.gen.dfyImpl___module.__default.lemma__preserve__contentsOfPhysPage.smt2 |    3.470s | 115.0MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-MutableMapModel.i.dfy.CheckWellformed__MutableMapModel.__default.IterInc.smt2 |    3.481s | 45.472MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Base-Multisets.i.dfy.Impl__Multisets.__default.ApplySeq.smt2 |    3.508s | 68.696MiB| unsat | 0 |  |  |
+|d_komodo-verified-secprop-integ_ni_entry.i.dfyImpl___module.__default.lemma__enter__enc__ni.smt2 |    3.648s | 102.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-secprop-conf_ni.i.dfyImpl___module.__default.lemma__conf__ni.smt2 |    3.651s | 101.0MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-BtreeModel.i.dfy.Impl__BtreeModel.__default.SplitChildOfIndexPreservesInterpretationB.smt2 |    3.685s | 65.912MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.gen.dfyCheckWellformed___module.__default.va__lemma__stack__banked__regs3.smt2 |    3.793s | 93.676MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.i.dfyImpl___module.__default.lemma__validEnclaveExecutionStep__PageDb.smt2 |    3.890s | 132.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-secprop-conf_ni_entry.i.dfyImpl___module.__default.lemma__data__eqpdb__to__addrs.smt2 |    4.089s | 98.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.gen.dfyCheckWellformed___module.__default.va__lemma__stack__banked__regs2.smt2 |    4.332s | 93.372MiB| unsat | 0 |  |  |
+|d_lvbkv-BlockCacheSystem-BlockSystem.i.dfy.Impl__BlockSystem.__default.WriteBackIndirectionTableReqStepPreservesInv.smt2 |    4.363s | 108.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-exception_handlers.gen.dfyCheckWellformed___module.__default.va__lemma__CPSID__IAF.smt2 |    4.716s | 106.0MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Checksums-F2_X_Lemmas.i.dfy.Impl__F2__X__Lemmas.__default.pq__r__partial.smt2 |    4.890s | 111.0MiB| unknown | 0 |  |  |
+|d_komodo-verified-sha-hmac.gen.dfyImpl___module.__default.va__lemma__hmac__inner__prep__input.smt2 |    5.102s | 132.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-EvictImpl.i.dfy.Impl__EvictImpl.__default.Evict.smt2 |    5.216s | 168.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-secprop-conf_ni_entry.i.dfyImpl___module.__default.lemma__userStatesEquiv__atkr.smt2 |    5.364s | 117.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-IndirectionTableImpl.i.dfy.Impl__IndirectionTableImpl.IndirectionTable.InitLocBitmap.smt2 |    5.364s | 105.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.gen.dfyCheckWellformed___module.__default.va__lemma__unstack__banked__regs3.smt2 |    5.379s | 138.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-MarshallingImpl.i.dfy.Impl__MarshallingImpl.__default.bucketsToVal.smt2 |    5.538s | 170.0MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-DataStructures-KMBtree.i.dfy.Impl__KMBtreeModel.__default.InterpretationInheritance.smt2 |    5.685s | 98.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-secprop-conf_ni.i.dfyImpl___module.__default.lemma__initAddrspace__loweq__pdb.smt2 |    5.733s | 108.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-attest.gen.dfyCheckWellformed___module.__default.va__lemma__compute__hmac.smt2 |    5.808s | 111.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-map_insecure.gen.dfyImpl___module.__default.va__lemma__mkl2pte__insecure.smt2 |    6.008s | 126.0MiB| unsat | 0 |  |  |
+|s_komodo-1435.3.smt2                                         |    6.042s | 182.0MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-MutableBtree.i.dfy.Impl__MutableBtree.__default.InsertIndexChildNotFull.smt2 |    6.344s | 97.832MiB| unsat | 0 |  |  |
+|d_komodo-verified-verify_input.gen.dfyImpl___module.__default.va__lemma__arrange__verification__input.smt2 |    6.461s | 128.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-memset.gen.dfyCheckWellformed___module.__default.va__lemma__memcpy__bare.smt2 |    6.476s | 86.404MiB| unsat | 0 |  |  |
+|d_lvbkv-PivotBetree-PivotBetreeSpecRefinement.i.dfy.Impl__PivotBetreeSpecRefinement.__default.SplitRouteNewChild.smt2 |    6.554s | 163.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-memset.gen.dfyCheckWellformed___module.__default.va__lemma__memcpy.smt2 |    6.654s | 111.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-ptables.i.dfyImpl___module.__default.lemma__OnlyPTPagesInHwPTable.smt2 |    6.702s | 111.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-verify.gen.dfyCheckWellformed___module.__default.va__lemma__svc__returning__verify__inner.smt2 |    6.798s | 159.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-InsertImpl.i.dfy.Impl__InsertImpl.__default.insert.smt2 |    6.919s | 171.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-pagedb.i.dfyImpl___module.__default.AllButOnePagePreserving.smt2 |    7.134s | 115.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-smcapi.i.dfyImpl___module.__default.AllButOnePageOrStackPreserving.smt2 |    7.243s | 106.0MiB| unsat | 0 |  |  |
+|d_fvbkv-ByteBlockCacheSystem-ByteSystem.i.dfy.Impl__ByteSystem.__default.ProcessWritePreservesInv.smt2 |    7.320s | 171.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Betree-AsyncBetree_Refines_AsyncMap.i.dfy.Impl__AsyncBetree__Refines__AsyncMap.__default.RefinesQueryEndStep.smt2 |    7.648s | 106.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-svc_handlers.gen.dfyImpl___module.__default.lemma__svc__returning__WordAlignedStack.smt2 |    7.822s | 129.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-CommitterInitImpl.i.dfy.Impl__CommitterInitImpl.__default.FinishLoadingOtherPhase.smt2 |    8.061s | 168.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-secprop-conf_ni_entry.i.dfyImpl___module.__default.lemma__userMemEquiv__atkr.smt2 |    8.147s | 121.0MiB| unsat | 0 |  |  |
+|d_lvbkv-PivotBetree-PivotBetreeSpecRefinement.i.dfy.Impl__PivotBetreeSpecRefinement.__default.RefinesLookup.smt2 |    8.261s | 108.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-MarshallingImpl.i.dfy.Impl__MarshallingImpl.__default.ValToBuckets.smt2 |    8.278s | 167.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-allocate_page.gen.dfyCheckWellformed___module.__default.va__lemma__allocate__page__success.smt2 |    8.353s | 99.64MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-MarshallingImpl.i.dfy.Impl__MarshallingImpl.__default.nodeToVal.smt2 |    8.421s | 177.0MiB| unsat | 0 |  |  |
+|d_fvbkv-ByteBlockCacheSystem-InterpretationDisk.i.dfy.Impl__InterpretationDisk.__default.RefinesReqWriteOp.smt2 |    8.697s | 173.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-smcapi.i.dfyImpl___module.__default.initDispatcherPreservesPageDBValidity.smt2 |    8.871s | 110.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-sha-sha256-api.gen.dfyImpl___module.__default.va__abstract__sha256__init.smt2 |    8.911s | 103.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-map_common.gen.dfyCheckWellformed___module.__default.lemma__update__l2pte__helper1.smt2 |    9.035s | 152.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-exception_handlers.gen.dfyImpl___module.__default.va__lemma__switch__to__monitor.smt2 |    9.517s | 120.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-map_common.gen.dfyImpl___module.__default.va__lemma__mkL2Pte__secure.smt2 |    9.585s | 114.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-smcapi.i.dfyImpl___module.__default.lemma__validEnclaveExecutionStep__validPageDb.smt2 |    9.616s | 119.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-init_l2ptable.gen.dfyCheckWellformed___module.__default.va__lemma__zero__l2__page.smt2 |    9.641s | 155.0MiB| unsat | 0 |  |  |
+|d_fvbkv-BlockCacheSystem-BetreeSystem_Refines_StatesViewPivotBetree.i.dfy.Impl__BetreeSystem__Refines__StatesViewPivotBetree.__default.BetreeMoveStepRefines.smt2 |    9.647s | 115.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-MarshallingImpl.i.dfy.Impl__MarshallingImpl.__default.nodeToVal.smt2 |   10.367s | 175.0MiB| unsat | 0 |  |  |
+|d_lvbkv-PivotBetree-PivotBetreeSpecRefinement.i.dfy.Impl__PivotBetreeSpecRefinement.__default.RefinesValidFlush.smt2 |   11.242s | 173.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-attest_input.gen.dfyImpl___module.__default.va__lemma__arrange__attestation__input.smt2 |   11.621s | 197.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Betree-Betree_Refines_Map.i.dfy.Impl__Betree__Refines__Map.__default.SuccQueryStepRefinesMap.smt2 |   11.668s | 101.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-finalise.gen.dfyCheckWellformed___module.__default.lemma__kom__smc__finalise__success__helper1.smt2 |   11.932s | 134.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-IOImpl.i.dfy.Impl__IOImpl.__default.writeNodeResponse.smt2 |   12.036s | 170.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-JournalistMarshallingModel.i.dfy.Impl__JournalistMarshallingModel.__default.writeOntoResult.smt2 |   12.054s | 175.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-exhandler_state.i.dfyCheckWellformed___module.__default.lemma__SVCFIQNestedExceptionIsCorrect.smt2 |   12.088s | 187.0MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-Buckets-KMBPKVOps.i.dfy.Impl__KMBPKVOps.__default.ToPkv.smt2 |   12.364s | 117.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Betree-BetreeInv.i.dfy.Impl__BetreeInv.__default.RedirectPreservesRootHasNoPred.smt2 |   12.405s | 174.0MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Buckets-LKMBPKVOps.i.dfy.Impl__LKMBPKVOps.__default.LeafFillDpkv.smt2 |   12.477s | 124.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.gen.dfyImpl___module.__default.lemma__stackunstack__banked__regs.smt2 |   12.689s | 113.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-SplitImpl.i.dfy.Impl__SplitImpl.__default.splitBookkeeping.smt2 |   13.018s | 173.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-IOImpl.i.dfy.Impl__IOImpl.__default.writeNodeResponse.smt2 |   13.089s | 171.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-BookkeepingModel.i.dfy.Impl__BookkeepingModel.__default.writeCorrect.smt2 |   13.427s | 171.0MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-DataStructures-LinearContentMutableMap.i.dfy.Impl__LinearContentMutableMap.__default.Probe.smt2 |   13.590s | 75.992MiB| unsat | 0 |  |  |
+|d_lvbkv-ByteBlockCacheSystem-ByteSystem_Refines_BetreeJournalSystem.i.dfy.Impl__ByteSystem__Refines__BetreeJournalSystem.__default.RefinesNext.smt2 |   14.083s | 402.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-init_l2ptable.gen.dfyImpl___module.__default.va__lemma__init__l2ptable__success_split0.smt2 |   14.396s | 119.0MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Base-Multisets.i.dfy.Impl__Multisets.__default.FoldAdditive.smt2 |   14.544s | 142.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Betree-BetreeInv.i.dfy.Impl__BetreeInv.__default.InsertMessagePreservesLookupsPut.smt2 |   14.757s | 112.0MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-Checksums-F2_X_Lemmas.i.dfy.Impl__F2__X__Lemmas.__default.p__qr__partial.smt2 |   15.100s | 199.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-svc_handlers.gen.dfyImpl___module.__default.va__lemma__monvaddr__page__impl.smt2 |   15.112s | 120.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-svc_handlers.gen.dfyCheckWellformed___module.__default.va__lemma__svc__returning__verify__step0.smt2 |   15.117s | 185.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-map_common.gen.dfyImpl___module.__default.lemma__update__l2pte__helper1.smt2 |   15.237s | 130.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-map_insecure.gen.dfyImpl___module.__default.va__lemma__phys__page__is__insecure__ram.smt2 |   17.674s | 185.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-exhandler_state.i.dfyImpl___module.__default.lemma__KomUserEntryPrecond__Preserved.smt2 |   20.850s | 186.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-alloc_spare.gen.dfyImpl___module.__default.va__lemma__kom__smc__alloc__spare.smt2 |   21.649s | 185.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Betree-Betree_Refines_Map.i.dfy.Impl__Betree__Refines__Map.__default.RefinesNextStep.smt2 |   22.126s | 191.0MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-DataStructures-MutableMapModel.i.dfy.Impl__MutableMapModel.__default.IndexSetMatchesContents.smt2 |   22.484s | 109.0MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-MutableBtree.i.dfy.Impl__TestMutableBtree.__default.SplitIndex.smt2 |   23.036s | 116.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-sha-sha256-api.gen.dfyImpl___module.__default.va__refined__sha256__finalize.smt2 |   23.410s | 203.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-IndirectionTableImpl.i.dfy.Impl__IndirectionTableImpl.IndirectionTable.ValToIndirectionTable.smt2 |   23.753s | 183.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-secprop-conf_ni_entry.i.dfyCheckWellformed___module.__default.lemma__svcHandled__conf__not__atkr.smt2 |   24.038s | 191.0MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-KMBtree.i.dfy.Impl__KMBtree.__default.SplitIndex.smt2 |   24.122s | 117.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-BucketGeneratorImpl.i.dfy.Impl__BucketGeneratorImpl.Generator.GenCompose.smt2 |   25.454s | 170.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-attest_helpers.gen.dfyImpl___module.__default.va__lemma__unstack__all__regs.smt2 |   26.370s | 237.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-svc_handlers.gen.dfyImpl___module.__default.va__lemma__rng__read.smt2 |   26.704s | 223.0MiB| unsat | 0 |  |  |
+|d_fvbkv-Impl-HandleReadResponseImpl.i.dfy.Impl__HandleReadResponseImpl.__default.readResponse.smt2 |   26.724s | 181.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-sha-sha256-block-data-order.gen.dfyImpl___module.__default.va__abstract__sha256__block__data__order__inner.smt2 |   27.392s | 205.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-svc_handlers.gen.dfyCheckWellformed___module.__default.va__lemma__svc__map__data__success.smt2 |   28.733s | 188.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-BookkeepingModel.i.dfy.Impl__BookkeepingModel.__default.allocCorrect.smt2 |   28.738s | 204.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-smcapi.i.dfyImpl___module.__default.mapSecurePreservesPageDBValidity.smt2 |   29.098s | 183.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-sha-hmac.gen.dfyImpl___module.__default.va__lemma__hmac__outer.smt2 |   29.594s | 228.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.gen.dfyImpl___module.__default.va__lemma__unstack__banked__regs_split0.smt2 |   30.865s | 190.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-exhandler_state.i.dfyImpl___module.__default.lemma__PrivModeExceptionHandlersAreCorrect.smt2 |   30.914s | 188.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Betree-BetreeInv.i.dfy.Impl__BetreeInv.__default.FlushStepPreservesInvariant.smt2 |   30.951s | 114.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-sha-sha256-api.gen.dfyImpl___module.__default.va__refined__sha256__one__shot.smt2 |   31.160s | 205.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-CoordinationImpl.i.dfy.Impl__CoordinationImpl.__default.succ.smt2 |   31.822s | 229.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-secprop-conf_ni.i.dfyImpl___module.__default.lemma__mapSecure__loweq__pdb__success.smt2 |   33.649s | 358.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.gen.dfyImpl___module.__default.va__lemma__unstack__banked__regs1.smt2 |   33.699s | 184.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-SyncImpl.i.dfy.Impl__SyncImpl.__default.TryToWriteBlock.smt2 |   34.325s | 226.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-attest_helpers.gen.dfyCheckWellformed___module.__default.va__lemma__load__attestion__key__inner.smt2 |   35.479s | 275.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-exception_handlers.gen.dfyImpl___module.__default.va__lemma__CPSID__IAF.smt2 |   35.714s | 211.0MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-DataStructures-LinearContentMutableMap.i.dfy.Impl__LinearContentMutableMap.__default.FixedSizeInsertEntry.smt2 |   35.778s | 119.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-kom_utils.gen.dfyImpl___module.__default.va__abstract__load__32__bit__const.smt2 |   36.689s | 102.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-secprop-conf_ni_entry.i.dfyImpl___module.__default.lemma__svcHandled__conf__not__atkr.smt2 |   36.727s | 207.0MiB| unsat | 0 |  |  |
+|d_lvbkv-BlockCacheSystem-BlockSystem.i.dfy.Impl__BlockSystem.__default.AllocStepPreservesInv.smt2 |   38.576s | 339.0MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-MutableBtree.i.dfy.Impl__MutableBtree.__default.SplitIndex.smt2 |   39.535s | 190.0MiB| unsat | 0 |  |  |
+|d_lvbkv-lib-DataStructures-LinearMutableMap.i.dfy.Impl__LinearMutableMap.__default.UpdateByIter.smt2 |   41.547s | 123.0MiB| unsat | 0 |  |  |
+|d_lvbkv-Impl-SyncImpl.i.dfy.Impl__SyncImpl.__default.sync.smt2 |   46.917s | 231.0MiB| unsat | 0 |  |  |
+|d_fvbkv-lib-DataStructures-BtreeModel.i.dfy.Impl__BtreeModel.__default.SplitIndexInterpretation1.smt2 |   47.285s | 127.0MiB| unsat | 0 |  |  |
+|d_lvbkv-BlockCacheSystem-BlockSystem.i.dfy.Impl__BlockSystem.__default.WriteBackNodeRespStepPreservesGraphs.smt2 |   47.674s | 354.0MiB| unsat | 0 |  |  |
+|d_komodo-verified-entry.gen.dfyImpl___module.__default.va__lemma__enclaveexecution__loop.smt2 |   49.961s | 190.0MiB| unsat | 0 |  |  |
+|s_komodo-1551.3.smt2                                         |   65.472s | 125.0MiB| unsat | 0 |  |  |
+|s_komodo-1450.0.smt2                                         |   80.160s | 2935.0MiB| unset | 124 |  |  |
+|s_komodo-1499.4.smt2                                         |   80.248s | 4024.0MiB| unset | 124 |  |  |
+|s_komodo-1493.6.smt2                                         |   81.064s | 16.006GiB| unset | 124 |  |  |
+|s_komodo-1509.6.smt2                                         |   81.096s | 16.263GiB| unset | 124 |  |  |
+|s_komodo-1499.6.smt2                                         |   81.523s | 24.504GiB| unset | 124 |  |  |
+|s_komodo-1504.6.smt2                                         |   81.523s | 24.143GiB| unset | 124 |  |  |
+|s_komodo-1488.6.smt2                                         |   81.713s | 25.108GiB| unset | 124 |  |  |
+|d_lvbkv-Impl-FlushImpl.i.dfy.Impl__FlushImpl.__default.doFlush.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-ByteBlockCacheSystem-JournalBytes.i.dfy.Impl__JournalBytes.__default.JournalBlockOfJournalRange.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-BlockCacheSystem-BlockSystem.i.dfy.Impl__BlockSystem.__default.CleanUpStepPreservesGraphs.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-lib-Base-Sequences.i.dfy.Impl__Sequences.__default.UnflattenFlattenIdentity.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-X509.ExtFields.ExtendedKeyUsage-25.smt2      | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-L0.X509.AliasKeyTBS.Subject-12.smt2          | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-L0.X509.DeviceIDCRI.Subject-12.smt2          | 1000.000s | -1B| unset | -1 |  |  |
+|d_fvbkv-Impl-JournalistImpl.i.dfy.Impl__JournalistImpl.Journalist.packageFrozenJournal.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-ASN1.Low.TLV-1.smt2                          | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-L0.X509.DeviceIDCRI.Subject-10.smt2          | 1000.000s | -1B| unset | -1 |  |  |
+|d_komodo-verified-entry.gen.dfyImpl___module.__default.va__lemma__stack__banked__regs2.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-lib-DataStructures-BtreeModel.i.dfy.Impl__BtreeModel.__default.InterpretationsDisjointUnion.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-Impl-IndirectionTable.i.dfy.Impl__IndirectionTable.IndirectionTable.UpdatePredCounts.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-ASN1.Low.Value.BIT_STRING-1.smt2             | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-BlockCacheSystem-BlockSystem.i.dfy.Impl__BlockSystem.__default.DirtyStepPreservesInv.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|d_fvbkv-Impl-IndirectionTableModel.i.dfy.Impl__IndirectionTableModel.__default.InitLocBitmapIterateCorrect.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-X509.ExtFields.BasicConstraints-26.smt2      | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-Impl-IndirectionTable.i.dfy.Impl__IndirectionTable.IndirectionTable.UpdateAndRemoveLoc.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|d_fvbkv-lib-Marshalling-Math.i.dfy.Impl__Math.__default.lemma__power2__adds.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-L0.X509.AliasKeyTBS.Subject-10.smt2          | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-ASN1.Low.Value.StringCombinator-2.smt2       | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-Impl-GrowImpl.i.dfy.Impl__GrowImpl.__default.doGrow.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|d_komodo-verified-exhandler_state.i.dfyImpl___module.__default.lemma__evalHandler.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-X509.ExtFields.KeyUsage-18.smt2              | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-BlockCacheSystem-BlockSystem.i.dfy.Impl__BlockSystem.__default.WriteBackIndirectionTableReqStepPreservesGraphs.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-L0.X509.AliasKeyTBS.Issuer-12.smt2           | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-BlockCacheSystem-BlockSystem.i.dfy.Impl__BlockSystem.__default.PageInNodeRespStepPreservesGraphs.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-L0.X509.AliasKeyTBS.Issuer-10.smt2           | 1000.000s | -1B| unset | -1 |  |  |
+|d_komodo-verified-bitvectors_primitive.i.dfyImpl___module.__default.lemma__ShiftsLeftSum.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|fs_dice-queries-ASN1.Spec.Value.Envelop-20.smt2              | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-lib-DataStructures-BtreeModel.i.dfy.Impl__BtreeModel.__default.GrowPreservesInterpretation.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-lib-DataStructures-BtreeModel.i.dfy.Impl__BtreeModel.__default.SplitLeafInterpretation.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-BlockCacheSystem-BlockSystem.i.dfy.Impl__BlockSystem.__default.PageInNodeReqStepPreservesGraphs.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|d_lvbkv-BlockCacheSystem-BlockSystem.i.dfy.Impl__BlockSystem.__default.EvictStepPreservesGraphs.smt2 | 1000.000s | -1B| unset | -1 |  |  |
+|d_fvbkv-MapSpec-TSJ.i.dfy.Impl__TSJ.__default.Move2to3StepPreservesInv.smt2 | 1000.000s | -1B| unset | -1 |  |  |
