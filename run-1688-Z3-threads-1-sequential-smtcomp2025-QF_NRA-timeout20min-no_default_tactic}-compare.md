@@ -1,0 +1,445 @@
+Comparing data and data
+
+
+# SUMMARY
+- LHS tests = 44
+- RHS tests = 44
+- LHS success = 44  (100.0%)
+- RHS success = 44  (100.0%)
+
+
+## METADATA
+
+<details><summary>METADATA</summary>
+
+# LHS
+<pre>
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: Z3-threads-1-sequential-smtcomp2025-QF_NRA-timeout20min-no_default_tactic}
+Runner: rise-runner-2
+Z3 repo: ilanashapiro/z3
+Z3 commit: bb9a55789061a7e3da7e3868f9e388c750e72ad9
+Z3 branch: core_min
+Z3 options: "-T:1200 -v:0 smt.threads=1 smt.auto_config=false"
+Z3 inputs: inputs/smt_comp_2025_parallel/QF_NRA
+Z3 commit message: clean up code
+
+</pre>
+# RHS
+<pre>
+Ramon benchmark for Z3
+-
+Job description: 
+Job tag: Z3-threads-1-sequential-smtcomp2025-QF_NRA-timeout20min-no_default_tactic}
+Runner: rise-runner-2
+Z3 repo: ilanashapiro/z3
+Z3 commit: bb9a55789061a7e3da7e3868f9e388c750e72ad9
+Z3 branch: core_min
+Z3 options: "-T:1200 -v:0 smt.threads=1 smt.auto_config=false"
+Z3 inputs: inputs/smt_comp_2025_parallel/QF_NRA
+Z3 commit message: clean up code
+
+</pre>
+</details>
+
+
+## TOP 20 RUNTIME INCREASE
+
+<details><summary>TOP 20 RUNTIME INCREASE</summary>
+
+|FILE                                                                                        |TIME_L     |TIME_R     |DIFF(s)    |DIFF(%)|
+|-------------|-------------:|-------------:|--------------:|------------:|
+|scrambled100912.smt2                                                                        |1200.012s  |1200.012s  |   0.000s  | 0.0%|
+|scrambled112083.smt2                                                                        |1200.037s  |1200.037s  |   0.000s  | 0.0%|
+|scrambled112144.smt2                                                                        |1200.018s  |1200.018s  |   0.000s  | 0.0%|
+|scrambled114923.smt2                                                                        |1200.202s  |1200.202s  |   0.000s  | 0.0%|
+|scrambled117334.smt2                                                                        |1200.063s  |1200.063s  |   0.000s  | 0.0%|
+|scrambled117944.smt2                                                                        |1200.014s  |1200.014s  |   0.000s  | 0.0%|
+|scrambled118224.smt2                                                                        |1200.040s  |1200.040s  |   0.000s  | 0.0%|
+|scrambled121780.smt2                                                                        |1200.094s  |1200.094s  |   0.000s  | 0.0%|
+|scrambled124828.smt2                                                                        |1200.039s  |1200.039s  |   0.000s  | 0.0%|
+|scrambled14016.smt2                                                                         |1200.109s  |1200.109s  |   0.000s  | 0.0%|
+|scrambled14368.smt2                                                                         |  51.371s  |  51.371s  |   0.000s  | 0.0%|
+|scrambled14880.smt2                                                                         |1200.029s  |1200.029s  |   0.000s  | 0.0%|
+|scrambled18831.smt2                                                                         |1200.020s  |1200.020s  |   0.000s  | 0.0%|
+|scrambled21647.smt2                                                                         |1200.021s  |1200.021s  |   0.000s  | 0.0%|
+|scrambled22492.smt2                                                                         |1200.040s  |1200.040s  |   0.000s  | 0.0%|
+|scrambled27426.smt2                                                                         |1200.081s  |1200.081s  |   0.000s  | 0.0%|
+|scrambled28630.smt2                                                                         |1200.037s  |1200.037s  |   0.000s  | 0.0%|
+|scrambled29556.smt2                                                                         |   0.672s  |   0.672s  |   0.000s  | 0.0%|
+|scrambled32269.smt2                                                                         |1200.038s  |1200.038s  |   0.000s  | 0.0%|
+|scrambled32701.smt2                                                                         |1200.053s  |1200.053s  |   0.000s  | 0.0%|
+</details>
+
+
+## TOP 20 RUNTIME INCREASE (RELATIVE)
+
+<details><summary>TOP 20 RUNTIME INCREASE (RELATIVE)</summary>
+
+|FILE                                                                                        |TIME_L     |TIME_R     |DIFF(s)    |DIFF(%)|
+|-------------|-------------:|-------------:|--------------:|------------:|
+|scrambled100912.smt2                                                                        |1200.012s  |1200.012s  |   0.000s  | 0.0%|
+|scrambled112083.smt2                                                                        |1200.037s  |1200.037s  |   0.000s  | 0.0%|
+|scrambled112144.smt2                                                                        |1200.018s  |1200.018s  |   0.000s  | 0.0%|
+|scrambled114923.smt2                                                                        |1200.202s  |1200.202s  |   0.000s  | 0.0%|
+|scrambled117334.smt2                                                                        |1200.063s  |1200.063s  |   0.000s  | 0.0%|
+|scrambled117944.smt2                                                                        |1200.014s  |1200.014s  |   0.000s  | 0.0%|
+|scrambled118224.smt2                                                                        |1200.040s  |1200.040s  |   0.000s  | 0.0%|
+|scrambled121780.smt2                                                                        |1200.094s  |1200.094s  |   0.000s  | 0.0%|
+|scrambled124828.smt2                                                                        |1200.039s  |1200.039s  |   0.000s  | 0.0%|
+|scrambled14016.smt2                                                                         |1200.109s  |1200.109s  |   0.000s  | 0.0%|
+|scrambled14368.smt2                                                                         |  51.371s  |  51.371s  |   0.000s  | 0.0%|
+|scrambled14880.smt2                                                                         |1200.029s  |1200.029s  |   0.000s  | 0.0%|
+|scrambled18831.smt2                                                                         |1200.020s  |1200.020s  |   0.000s  | 0.0%|
+|scrambled21647.smt2                                                                         |1200.021s  |1200.021s  |   0.000s  | 0.0%|
+|scrambled22492.smt2                                                                         |1200.040s  |1200.040s  |   0.000s  | 0.0%|
+|scrambled27426.smt2                                                                         |1200.081s  |1200.081s  |   0.000s  | 0.0%|
+|scrambled28630.smt2                                                                         |1200.037s  |1200.037s  |   0.000s  | 0.0%|
+|scrambled29556.smt2                                                                         |   0.672s  |   0.672s  |   0.000s  | 0.0%|
+|scrambled32269.smt2                                                                         |1200.038s  |1200.038s  |   0.000s  | 0.0%|
+|scrambled32701.smt2                                                                         |1200.053s  |1200.053s  |   0.000s  | 0.0%|
+</details>
+
+
+## TOP 20 RUNTIME DECREASE
+
+<details><summary>TOP 20 RUNTIME DECREASE</summary>
+
+|FILE                                                                                        |TIME_L     |TIME_R     |DIFF(s)    |DIFF(%)|
+|-------------|-------------:|-------------:|--------------:|------------:|
+|scrambled100912.smt2                                                                        |1200.012s  |1200.012s  |   0.000s  | 0.0%|
+|scrambled112083.smt2                                                                        |1200.037s  |1200.037s  |   0.000s  | 0.0%|
+|scrambled112144.smt2                                                                        |1200.018s  |1200.018s  |   0.000s  | 0.0%|
+|scrambled114923.smt2                                                                        |1200.202s  |1200.202s  |   0.000s  | 0.0%|
+|scrambled117334.smt2                                                                        |1200.063s  |1200.063s  |   0.000s  | 0.0%|
+|scrambled117944.smt2                                                                        |1200.014s  |1200.014s  |   0.000s  | 0.0%|
+|scrambled118224.smt2                                                                        |1200.040s  |1200.040s  |   0.000s  | 0.0%|
+|scrambled121780.smt2                                                                        |1200.094s  |1200.094s  |   0.000s  | 0.0%|
+|scrambled124828.smt2                                                                        |1200.039s  |1200.039s  |   0.000s  | 0.0%|
+|scrambled14016.smt2                                                                         |1200.109s  |1200.109s  |   0.000s  | 0.0%|
+|scrambled14368.smt2                                                                         |  51.371s  |  51.371s  |   0.000s  | 0.0%|
+|scrambled14880.smt2                                                                         |1200.029s  |1200.029s  |   0.000s  | 0.0%|
+|scrambled18831.smt2                                                                         |1200.020s  |1200.020s  |   0.000s  | 0.0%|
+|scrambled21647.smt2                                                                         |1200.021s  |1200.021s  |   0.000s  | 0.0%|
+|scrambled22492.smt2                                                                         |1200.040s  |1200.040s  |   0.000s  | 0.0%|
+|scrambled27426.smt2                                                                         |1200.081s  |1200.081s  |   0.000s  | 0.0%|
+|scrambled28630.smt2                                                                         |1200.037s  |1200.037s  |   0.000s  | 0.0%|
+|scrambled29556.smt2                                                                         |   0.672s  |   0.672s  |   0.000s  | 0.0%|
+|scrambled32269.smt2                                                                         |1200.038s  |1200.038s  |   0.000s  | 0.0%|
+|scrambled32701.smt2                                                                         |1200.053s  |1200.053s  |   0.000s  | 0.0%|
+</details>
+
+
+## TOP 20 RUNTIME DECREASE (RELATIVE)
+
+<details><summary>TOP 20 RUNTIME DECREASE (RELATIVE)</summary>
+
+|FILE                                                                                        |TIME_L     |TIME_R     |DIFF(s)    |DIFF(%)|
+|-------------|-------------:|-------------:|--------------:|------------:|
+|scrambled100912.smt2                                                                        |1200.012s  |1200.012s  |   0.000s  | 0.0%|
+|scrambled112083.smt2                                                                        |1200.037s  |1200.037s  |   0.000s  | 0.0%|
+|scrambled112144.smt2                                                                        |1200.018s  |1200.018s  |   0.000s  | 0.0%|
+|scrambled114923.smt2                                                                        |1200.202s  |1200.202s  |   0.000s  | 0.0%|
+|scrambled117334.smt2                                                                        |1200.063s  |1200.063s  |   0.000s  | 0.0%|
+|scrambled117944.smt2                                                                        |1200.014s  |1200.014s  |   0.000s  | 0.0%|
+|scrambled118224.smt2                                                                        |1200.040s  |1200.040s  |   0.000s  | 0.0%|
+|scrambled121780.smt2                                                                        |1200.094s  |1200.094s  |   0.000s  | 0.0%|
+|scrambled124828.smt2                                                                        |1200.039s  |1200.039s  |   0.000s  | 0.0%|
+|scrambled14016.smt2                                                                         |1200.109s  |1200.109s  |   0.000s  | 0.0%|
+|scrambled14368.smt2                                                                         |  51.371s  |  51.371s  |   0.000s  | 0.0%|
+|scrambled14880.smt2                                                                         |1200.029s  |1200.029s  |   0.000s  | 0.0%|
+|scrambled18831.smt2                                                                         |1200.020s  |1200.020s  |   0.000s  | 0.0%|
+|scrambled21647.smt2                                                                         |1200.021s  |1200.021s  |   0.000s  | 0.0%|
+|scrambled22492.smt2                                                                         |1200.040s  |1200.040s  |   0.000s  | 0.0%|
+|scrambled27426.smt2                                                                         |1200.081s  |1200.081s  |   0.000s  | 0.0%|
+|scrambled28630.smt2                                                                         |1200.037s  |1200.037s  |   0.000s  | 0.0%|
+|scrambled29556.smt2                                                                         |   0.672s  |   0.672s  |   0.000s  | 0.0%|
+|scrambled32269.smt2                                                                         |1200.038s  |1200.038s  |   0.000s  | 0.0%|
+|scrambled32701.smt2                                                                         |1200.053s  |1200.053s  |   0.000s  | 0.0%|
+</details>
+
+
+## TOP 20 LHS FILES, BY RUNTIME
+
+<details><summary>TOP 20 LHS FILES, BY RUNTIME</summary>
+
+|FILE                                                                                       |TIME     |MEM        |
+|------------|----------:|---------:|
+|scrambled114923.smt2                                                                       |1200.202s |1982.0MiB|
+|scrambled5797.smt2                                                                         |1200.133s |1369.0MiB|
+|scrambled14016.smt2                                                                        |1200.109s |931.0MiB|
+|scrambled61896.smt2                                                                        |1200.108s |711.0MiB|
+|scrambled41575.smt2                                                                        |1200.105s |835.0MiB|
+|scrambled60239.smt2                                                                        |1200.096s |737.0MiB|
+|scrambled91241.smt2                                                                        |1200.095s |753.0MiB|
+|scrambled121780.smt2                                                                       |1200.094s |1051.0MiB|
+|scrambled6476.smt2                                                                         |1200.088s |1023.0MiB|
+|scrambled70990.smt2                                                                        |1200.086s |656.0MiB|
+|scrambled78428.smt2                                                                        |1200.082s |772.0MiB|
+|scrambled27426.smt2                                                                        |1200.081s |927.0MiB|
+|scrambled117334.smt2                                                                       |1200.063s |570.0MiB|
+|scrambled32701.smt2                                                                        |1200.053s |125.0MiB|
+|scrambled85895.smt2                                                                        |1200.052s |459.0MiB|
+|scrambled118224.smt2                                                                       |1200.040s |141.0MiB|
+|scrambled22492.smt2                                                                        |1200.040s |119.0MiB|
+|scrambled124828.smt2                                                                       |1200.039s |102.0MiB|
+|scrambled99534.smt2                                                                        |1200.038s |182.0MiB|
+|scrambled32269.smt2                                                                        |1200.038s |94.688MiB|
+</details>
+
+
+## TOP 20 RHS FILES, BY RUNTIME
+
+<details><summary>TOP 20 RHS FILES, BY RUNTIME</summary>
+
+|FILE                                                                                       |TIME     |MEM        |
+|------------|----------:|---------:|
+|scrambled114923.smt2                                                                       |1200.202s |1982.0MiB|
+|scrambled5797.smt2                                                                         |1200.133s |1369.0MiB|
+|scrambled14016.smt2                                                                        |1200.109s |931.0MiB|
+|scrambled61896.smt2                                                                        |1200.108s |711.0MiB|
+|scrambled41575.smt2                                                                        |1200.105s |835.0MiB|
+|scrambled60239.smt2                                                                        |1200.096s |737.0MiB|
+|scrambled91241.smt2                                                                        |1200.095s |753.0MiB|
+|scrambled121780.smt2                                                                       |1200.094s |1051.0MiB|
+|scrambled6476.smt2                                                                         |1200.088s |1023.0MiB|
+|scrambled70990.smt2                                                                        |1200.086s |656.0MiB|
+|scrambled78428.smt2                                                                        |1200.082s |772.0MiB|
+|scrambled27426.smt2                                                                        |1200.081s |927.0MiB|
+|scrambled117334.smt2                                                                       |1200.063s |570.0MiB|
+|scrambled32701.smt2                                                                        |1200.053s |125.0MiB|
+|scrambled85895.smt2                                                                        |1200.052s |459.0MiB|
+|scrambled118224.smt2                                                                       |1200.040s |141.0MiB|
+|scrambled22492.smt2                                                                        |1200.040s |119.0MiB|
+|scrambled124828.smt2                                                                       |1200.039s |102.0MiB|
+|scrambled99534.smt2                                                                        |1200.038s |182.0MiB|
+|scrambled32269.smt2                                                                        |1200.038s |94.688MiB|
+</details>
+
+
+## TOP 20 MEMORY INCREASE
+
+<details><summary>TOP 20 MEMORY INCREASE</summary>
+
+|FILE                                                                                        |MEM_L         |MEM_R         |DIFF            |DIFF(%)|
+|-------------|-------------:|-------------:|--------------:|------------:|
+|scrambled100912.smt2                                                                        |35.892MiB|35.892MiB|0B| 0.0%|
+|scrambled112083.smt2                                                                        |34.52MiB|34.52MiB|0B| 0.0%|
+|scrambled112144.smt2                                                                        |43.236MiB|43.236MiB|0B| 0.0%|
+|scrambled114923.smt2                                                                        |1982.0MiB|1982.0MiB|0B| 0.0%|
+|scrambled117334.smt2                                                                        |570.0MiB|570.0MiB|0B| 0.0%|
+|scrambled117944.smt2                                                                        |38.36MiB|38.36MiB|0B| 0.0%|
+|scrambled118224.smt2                                                                        |141.0MiB|141.0MiB|0B| 0.0%|
+|scrambled121780.smt2                                                                        |1051.0MiB|1051.0MiB|0B| 0.0%|
+|scrambled124828.smt2                                                                        |102.0MiB|102.0MiB|0B| 0.0%|
+|scrambled14016.smt2                                                                         |931.0MiB|931.0MiB|0B| 0.0%|
+|scrambled14368.smt2                                                                         |29.288MiB|29.288MiB|0B| 0.0%|
+|scrambled14880.smt2                                                                         |34.6MiB|34.6MiB|0B| 0.0%|
+|scrambled18831.smt2                                                                         |204.0MiB|204.0MiB|0B| 0.0%|
+|scrambled21647.smt2                                                                         |110.0MiB|110.0MiB|0B| 0.0%|
+|scrambled22492.smt2                                                                         |119.0MiB|119.0MiB|0B| 0.0%|
+|scrambled27426.smt2                                                                         |927.0MiB|927.0MiB|0B| 0.0%|
+|scrambled28630.smt2                                                                         |49.884MiB|49.884MiB|0B| 0.0%|
+|scrambled29556.smt2                                                                         |24.716MiB|24.716MiB|0B| 0.0%|
+|scrambled32269.smt2                                                                         |94.688MiB|94.688MiB|0B| 0.0%|
+|scrambled32701.smt2                                                                         |125.0MiB|125.0MiB|0B| 0.0%|
+</details>
+
+
+## TOP 20 MEMORY INCREASE (RELATIVE)
+
+<details><summary>TOP 20 MEMORY INCREASE (RELATIVE)</summary>
+
+|FILE                                                                                        |MEM_L         |MEM_R         |DIFF            |DIFF(%)|
+|-------------|-------------:|-------------:|--------------:|------------:|
+|scrambled100912.smt2                                                                        |35.892MiB|35.892MiB|0B| 0.0%|
+|scrambled112083.smt2                                                                        |34.52MiB|34.52MiB|0B| 0.0%|
+|scrambled112144.smt2                                                                        |43.236MiB|43.236MiB|0B| 0.0%|
+|scrambled114923.smt2                                                                        |1982.0MiB|1982.0MiB|0B| 0.0%|
+|scrambled117334.smt2                                                                        |570.0MiB|570.0MiB|0B| 0.0%|
+|scrambled117944.smt2                                                                        |38.36MiB|38.36MiB|0B| 0.0%|
+|scrambled118224.smt2                                                                        |141.0MiB|141.0MiB|0B| 0.0%|
+|scrambled121780.smt2                                                                        |1051.0MiB|1051.0MiB|0B| 0.0%|
+|scrambled124828.smt2                                                                        |102.0MiB|102.0MiB|0B| 0.0%|
+|scrambled14016.smt2                                                                         |931.0MiB|931.0MiB|0B| 0.0%|
+|scrambled14368.smt2                                                                         |29.288MiB|29.288MiB|0B| 0.0%|
+|scrambled14880.smt2                                                                         |34.6MiB|34.6MiB|0B| 0.0%|
+|scrambled18831.smt2                                                                         |204.0MiB|204.0MiB|0B| 0.0%|
+|scrambled21647.smt2                                                                         |110.0MiB|110.0MiB|0B| 0.0%|
+|scrambled22492.smt2                                                                         |119.0MiB|119.0MiB|0B| 0.0%|
+|scrambled27426.smt2                                                                         |927.0MiB|927.0MiB|0B| 0.0%|
+|scrambled28630.smt2                                                                         |49.884MiB|49.884MiB|0B| 0.0%|
+|scrambled29556.smt2                                                                         |24.716MiB|24.716MiB|0B| 0.0%|
+|scrambled32269.smt2                                                                         |94.688MiB|94.688MiB|0B| 0.0%|
+|scrambled32701.smt2                                                                         |125.0MiB|125.0MiB|0B| 0.0%|
+</details>
+
+
+## TOP 20 MEMORY DECREASE
+
+<details><summary>TOP 20 MEMORY DECREASE</summary>
+
+|FILE                                                                                        |MEM_L         |MEM_R         |DIFF            |DIFF(%)|
+|-------------|-------------:|-------------:|--------------:|------------:|
+|scrambled100912.smt2                                                                        |35.892MiB|35.892MiB|0B| 0.0%|
+|scrambled112083.smt2                                                                        |34.52MiB|34.52MiB|0B| 0.0%|
+|scrambled112144.smt2                                                                        |43.236MiB|43.236MiB|0B| 0.0%|
+|scrambled114923.smt2                                                                        |1982.0MiB|1982.0MiB|0B| 0.0%|
+|scrambled117334.smt2                                                                        |570.0MiB|570.0MiB|0B| 0.0%|
+|scrambled117944.smt2                                                                        |38.36MiB|38.36MiB|0B| 0.0%|
+|scrambled118224.smt2                                                                        |141.0MiB|141.0MiB|0B| 0.0%|
+|scrambled121780.smt2                                                                        |1051.0MiB|1051.0MiB|0B| 0.0%|
+|scrambled124828.smt2                                                                        |102.0MiB|102.0MiB|0B| 0.0%|
+|scrambled14016.smt2                                                                         |931.0MiB|931.0MiB|0B| 0.0%|
+|scrambled14368.smt2                                                                         |29.288MiB|29.288MiB|0B| 0.0%|
+|scrambled14880.smt2                                                                         |34.6MiB|34.6MiB|0B| 0.0%|
+|scrambled18831.smt2                                                                         |204.0MiB|204.0MiB|0B| 0.0%|
+|scrambled21647.smt2                                                                         |110.0MiB|110.0MiB|0B| 0.0%|
+|scrambled22492.smt2                                                                         |119.0MiB|119.0MiB|0B| 0.0%|
+|scrambled27426.smt2                                                                         |927.0MiB|927.0MiB|0B| 0.0%|
+|scrambled28630.smt2                                                                         |49.884MiB|49.884MiB|0B| 0.0%|
+|scrambled29556.smt2                                                                         |24.716MiB|24.716MiB|0B| 0.0%|
+|scrambled32269.smt2                                                                         |94.688MiB|94.688MiB|0B| 0.0%|
+|scrambled32701.smt2                                                                         |125.0MiB|125.0MiB|0B| 0.0%|
+</details>
+
+
+## TOP 20 MEMORY DECREASE (RELATIVE)
+
+<details><summary>TOP 20 MEMORY DECREASE (RELATIVE)</summary>
+
+|FILE                                                                                        |MEM_L         |MEM_R         |DIFF            |DIFF(%)|
+|-------------|-------------:|-------------:|--------------:|------------:|
+|scrambled100912.smt2                                                                        |35.892MiB|35.892MiB|0B| 0.0%|
+|scrambled112083.smt2                                                                        |34.52MiB|34.52MiB|0B| 0.0%|
+|scrambled112144.smt2                                                                        |43.236MiB|43.236MiB|0B| 0.0%|
+|scrambled114923.smt2                                                                        |1982.0MiB|1982.0MiB|0B| 0.0%|
+|scrambled117334.smt2                                                                        |570.0MiB|570.0MiB|0B| 0.0%|
+|scrambled117944.smt2                                                                        |38.36MiB|38.36MiB|0B| 0.0%|
+|scrambled118224.smt2                                                                        |141.0MiB|141.0MiB|0B| 0.0%|
+|scrambled121780.smt2                                                                        |1051.0MiB|1051.0MiB|0B| 0.0%|
+|scrambled124828.smt2                                                                        |102.0MiB|102.0MiB|0B| 0.0%|
+|scrambled14016.smt2                                                                         |931.0MiB|931.0MiB|0B| 0.0%|
+|scrambled14368.smt2                                                                         |29.288MiB|29.288MiB|0B| 0.0%|
+|scrambled14880.smt2                                                                         |34.6MiB|34.6MiB|0B| 0.0%|
+|scrambled18831.smt2                                                                         |204.0MiB|204.0MiB|0B| 0.0%|
+|scrambled21647.smt2                                                                         |110.0MiB|110.0MiB|0B| 0.0%|
+|scrambled22492.smt2                                                                         |119.0MiB|119.0MiB|0B| 0.0%|
+|scrambled27426.smt2                                                                         |927.0MiB|927.0MiB|0B| 0.0%|
+|scrambled28630.smt2                                                                         |49.884MiB|49.884MiB|0B| 0.0%|
+|scrambled29556.smt2                                                                         |24.716MiB|24.716MiB|0B| 0.0%|
+|scrambled32269.smt2                                                                         |94.688MiB|94.688MiB|0B| 0.0%|
+|scrambled32701.smt2                                                                         |125.0MiB|125.0MiB|0B| 0.0%|
+</details>
+
+
+## TOP 20 LHS FILES, BY PEAK MEMORY USAGE
+
+<details><summary>TOP 20 LHS FILES, BY PEAK MEMORY USAGE</summary>
+
+|FILE                                                                                       |TIME     |MEM        |
+|------------|----------:|---------:|
+|scrambled114923.smt2                                                                       |1200.202s |1982.0MiB|
+|scrambled5797.smt2                                                                         |1200.133s |1369.0MiB|
+|scrambled121780.smt2                                                                       |1200.094s |1051.0MiB|
+|scrambled6476.smt2                                                                         |1200.088s |1023.0MiB|
+|scrambled14016.smt2                                                                        |1200.109s |931.0MiB|
+|scrambled27426.smt2                                                                        |1200.081s |927.0MiB|
+|scrambled41575.smt2                                                                        |1200.105s |835.0MiB|
+|scrambled78428.smt2                                                                        |1200.082s |772.0MiB|
+|scrambled91241.smt2                                                                        |1200.095s |753.0MiB|
+|scrambled60239.smt2                                                                        |1200.096s |737.0MiB|
+|scrambled61896.smt2                                                                        |1200.108s |711.0MiB|
+|scrambled70990.smt2                                                                        |1200.086s |656.0MiB|
+|scrambled117334.smt2                                                                       |1200.063s |570.0MiB|
+|scrambled85895.smt2                                                                        |1200.052s |459.0MiB|
+|scrambled65757.smt2                                                                        |1200.037s |233.0MiB|
+|scrambled94768.smt2                                                                        |1200.035s |210.0MiB|
+|scrambled18831.smt2                                                                        |1200.020s |204.0MiB|
+|scrambled99534.smt2                                                                        |1200.038s |182.0MiB|
+|scrambled58292.smt2                                                                        |1200.017s |180.0MiB|
+|scrambled7586.smt2                                                                         |1200.020s |159.0MiB|
+</details>
+
+
+## TOP 20 RHS FILES, BY PEAK MEMORY USAGE
+
+<details><summary>TOP 20 RHS FILES, BY PEAK MEMORY USAGE</summary>
+
+|FILE                                                                                       |TIME     |MEM        |
+|------------|----------:|---------:|
+|scrambled114923.smt2                                                                       |1200.202s |1982.0MiB|
+|scrambled5797.smt2                                                                         |1200.133s |1369.0MiB|
+|scrambled121780.smt2                                                                       |1200.094s |1051.0MiB|
+|scrambled6476.smt2                                                                         |1200.088s |1023.0MiB|
+|scrambled14016.smt2                                                                        |1200.109s |931.0MiB|
+|scrambled27426.smt2                                                                        |1200.081s |927.0MiB|
+|scrambled41575.smt2                                                                        |1200.105s |835.0MiB|
+|scrambled78428.smt2                                                                        |1200.082s |772.0MiB|
+|scrambled91241.smt2                                                                        |1200.095s |753.0MiB|
+|scrambled60239.smt2                                                                        |1200.096s |737.0MiB|
+|scrambled61896.smt2                                                                        |1200.108s |711.0MiB|
+|scrambled70990.smt2                                                                        |1200.086s |656.0MiB|
+|scrambled117334.smt2                                                                       |1200.063s |570.0MiB|
+|scrambled85895.smt2                                                                        |1200.052s |459.0MiB|
+|scrambled65757.smt2                                                                        |1200.037s |233.0MiB|
+|scrambled94768.smt2                                                                        |1200.035s |210.0MiB|
+|scrambled18831.smt2                                                                        |1200.020s |204.0MiB|
+|scrambled99534.smt2                                                                        |1200.038s |182.0MiB|
+|scrambled58292.smt2                                                                        |1200.017s |180.0MiB|
+|scrambled7586.smt2                                                                         |1200.020s |159.0MiB|
+</details>
+
+
+## FULL COMPARISON
+
+<details><summary>FULL COMPARISON</summary>
+
+|FILE                                                                                        |TIME_L     |TIME_R     |DIFF(s)    |DIFF(%)|
+|-------------|-------------:|-------------:|--------------:|------------:|
+|scrambled100912.smt2                                                                        |1200.012s  |1200.012s  |   0.000s  | 0.0%|
+|scrambled112083.smt2                                                                        |1200.037s  |1200.037s  |   0.000s  | 0.0%|
+|scrambled112144.smt2                                                                        |1200.018s  |1200.018s  |   0.000s  | 0.0%|
+|scrambled114923.smt2                                                                        |1200.202s  |1200.202s  |   0.000s  | 0.0%|
+|scrambled117334.smt2                                                                        |1200.063s  |1200.063s  |   0.000s  | 0.0%|
+|scrambled117944.smt2                                                                        |1200.014s  |1200.014s  |   0.000s  | 0.0%|
+|scrambled118224.smt2                                                                        |1200.040s  |1200.040s  |   0.000s  | 0.0%|
+|scrambled121780.smt2                                                                        |1200.094s  |1200.094s  |   0.000s  | 0.0%|
+|scrambled124828.smt2                                                                        |1200.039s  |1200.039s  |   0.000s  | 0.0%|
+|scrambled14016.smt2                                                                         |1200.109s  |1200.109s  |   0.000s  | 0.0%|
+|scrambled14368.smt2                                                                         |  51.371s  |  51.371s  |   0.000s  | 0.0%|
+|scrambled14880.smt2                                                                         |1200.029s  |1200.029s  |   0.000s  | 0.0%|
+|scrambled18831.smt2                                                                         |1200.020s  |1200.020s  |   0.000s  | 0.0%|
+|scrambled21647.smt2                                                                         |1200.021s  |1200.021s  |   0.000s  | 0.0%|
+|scrambled22492.smt2                                                                         |1200.040s  |1200.040s  |   0.000s  | 0.0%|
+|scrambled27426.smt2                                                                         |1200.081s  |1200.081s  |   0.000s  | 0.0%|
+|scrambled28630.smt2                                                                         |1200.037s  |1200.037s  |   0.000s  | 0.0%|
+|scrambled29556.smt2                                                                         |   0.672s  |   0.672s  |   0.000s  | 0.0%|
+|scrambled32269.smt2                                                                         |1200.038s  |1200.038s  |   0.000s  | 0.0%|
+|scrambled32701.smt2                                                                         |1200.053s  |1200.053s  |   0.000s  | 0.0%|
+|scrambled34121.smt2                                                                         |1200.030s  |1200.030s  |   0.000s  | 0.0%|
+|scrambled36539.smt2                                                                         |1200.031s  |1200.031s  |   0.000s  | 0.0%|
+|scrambled41575.smt2                                                                         |1200.105s  |1200.105s  |   0.000s  | 0.0%|
+|scrambled42946.smt2                                                                         |1200.013s  |1200.013s  |   0.000s  | 0.0%|
+|scrambled54263.smt2                                                                         |1200.033s  |1200.033s  |   0.000s  | 0.0%|
+|scrambled5797.smt2                                                                          |1200.133s  |1200.133s  |   0.000s  | 0.0%|
+|scrambled58292.smt2                                                                         |1200.017s  |1200.017s  |   0.000s  | 0.0%|
+|scrambled60239.smt2                                                                         |1200.096s  |1200.096s  |   0.000s  | 0.0%|
+|scrambled61896.smt2                                                                         |1200.108s  |1200.108s  |   0.000s  | 0.0%|
+|scrambled6476.smt2                                                                          |1200.088s  |1200.088s  |   0.000s  | 0.0%|
+|scrambled65757.smt2                                                                         |1200.037s  |1200.037s  |   0.000s  | 0.0%|
+|scrambled70990.smt2                                                                         |1200.086s  |1200.086s  |   0.000s  | 0.0%|
+|scrambled73220.smt2                                                                         |1200.033s  |1200.033s  |   0.000s  | 0.0%|
+|scrambled74869.smt2                                                                         |1200.029s  |1200.029s  |   0.000s  | 0.0%|
+|scrambled7586.smt2                                                                          |1200.020s  |1200.020s  |   0.000s  | 0.0%|
+|scrambled78428.smt2                                                                         |1200.082s  |1200.082s  |   0.000s  | 0.0%|
+|scrambled7923.smt2                                                                          |1200.030s  |1200.030s  |   0.000s  | 0.0%|
+|scrambled80728.smt2                                                                         |1200.036s  |1200.036s  |   0.000s  | 0.0%|
+|scrambled82241.smt2                                                                         |1200.016s  |1200.016s  |   0.000s  | 0.0%|
+|scrambled85895.smt2                                                                         |1200.052s  |1200.052s  |   0.000s  | 0.0%|
+|scrambled91241.smt2                                                                         |1200.095s  |1200.095s  |   0.000s  | 0.0%|
+|scrambled94319.smt2                                                                         |1200.014s  |1200.014s  |   0.000s  | 0.0%|
+|scrambled94768.smt2                                                                         |1200.035s  |1200.035s  |   0.000s  | 0.0%|
+</details>
